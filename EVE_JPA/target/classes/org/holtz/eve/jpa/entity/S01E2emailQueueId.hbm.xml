@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01E2emailQueueId" table="S01E2EMAILQUEUEID">
+        <id name="e2custId" type="int">
+            <column name="E2CUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="e2emailQueueId" type="int">
+            <column name="E2EMAILQUEUEID" />
+        </property>
+        <property name="e2subjectLineTx" type="java.lang.String">
+            <column name="E2SUBJECTLINETX" />
+        </property>
+        <property name="e2emailAddressTx" type="java.lang.String">
+            <column name="E2EMAILADDRESSTX" />
+        </property>
+        <property name="e2mailMergeFieldsTxN" type="java.lang.String">
+            <column name="E2MAILMERGEFIELDSTXN" />
+        </property>
+        <property name="e2emailSentDateN" type="java.util.Date">
+            <column name="E2EMAILSENTDATEN" />
+        </property>
+        <property name="e2emailExpDateN" type="java.util.Date">
+            <column name="E2EMAILEXPDATEN" />
+        </property>
+        <property name="e2creationDate" type="java.util.Date">
+            <column name="E2CREATIONDATE" />
+        </property>
+        <property name="e2outlookFolderTx" type="java.lang.String">
+            <column name="E2OUTLOOKFOLDERTX" />
+        </property>
+        <property name="e2confirmationRequiredBl" type="boolean">
+            <column name="E2CONFIRMATIONREQUIREDBL" />
+        </property>
+        <property name="e2emailSendDateN" type="java.util.Date">
+            <column name="E2EMAILSENDDATEN" />
+        </property>
+        <property name="e2statusTxN" type="java.lang.String">
+            <column name="E2STATUSTXN" />
+        </property>
+        <property name="e2priorityIn" type="int">
+            <column name="E2PRIORITYIN" />
+        </property>
+        <property name="e2sendToNewsletterEngineBl" type="boolean">
+            <column name="E2SENDTONEWSLETTERENGINEBL" />
+        </property>
+        <property name="e2newsletterTemplateTxN" type="java.lang.String">
+            <column name="E2NEWSLETTERTEMPLATETXN" />
+        </property>
+        <property name="e2fromAccountTxN" type="java.lang.String">
+            <column name="E2FROMACCOUNTTXN" />
+        </property>
+        <property name="e2storeId" type="short">
+            <column name="E2STOREID" />
+        </property>
+        <property name="e2subJobTypeId" type="int">
+            <column name="E2SUBJOBTYPEID" />
+        </property>
+        <property name="e2listTxN" type="java.lang.String">
+            <column name="E2LISTTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

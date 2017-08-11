@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01C8custInterestId" table="D01C8CUSTINTERESTID">
+        <id name="c8empId" type="int">
+            <column name="C8EMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="c8custInterestId" type="int">
+            <column name="C8CUSTINTERESTID" />
+        </property>
+        <property name="c8interestTypeId" type="int">
+            <column name="C8INTERESTTYPEID" />
+        </property>
+        <property name="c8custId" type="int">
+            <column name="C8CUSTID" />
+        </property>
+        <property name="c8notesTxN" type="java.lang.String">
+            <column name="C8NOTESTXN" />
+        </property>
+        <property name="c8courseTypeIdN" type="java.lang.Integer">
+            <column name="C8COURSETYPEIDN" />
+        </property>
+        <property name="c8destinationIdN" type="java.lang.Integer">
+            <column name="C8DESTINATIONIDN" />
+        </property>
+        <property name="c8specialInterestIdN" type="java.lang.Integer">
+            <column name="C8SPECIALINTERESTIDN" />
+        </property>
+        <property name="c8stockItemIdN" type="java.lang.Integer">
+            <column name="C8STOCKITEMIDN" />
+        </property>
+        <property name="c8afterDateN" type="java.util.Date">
+            <column name="C8AFTERDATEN" />
+        </property>
+        <property name="c8beforeDateN" type="java.util.Date">
+            <column name="C8BEFOREDATEN" />
+        </property>
+        <property name="c8courseIdN" type="java.lang.Integer">
+            <column name="C8COURSEIDN" />
+        </property>
+        <property name="c8tripIdN" type="java.lang.Integer">
+            <column name="C8TRIPIDN" />
+        </property>
+        <property name="c8contactMethodIdN" type="java.lang.Integer">
+            <column name="C8CONTACTMETHODIDN" />
+        </property>
+        <property name="c8creationDate" type="java.util.Date">
+            <column name="C8CREATIONDATE" />
+        </property>
+        <property name="c8lastUpdatedDate" type="java.util.Date">
+            <column name="C8LASTUPDATEDDATE" />
+        </property>
+        <property name="c8interestStatusId" type="int">
+            <column name="C8INTERESTSTATUSID" />
+        </property>
+        <property name="c8storeId" type="short">
+            <column name="C8STOREID" />
+        </property>
+    </class>
+</hibernate-mapping>

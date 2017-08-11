@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+<wicket:head>
+	<wicket:link>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</wicket:link>
+</wicket:head>
+</head>
+<body>
+	<span style="display: block; border: 1px solid black;"> Selected
+		StockItem: <span wicket:id="selectedLabel">[selectedItem]</span>
+	</span>
+	<br />
+	<span wicket:id="editSelectedLabel">[editSelected]</span>
+
+	<span wicket:id="feedback">Feedback messages go here</span>
+	<wicket:child/>
+</body>
+</html>

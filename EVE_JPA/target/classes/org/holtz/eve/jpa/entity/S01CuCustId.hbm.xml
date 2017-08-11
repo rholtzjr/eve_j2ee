@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01CuCustId" table="S01CUCUSTID">
+        <id name="cuCustId" type="int">
+            <column name="CUCUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cuStoreId" type="short">
+            <column name="CUSTOREID" />
+        </property>
+        <property name="cuFirstNameTx" type="java.lang.String">
+            <column name="CUFIRSTNAMETX" />
+        </property>
+        <property name="cuMiddleInitialTxN" type="java.lang.String">
+            <column name="CUMIDDLEINITIALTXN" />
+        </property>
+        <property name="cuLastNameTx" type="java.lang.String">
+            <column name="CULASTNAMETX" />
+        </property>
+        <property name="cuKnownAsTxN" type="java.lang.String">
+            <column name="CUKNOWNASTXN" />
+        </property>
+        <property name="cuOccupationTxN" type="java.lang.String">
+            <column name="CUOCCUPATIONTXN" />
+        </property>
+        <property name="cuBirthDateN" type="java.util.Date">
+            <column name="CUBIRTHDATEN" />
+        </property>
+        <property name="cuSexIdN" type="java.lang.Short">
+            <column name="CUSEXIDN" />
+        </property>
+        <property name="cuMaritalStatusIdN" type="java.lang.Short">
+            <column name="CUMARITALSTATUSIDN" />
+        </property>
+        <property name="cuSourceIdN" type="java.lang.Integer">
+            <column name="CUSOURCEIDN" />
+        </property>
+        <property name="cuAddress1txN" type="java.lang.String">
+            <column name="CUADDRESS1TXN" />
+        </property>
+        <property name="cuAddress2txN" type="java.lang.String">
+            <column name="CUADDRESS2TXN" />
+        </property>
+        <property name="cuAddress3txN" type="java.lang.String">
+            <column name="CUADDRESS3TXN" />
+        </property>
+        <property name="cuAddress4txN" type="java.lang.String">
+            <column name="CUADDRESS4TXN" />
+        </property>
+        <property name="cuStateIdN" type="java.lang.Integer">
+            <column name="CUSTATEIDN" />
+        </property>
+        <property name="cuPostcodeTxN" type="java.lang.String">
+            <column name="CUPOSTCODETXN" />
+        </property>
+        <property name="cuCountryIdN" type="java.lang.Integer">
+            <column name="CUCOUNTRYIDN" />
+        </property>
+        <property name="cuCompanyIdN" type="java.lang.Integer">
+            <column name="CUCOMPANYIDN" />
+        </property>
+        <property name="cuCompanyTxN" type="java.lang.String">
+            <column name="CUCOMPANYTXN" />
+        </property>
+        <property name="cuWaddress1txN" type="java.lang.String">
+            <column name="CUWADDRESS1TXN" />
+        </property>
+        <property name="cuWaddress2txN" type="java.lang.String">
+            <column name="CUWADDRESS2TXN" />
+        </property>
+        <property name="cuWaddress3txN" type="java.lang.String">
+            <column name="CUWADDRESS3TXN" />
+        </property>
+        <property name="cuWaddress4txN" type="java.lang.String">
+            <column name="CUWADDRESS4TXN" />
+        </property>
+        <property name="cuWstateIdN" type="java.lang.Integer">
+            <column name="CUWSTATEIDN" />
+        </property>
+        <property name="cuWpostcodeTxN" type="java.lang.String">
+            <column name="CUWPOSTCODETXN" />
+        </property>
+        <property name="cuWcountryIdN" type="java.lang.Integer">
+            <column name="CUWCOUNTRYIDN" />
+        </property>
+        <property name="cuLaddress1txN" type="java.lang.String">
+            <column name="CULADDRESS1TXN" />
+        </property>
+        <property name="cuLaddress2txN" type="java.lang.String">
+            <column name="CULADDRESS2TXN" />
+        </property>
+        <property name="cuLaddress3txN" type="java.lang.String">
+            <column name="CULADDRESS3TXN" />
+        </property>
+        <property name="cuLaddress4txN" type="java.lang.String">
+            <column name="CULADDRESS4TXN" />
+        </property>
+        <property name="cuLpostcodeTxN" type="java.lang.String">
+            <column name="CULPOSTCODETXN" />
+        </property>
+        <property name="cuTelLocalTxN" type="java.lang.String">
+            <column name="CUTELLOCALTXN" />
+        </property>
+        <property name="cuTelHomeTxN" type="java.lang.String">
+            <column name="CUTELHOMETXN" />
+        </property>
+        <property name="cuTelWorkTxN" type="java.lang.String">
+            <column name="CUTELWORKTXN" />
+        </property>
+        <property name="cuTelMobileTxN" type="java.lang.String">
+            <column name="CUTELMOBILETXN" />
+        </property>
+        <property name="cuFaxTxN" type="java.lang.String">
+            <column name="CUFAXTXN" />
+        </property>
+        <property name="cuEmailTxN" type="java.lang.String">
+            <column name="CUEMAILTXN" />
+        </property>
+        <property name="cuPagerTxN" type="java.lang.String">
+            <column name="CUPAGERTXN" />
+        </property>
+        <property name="cuFirstLanguageIdN" type="java.lang.Integer">
+            <column name="CUFIRSTLANGUAGEIDN" />
+        </property>
+        <property name="cuNoknameTxN" type="java.lang.String">
+            <column name="CUNOKNAMETXN" />
+        </property>
+        <property name="cuNokrelationshipTxN" type="java.lang.String">
+            <column name="CUNOKRELATIONSHIPTXN" />
+        </property>
+        <property name="cuNokaddress1txN" type="java.lang.String">
+            <column name="CUNOKADDRESS1TXN" />
+        </property>
+        <property name="cuNokaddress2txN" type="java.lang.String">
+            <column name="CUNOKADDRESS2TXN" />
+        </property>
+        <property name="cuNokaddress3txN" type="java.lang.String">
+            <column name="CUNOKADDRESS3TXN" />
+        </property>
+        <property name="cuNokaddress4txN" type="java.lang.String">
+            <column name="CUNOKADDRESS4TXN" />
+        </property>
+        <property name="cuNokpostcodeTxN" type="java.lang.String">
+            <column name="CUNOKPOSTCODETXN" />
+        </property>
+        <property name="cuNoktelTxN" type="java.lang.String">
+            <column name="CUNOKTELTXN" />
+        </property>
+        <property name="cuImagePathTxN" type="java.lang.String">
+            <column name="CUIMAGEPATHTXN" />
+        </property>
+        <property name="cuNotesTxN" type="java.lang.String">
+            <column name="CUNOTESTXN" />
+        </property>
+        <property name="cuDoctorsReportRequiredBl" type="boolean">
+            <column name="CUDOCTORSREPORTREQUIREDBL" />
+        </property>
+        <property name="cuDoctorsReportReceivedBl" type="boolean">
+            <column name="CUDOCTORSREPORTRECEIVEDBL" />
+        </property>
+        <property name="cuSuggestionTxN" type="java.lang.String">
+            <column name="CUSUGGESTIONTXN" />
+        </property>
+        <property name="cuUnavailableBl" type="boolean">
+            <column name="CUUNAVAILABLEBL" />
+        </property>
+        <property name="cuLastUpdatedDate" type="java.util.Date">
+            <column name="CULASTUPDATEDDATE" />
+        </property>
+        <property name="cuPassportNoTxN" type="java.lang.String">
+            <column name="CUPASSPORTNOTXN" />
+        </property>
+        <property name="cuFrequentFlyerTxN" type="java.lang.String">
+            <column name="CUFREQUENTFLYERTXN" />
+        </property>
+        <property name="cuSsntxN" type="java.lang.String">
+            <column name="CUSSNTXN" />
+        </property>
+        <property name="cuStatusId" type="int">
+            <column name="CUSTATUSID" />
+        </property>
+        <property name="cuPadikeyTxN" type="java.lang.String">
+            <column name="CUPADIKEYTXN" />
+        </property>
+        <property name="cuCommissionableBl" type="boolean">
+            <column name="CUCOMMISSIONABLEBL" />
+        </property>
+        <property name="cuLastPurchaseDate" type="java.util.Date">
+            <column name="CULASTPURCHASEDATE" />
+        </property>
+        <property name="cuCreditMn" type="double">
+            <column name="CUCREDITMN" />
+        </property>
+        <property name="cuCreditLimitMn" type="double">
+            <column name="CUCREDITLIMITMN" />
+        </property>
+        <property name="cuCreationDate" type="java.util.Date">
+            <column name="CUCREATIONDATE" />
+        </property>
+        <property name="cuUserDefined1txN" type="java.lang.String">
+            <column name="CUUSERDEFINED1TXN" />
+        </property>
+        <property name="cuUserDefined2txN" type="java.lang.String">
+            <column name="CUUSERDEFINED2TXN" />
+        </property>
+        <property name="cuUserDefined3txN" type="java.lang.String">
+            <column name="CUUSERDEFINED3TXN" />
+        </property>
+        <property name="cuUserNameTxN" type="java.lang.String">
+            <column name="CUUSERNAMETXN" />
+        </property>
+        <property name="cuPasswordTxN" type="java.lang.String">
+            <column name="CUPASSWORDTXN" />
+        </property>
+        <property name="cuNoOfDivesInN" type="java.lang.Short">
+            <column name="CUNOOFDIVESINN" />
+        </property>
+        <property name="cuLastDiveDateN" type="java.util.Date">
+            <column name="CULASTDIVEDATEN" />
+        </property>
+        <property name="cuCardSeenBl" type="boolean">
+            <column name="CUCARDSEENBL" />
+        </property>
+        <property name="cuHeightFlN" type="java.lang.Float">
+            <column name="CUHEIGHTFLN" />
+        </property>
+        <property name="cuWeightFlN" type="java.lang.Float">
+            <column name="CUWEIGHTFLN" />
+        </property>
+        <property name="cuInsuranceNoTxN" type="java.lang.String">
+            <column name="CUINSURANCENOTXN" />
+        </property>
+        <property name="cuInsuranceCoTxN" type="java.lang.String">
+            <column name="CUINSURANCECOTXN" />
+        </property>
+        <property name="cuShoeSizeFlN" type="java.lang.Float">
+            <column name="CUSHOESIZEFLN" />
+        </property>
+        <property name="cuSkypeNameTxN" type="java.lang.String">
+            <column name="CUSKYPENAMETXN" />
+        </property>
+        <property name="cuInsuranceDateN" type="java.util.Date">
+            <column name="CUINSURANCEDATEN" />
+        </property>
+        <property name="cuDoctorsReportDateN" type="java.util.Date">
+            <column name="CUDOCTORSREPORTDATEN" />
+        </property>
+        <property name="cuVerifyGuid" type="java.lang.String">
+            <column name="CUVERIFYGUID" />
+        </property>
+        <property name="cuBounceCountInN" type="java.lang.Integer">
+            <column name="CUBOUNCECOUNTINN" />
+        </property>
+        <property name="cuStoreNoTxN" type="java.lang.String">
+            <column name="CUSTORENOTXN" />
+        </property>
+        <property name="cuIsAnonymousBlN" type="java.lang.Boolean">
+            <column name="CUISANONYMOUSBLN" />
+        </property>
+        <property name="cuLastActivityDateN" type="java.util.Date">
+            <column name="CULASTACTIVITYDATEN" />
+        </property>
+        <property name="cuCreditRiskBl" type="boolean">
+            <column name="CUCREDITRISKBL" />
+        </property>
+        <property name="cuAccManagerIdN" type="java.lang.Integer">
+            <column name="CUACCMANAGERIDN" />
+        </property>
+        <property name="cuSecretQuestionTxN" type="java.lang.String">
+            <column name="CUSECRETQUESTIONTXN" />
+        </property>
+        <property name="cuSecretAnswerTxN" type="java.lang.String">
+            <column name="CUSECRETANSWERTXN" />
+        </property>
+        <property name="cuIsCustomerCompletlyRegisteredBl" type="boolean">
+            <column name="CUISCUSTOMERCOMPLETLYREGISTEREDBL" />
+        </property>
+        <property name="cuCustNumberTxN" type="java.lang.String">
+            <column name="CUCUSTNUMBERTXN" />
+        </property>
+        <property name="cuSwipeTxN" type="java.lang.String">
+            <column name="CUSWIPETXN" />
+        </property>
+        <property name="cuRequiredBl" type="boolean">
+            <column name="CUREQUIREDBL" />
+        </property>
+        <property name="cuPadimailingsBl" type="boolean">
+            <column name="CUPADIMAILINGSBL" />
+        </property>
+        <property name="cu3rdPartyMailingsBl" type="boolean">
+            <column name="CU3RDPARTYMAILINGSBL" />
+        </property>
+        <property name="cuScubaTribeIdN" type="java.lang.Integer">
+            <column name="CUSCUBATRIBEIDN" />
+        </property>
+        <property name="cuScubaTribeSentDate" type="java.util.Date">
+            <column name="CUSCUBATRIBESENTDATE" />
+        </property>
+        <property name="cuScubaTribeCodeTxN" type="java.lang.String">
+            <column name="CUSCUBATRIBECODETXN" />
+        </property>
+        <property name="cuPadiidN" type="java.lang.Integer">
+            <column name="CUPADIIDN" />
+        </property>
+        <property name="cuDataSourceTxN" type="java.lang.String">
+            <column name="CUDATASOURCETXN" />
+        </property>
+        <property name="cuInitialCatalogTxN" type="java.lang.String">
+            <column name="CUINITIALCATALOGTXN" />
+        </property>
+        <property name="cuDbuserIdtxN" type="java.lang.String">
+            <column name="CUDBUSERIDTXN" />
+        </property>
+        <property name="cuDbpasswordTxN" type="java.lang.String">
+            <column name="CUDBPASSWORDTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

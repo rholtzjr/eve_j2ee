@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01E3emailAgentId" table="D01E3EMAILAGENTID">
+        <id name="e3storeId" type="short">
+            <column name="E3STOREID" />
+            <generator class="assigned" />
+        </id>
+        <property name="e3emailAgentId" type="int">
+            <column name="E3EMAILAGENTID" />
+        </property>
+        <property name="e3eventTx" type="java.lang.String">
+            <column name="E3EVENTTX" />
+        </property>
+        <property name="e3eventParam1txN" type="java.lang.String">
+            <column name="E3EVENTPARAM1TXN" />
+        </property>
+        <property name="e3eventParam2txN" type="java.lang.String">
+            <column name="E3EVENTPARAM2TXN" />
+        </property>
+        <property name="e3sqltx" type="java.lang.String">
+            <column name="E3SQLTX" />
+        </property>
+        <property name="e3outlookFolderTxN" type="java.lang.String">
+            <column name="E3OUTLOOKFOLDERTXN" />
+        </property>
+        <property name="e3subjectLineTx" type="java.lang.String">
+            <column name="E3SUBJECTLINETX" />
+        </property>
+        <property name="e3delayIn" type="int">
+            <column name="E3DELAYIN" />
+        </property>
+        <property name="e3expiryDaysIn" type="int">
+            <column name="E3EXPIRYDAYSIN" />
+        </property>
+        <property name="e3lastRunDate" type="java.util.Date">
+            <column name="E3LASTRUNDATE" />
+        </property>
+        <property name="e3confirmationRequiredBl" type="boolean">
+            <column name="E3CONFIRMATIONREQUIREDBL" />
+        </property>
+        <property name="e3lastRunStatusTxN" type="java.lang.String">
+            <column name="E3LASTRUNSTATUSTXN" />
+        </property>
+        <property name="e3runLaterIfAgentOffBl" type="boolean">
+            <column name="E3RUNLATERIFAGENTOFFBL" />
+        </property>
+        <property name="e3unavailableBl" type="boolean">
+            <column name="E3UNAVAILABLEBL" />
+        </property>
+        <property name="e3onMailingListsTxN" type="java.lang.String">
+            <column name="E3ONMAILINGLISTSTXN" />
+        </property>
+        <property name="e3notOnMailingListsTxN" type="java.lang.String">
+            <column name="E3NOTONMAILINGLISTSTXN" />
+        </property>
+        <property name="e3subQueryTxN" type="java.lang.String">
+            <column name="E3SUBQUERYTXN" />
+        </property>
+        <property name="e3priorityIn" type="int">
+            <column name="E3PRIORITYIN" />
+        </property>
+        <property name="e3sendToNewsletterEngineBl" type="boolean">
+            <column name="E3SENDTONEWSLETTERENGINEBL" />
+        </property>
+        <property name="e3newsletterTemplateTxN" type="java.lang.String">
+            <column name="E3NEWSLETTERTEMPLATETXN" />
+        </property>
+        <property name="e3notesTxN" type="java.lang.String">
+            <column name="E3NOTESTXN" />
+        </property>
+        <property name="e3fromAccountTxN" type="java.lang.String">
+            <column name="E3FROMACCOUNTTXN" />
+        </property>
+        <property name="e3primaryTablesTx" type="java.lang.String">
+            <column name="E3PRIMARYTABLESTX" />
+        </property>
+        <property name="e3jobTypeId" type="int">
+            <column name="E3JOBTYPEID" />
+        </property>
+        <property name="e3subJobTypeId" type="int">
+            <column name="E3SUBJOBTYPEID" />
+        </property>
+        <property name="e3listTxN" type="java.lang.String">
+            <column name="E3LISTTXN" />
+        </property>
+        <property name="e3moveToFolderBl" type="boolean">
+            <column name="E3MOVETOFOLDERBL" />
+        </property>
+        <property name="e3viewTxN" type="java.lang.String">
+            <column name="E3VIEWTXN" />
+        </property>
+        <property name="e3columnsTxN" type="java.lang.String">
+            <column name="E3COLUMNSTXN" />
+        </property>
+        <property name="e3dateColumnTxN" type="java.lang.String">
+            <column name="E3DATECOLUMNTXN" />
+        </property>
+        <property name="e3datePeriodInN" type="java.lang.Integer">
+            <column name="E3DATEPERIODINN" />
+        </property>
+        <property name="e3dateValueInN" type="java.lang.Integer">
+            <column name="E3DATEVALUEINN" />
+        </property>
+        <property name="e3groupIdN" type="java.lang.Integer">
+            <column name="E3GROUPIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

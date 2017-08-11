@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01ChCustTypeId" table="D01CHCUSTTYPEID">
+        <id name="chCustTypeId" type="int">
+            <column name="CHCUSTTYPEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="chCustTypeTx" type="java.lang.String">
+            <column name="CHCUSTTYPETX" />
+        </property>
+        <property name="chDiscountableBl" type="boolean">
+            <column name="CHDISCOUNTABLEBL" />
+        </property>
+        <property name="chCourseRoleBl" type="boolean">
+            <column name="CHCOURSEROLEBL" />
+        </property>
+        <property name="chTripRoleBl" type="boolean">
+            <column name="CHTRIPROLEBL" />
+        </property>
+        <property name="chUnavailableBl" type="boolean">
+            <column name="CHUNAVAILABLEBL" />
+        </property>
+        <property name="chLastUpdatedDate" type="java.util.Date">
+            <column name="CHLASTUPDATEDDATE" />
+        </property>
+        <property name="chRequiredBl" type="boolean">
+            <column name="CHREQUIREDBL" />
+        </property>
+        <property name="chCreationDate" type="java.util.Date">
+            <column name="CHCREATIONDATE" />
+        </property>
+        <property name="chEmployeeBl" type="boolean">
+            <column name="CHEMPLOYEEBL" />
+        </property>
+        <property name="chTripCustTypeBl" type="boolean">
+            <column name="CHTRIPCUSTTYPEBL" />
+        </property>
+        <property name="chInvoiceTextTxN" type="java.lang.String">
+            <column name="CHINVOICETEXTTXN" />
+        </property>
+        <property name="chSupportStaffBl" type="boolean">
+            <column name="CHSUPPORTSTAFFBL" />
+        </property>
+    </class>
+</hibernate-mapping>

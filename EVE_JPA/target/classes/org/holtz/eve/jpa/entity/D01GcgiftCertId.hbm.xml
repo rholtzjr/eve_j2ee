@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01GcgiftCertId" table="D01GCGIFTCERTID">
+        <id name="gcpcid" type="short">
+            <column name="GCPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="gcgiftCertId" type="int">
+            <column name="GCGIFTCERTID" />
+        </property>
+        <property name="gcgiftCertNoTx" type="java.lang.String">
+            <column name="GCGIFTCERTNOTX" />
+        </property>
+        <property name="gcpurchasedById" type="int">
+            <column name="GCPURCHASEDBYID" />
+        </property>
+        <property name="gcownedById" type="int">
+            <column name="GCOWNEDBYID" />
+        </property>
+        <property name="gcstoreId" type="short">
+            <column name="GCSTOREID" />
+        </property>
+        <property name="gccostCenterId" type="int">
+            <column name="GCCOSTCENTERID" />
+        </property>
+        <property name="gcpurchasedInvoiceIdN" type="java.lang.Integer">
+            <column name="GCPURCHASEDINVOICEIDN" />
+        </property>
+        <property name="gcusedInvoiceIdN" type="java.lang.Integer">
+            <column name="GCUSEDINVOICEIDN" />
+        </property>
+        <property name="gccreationDate" type="java.util.Date">
+            <column name="GCCREATIONDATE" />
+        </property>
+        <property name="gcexpiryDate" type="java.util.Date">
+            <column name="GCEXPIRYDATE" />
+        </property>
+        <property name="gcactualExpiryDateN" type="java.util.Date">
+            <column name="GCACTUALEXPIRYDATEN" />
+        </property>
+        <property name="gcempId" type="int">
+            <column name="GCEMPID" />
+        </property>
+        <property name="gcamountMn" type="double">
+            <column name="GCAMOUNTMN" />
+        </property>
+        <property name="gccurrencyId" type="short">
+            <column name="GCCURRENCYID" />
+        </property>
+        <property name="gcexchangeRateFl" type="float">
+            <column name="GCEXCHANGERATEFL" />
+        </property>
+        <property name="gclastUpdatedDate" type="java.util.Date">
+            <column name="GCLASTUPDATEDDATE" />
+        </property>
+        <property name="gctransStatusId" type="int">
+            <column name="GCTRANSSTATUSID" />
+        </property>
+        <property name="gcnotesTxN" type="java.lang.String">
+            <column name="GCNOTESTXN" />
+        </property>
+        <property name="gcvoidDateN" type="java.util.Date">
+            <column name="GCVOIDDATEN" />
+        </property>
+        <property name="gcvoidReasonTxN" type="java.lang.String">
+            <column name="GCVOIDREASONTXN" />
+        </property>
+        <property name="gcaccountingPeriodIdN" type="java.lang.Integer">
+            <column name="GCACCOUNTINGPERIODIDN" />
+        </property>
+        <property name="gcgiftCertTypeId" type="int">
+            <column name="GCGIFTCERTTYPEID" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01StstockTypeId" table="D01STSTOCKTYPEID">
+        <id name="strebiidN" type="java.lang.Integer">
+            <column name="STREBIIDN" />
+            <generator class="assigned" />
+        </id>
+        <property name="ststockTypeId" type="int">
+            <column name="STSTOCKTYPEID" />
+        </property>
+        <property name="ststockTypeTx" type="java.lang.String">
+            <column name="STSTOCKTYPETX" />
+        </property>
+        <property name="stprofitCenterId" type="int">
+            <column name="STPROFITCENTERID" />
+        </property>
+        <property name="stprofileBl" type="boolean">
+            <column name="STPROFILEBL" />
+        </property>
+        <property name="stforRentBl" type="boolean">
+            <column name="STFORRENTBL" />
+        </property>
+        <property name="stforServiceBl" type="boolean">
+            <column name="STFORSERVICEBL" />
+        </property>
+        <property name="stforServicePartsBl" type="boolean">
+            <column name="STFORSERVICEPARTSBL" />
+        </property>
+        <property name="stforSaleBl" type="boolean">
+            <column name="STFORSALEBL" />
+        </property>
+        <property name="sttrackOwnershipBl" type="boolean">
+            <column name="STTRACKOWNERSHIPBL" />
+        </property>
+        <property name="stforChecklistBl" type="boolean">
+            <column name="STFORCHECKLISTBL" />
+        </property>
+        <property name="stcustomerRequiredBl" type="boolean">
+            <column name="STCUSTOMERREQUIREDBL" />
+        </property>
+        <property name="stunavailableBl" type="boolean">
+            <column name="STUNAVAILABLEBL" />
+        </property>
+        <property name="stlastUpdatedDate" type="java.util.Date">
+            <column name="STLASTUPDATEDDATE" />
+        </property>
+        <property name="stcommissionRateFl" type="float">
+            <column name="STCOMMISSIONRATEFL" />
+        </property>
+        <property name="stsaleDiscountBandIdN" type="java.lang.Integer">
+            <column name="STSALEDISCOUNTBANDIDN" />
+        </property>
+        <property name="strequiredBl" type="boolean">
+            <column name="STREQUIREDBL" />
+        </property>
+        <property name="stinvoiceTextTxN" type="java.lang.String">
+            <column name="STINVOICETEXTTXN" />
+        </property>
+        <property name="stservicePeriodIn" type="short">
+            <column name="STSERVICEPERIODIN" />
+        </property>
+        <property name="stcreationDate" type="java.util.Date">
+            <column name="STCREATIONDATE" />
+        </property>
+        <property name="stgiftCertPromptBl" type="boolean">
+            <column name="STGIFTCERTPROMPTBL" />
+        </property>
+        <property name="stgiftCardPromptBl" type="boolean">
+            <column name="STGIFTCARDPROMPTBL" />
+        </property>
+        <property name="stroomBookingPromptBl" type="boolean">
+            <column name="STROOMBOOKINGPROMPTBL" />
+        </property>
+        <property name="stwebAdminEntryBl" type="boolean">
+            <column name="STWEBADMINENTRYBL" />
+        </property>
+        <property name="stwebAdminDeletedBl" type="boolean">
+            <column name="STWEBADMINDELETEDBL" />
+        </property>
+        <property name="sttechnicianActivityBl" type="boolean">
+            <column name="STTECHNICIANACTIVITYBL" />
+        </property>
+        <property name="stdisplayOrderIn" type="int">
+            <column name="STDISPLAYORDERIN" />
+        </property>
+        <property name="steventDataTypeIdN" type="java.lang.Short">
+            <column name="STEVENTDATATYPEIDN" />
+        </property>
+        <property name="stseotagTxN" type="java.lang.String">
+            <column name="STSEOTAGTXN" />
+        </property>
+        <property name="stshowCylinderInfoBl" type="boolean">
+            <column name="STSHOWCYLINDERINFOBL" />
+        </property>
+        <property name="stclassNameTxN" type="java.lang.String">
+            <column name="STCLASSNAMETXN" />
+        </property>
+        <property name="steolstockTypeTxN" type="java.lang.String">
+            <column name="STEOLSTOCKTYPETXN" />
+        </property>
+        <property name="steolheaderId" type="int">
+            <column name="STEOLHEADERID" />
+        </property>
+        <property name="stallowPriceUpdatesBl" type="boolean">
+            <column name="STALLOWPRICEUPDATESBL" />
+        </property>
+        <property name="stqtyBasedDiscountsTxN" type="java.lang.String">
+            <column name="STQTYBASEDDISCOUNTSTXN" />
+        </property>
+        <property name="stallowPaymentSurchargeBl" type="boolean">
+            <column name="STALLOWPAYMENTSURCHARGEBL" />
+        </property>
+    </class>
+</hibernate-mapping>

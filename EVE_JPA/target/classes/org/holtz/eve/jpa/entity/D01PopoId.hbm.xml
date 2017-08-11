@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01PopoId" table="D01POPOID">
+        <id name="poid" type="int">
+            <column name="POID" />
+            <generator class="assigned" />
+        </id>
+        <property name="postoreId" type="short">
+            <column name="POSTOREID" />
+        </property>
+        <property name="pocostCenterId" type="int">
+            <column name="POCOSTCENTERID" />
+        </property>
+        <property name="posupplierId" type="int">
+            <column name="POSUPPLIERID" />
+        </property>
+        <property name="poshipToStoreId" type="short">
+            <column name="POSHIPTOSTOREID" />
+        </property>
+        <property name="poshippingInstructionsTxN" type="java.lang.String">
+            <column name="POSHIPPINGINSTRUCTIONSTXN" />
+        </property>
+        <property name="popaymentTermsTxN" type="java.lang.String">
+            <column name="POPAYMENTTERMSTXN" />
+        </property>
+        <property name="poempId" type="int">
+            <column name="POEMPID" />
+        </property>
+        <property name="posentDateN" type="java.util.Date">
+            <column name="POSENTDATEN" />
+        </property>
+        <property name="poorderSubTotalMn" type="double">
+            <column name="POORDERSUBTOTALMN" />
+        </property>
+        <property name="poorderTaxMn" type="double">
+            <column name="POORDERTAXMN" />
+        </property>
+        <property name="pocurrencyId" type="short">
+            <column name="POCURRENCYID" />
+        </property>
+        <property name="poexchangeRateFl" type="float">
+            <column name="POEXCHANGERATEFL" />
+        </property>
+        <property name="polastUpdatedDate" type="java.util.Date">
+            <column name="POLASTUPDATEDDATE" />
+        </property>
+        <property name="pocompletedDateN" type="java.util.Date">
+            <column name="POCOMPLETEDDATEN" />
+        </property>
+        <property name="postatusId" type="int">
+            <column name="POSTATUSID" />
+        </property>
+        <property name="povoidDateN" type="java.util.Date">
+            <column name="POVOIDDATEN" />
+        </property>
+        <property name="povoidReasonTxN" type="java.lang.String">
+            <column name="POVOIDREASONTXN" />
+        </property>
+        <property name="ponotesTxN" type="java.lang.String">
+            <column name="PONOTESTXN" />
+        </property>
+        <property name="pocreationDate" type="java.util.Date">
+            <column name="POCREATIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

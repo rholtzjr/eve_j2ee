@@ -1,0 +1,65 @@
+<wicket:panel xmlns:wicket="http://wicket.apache.org">
+
+	<form wicket:id="editForm">
+	
+		<fieldset style="display: inline-block;">
+	 		<legend>Stock Item Detail</legend>
+	 		<table style="white-space: nowrap;" >
+				<tr align="left" >
+					<td style="float: left;">Stock Id :</td>
+					<td><input wicket:id="sistockItemId" disabled/></td>
+				</tr>
+				<tr align="left" >
+					<td style="float: left;">Store Stock Id :</td>
+					<td><input wicket:id="zlStoreStockItemId" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">On Order X :</td>
+					<td><input wicket:id="zlNoOnOrderInX" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">On Order :</td> 
+					<td><input wicket:id="zlNoOnOrderIn" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">In Stock X :</td>
+					<td><input wicket:id="zlNoInStockInX" /></td>
+				</tr>
+				<tr>
+					<td style="float: left;">In Stock :</td>
+					<td><input wicket:id="zlNoInStockIn" /></td>
+				</tr>
+				<tr>
+					<td style="float: left;">Min. In Stock 2:</td>
+					<td><input wicket:id="zlMinStock2in" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">Min. In Stock 1:</td>
+					<td><input wicket:id="zlMinStock1in" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">Max. in Stock 2:</td>
+					<td><input wicket:id="zlMaxStock2in" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">Max. in Stock 1:</td>
+					<td><input wicket:id="zlMaxStock1in" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">For Upload :</td>
+					<td><input wicket:id="zlForUploadBl" disabled/></td>
+				</tr>
+				<tr>
+					<td style="float: left;">Display on Web :</td>
+					<td><input wicket:id="zlDisplayOnWebBl" disabled/></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" wicket:id="save" value="Save" /> <input
+						type="button" wicket:id="close" value="Cancel" /></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+
+</wicket:panel>

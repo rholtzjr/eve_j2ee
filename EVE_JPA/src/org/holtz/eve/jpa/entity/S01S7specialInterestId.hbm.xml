@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01S7specialInterestId" table="S01S7SPECIALINTERESTID">
+        <id name="s7specialInterestId" type="int">
+            <column name="S7SPECIALINTERESTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="s7specialInterestTx" type="java.lang.String">
+            <column name="S7SPECIALINTERESTTX" />
+        </property>
+        <property name="s7unavailableBl" type="boolean">
+            <column name="S7UNAVAILABLEBL" />
+        </property>
+        <property name="s7lastUpdatedDate" type="java.util.Date">
+            <column name="S7LASTUPDATEDDATE" />
+        </property>
+        <property name="s7requiredBl" type="boolean">
+            <column name="S7REQUIREDBL" />
+        </property>
+        <property name="s7creationDate" type="java.util.Date">
+            <column name="S7CREATIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01GdGiftCardId" table="D01GDGIFTCARDID">
+        <id name="gdPcid" type="short">
+            <column name="GDPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="gdGiftCardId" type="int">
+            <column name="GDGIFTCARDID" />
+        </property>
+        <property name="gdGiftCardNoTx" type="java.lang.String">
+            <column name="GDGIFTCARDNOTX" />
+        </property>
+        <property name="gdPurchasedById" type="int">
+            <column name="GDPURCHASEDBYID" />
+        </property>
+        <property name="gdOwnedById" type="int">
+            <column name="GDOWNEDBYID" />
+        </property>
+        <property name="gdStoreId" type="short">
+            <column name="GDSTOREID" />
+        </property>
+        <property name="gdCostCenterId" type="int">
+            <column name="GDCOSTCENTERID" />
+        </property>
+        <property name="gdPurchasedInvoiceIdN" type="java.lang.Integer">
+            <column name="GDPURCHASEDINVOICEIDN" />
+        </property>
+        <property name="gdCreationDate" type="java.util.Date">
+            <column name="GDCREATIONDATE" />
+        </property>
+        <property name="gdEmpId" type="int">
+            <column name="GDEMPID" />
+        </property>
+        <property name="gdCreditMn" type="double">
+            <column name="GDCREDITMN" />
+        </property>
+        <property name="gdCurrencyId" type="short">
+            <column name="GDCURRENCYID" />
+        </property>
+        <property name="gdExchangeRateFl" type="float">
+            <column name="GDEXCHANGERATEFL" />
+        </property>
+        <property name="gdLastUpdatedDate" type="java.util.Date">
+            <column name="GDLASTUPDATEDDATE" />
+        </property>
+        <property name="gdTransStatusId" type="int">
+            <column name="GDTRANSSTATUSID" />
+        </property>
+        <property name="gdNotesTxN" type="java.lang.String">
+            <column name="GDNOTESTXN" />
+        </property>
+        <property name="gdVoidDateN" type="java.util.Date">
+            <column name="GDVOIDDATEN" />
+        </property>
+        <property name="gdVoidReasonTxN" type="java.lang.String">
+            <column name="GDVOIDREASONTXN" />
+        </property>
+        <property name="gdAccountingPeriodIdN" type="java.lang.Integer">
+            <column name="GDACCOUNTINGPERIODIDN" />
+        </property>
+        <property name="gdGiftCardTypeId" type="int">
+            <column name="GDGIFTCARDTYPEID" />
+        </property>
+        <property name="gcCloseCardOnCreditZeroBl" type="boolean">
+            <column name="GCCLOSECARDONCREDITZEROBL" />
+        </property>
+    </class>
+</hibernate-mapping>

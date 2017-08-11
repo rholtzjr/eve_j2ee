@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01InInvoiceId" table="S01ININVOICEID">
+        <id name="inPcid" type="short">
+            <column name="INPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="inInvoiceId" type="int">
+            <column name="ININVOICEID" />
+        </property>
+        <property name="inInvoiceTypeId" type="short">
+            <column name="ININVOICETYPEID" />
+        </property>
+        <property name="inCustId" type="int">
+            <column name="INCUSTID" />
+        </property>
+        <property name="inStoreId" type="short">
+            <column name="INSTOREID" />
+        </property>
+        <property name="inCostCenterId" type="int">
+            <column name="INCOSTCENTERID" />
+        </property>
+        <property name="inAccountIdN" type="java.lang.Integer">
+            <column name="INACCOUNTIDN" />
+        </property>
+        <property name="inCreationDate" type="java.util.Date">
+            <column name="INCREATIONDATE" />
+        </property>
+        <property name="inCommittedDateN" type="java.util.Date">
+            <column name="INCOMMITTEDDATEN" />
+        </property>
+        <property name="inClosedDateN" type="java.util.Date">
+            <column name="INCLOSEDDATEN" />
+        </property>
+        <property name="inEmpId" type="int">
+            <column name="INEMPID" />
+        </property>
+        <property name="inCommissionEmpId" type="java.lang.Integer">
+            <column name="INCOMMISSIONEMPID" />
+        </property>
+        <property name="inCommissionRateFl" type="float">
+            <column name="INCOMMISSIONRATEFL" />
+        </property>
+        <property name="inCommissionableBl" type="boolean">
+            <column name="INCOMMISSIONABLEBL" />
+        </property>
+        <property name="inSubTotalMn" type="double">
+            <column name="INSUBTOTALMN" />
+        </property>
+        <property name="inTaxMn" type="double">
+            <column name="INTAXMN" />
+        </property>
+        <property name="inLegacyAccPayAmountMnN" type="java.lang.Double">
+            <column name="INLEGACYACCPAYAMOUNTMNN" />
+        </property>
+        <property name="inCurrencyId" type="short">
+            <column name="INCURRENCYID" />
+        </property>
+        <property name="inExchangeRateFl" type="float">
+            <column name="INEXCHANGERATEFL" />
+        </property>
+        <property name="inLastUpdatedDate" type="java.util.Date">
+            <column name="INLASTUPDATEDDATE" />
+        </property>
+        <property name="inTransStatusId" type="int">
+            <column name="INTRANSSTATUSID" />
+        </property>
+        <property name="inNotesTxN" type="java.lang.String">
+            <column name="INNOTESTXN" />
+        </property>
+        <property name="inVoidDateN" type="java.util.Date">
+            <column name="INVOIDDATEN" />
+        </property>
+        <property name="inVoidReasonTxN" type="java.lang.String">
+            <column name="INVOIDREASONTXN" />
+        </property>
+        <property name="inPaymentDueDateN" type="java.util.Date">
+            <column name="INPAYMENTDUEDATEN" />
+        </property>
+        <property name="inShipDate" type="java.util.Date">
+            <column name="INSHIPDATE" />
+        </property>
+        <property name="inPostageId" type="java.lang.Integer">
+            <column name="INPOSTAGEID" />
+        </property>
+        <property name="inProcessedBl" type="boolean">
+            <column name="INPROCESSEDBL" />
+        </property>
+        <property name="inTicketNoTxN" type="java.lang.String">
+            <column name="INTICKETNOTXN" />
+        </property>
+        <property name="inBillingAddressId" type="java.lang.Integer">
+            <column name="INBILLINGADDRESSID" />
+        </property>
+        <property name="inShippingAddressId" type="java.lang.Integer">
+            <column name="INSHIPPINGADDRESSID" />
+        </property>
+        <property name="inInvoiceNumberTxN" type="java.lang.String">
+            <column name="ININVOICENUMBERTXN" />
+        </property>
+        <property name="inUserIptxN" type="java.lang.String">
+            <column name="INUSERIPTXN" />
+        </property>
+        <property name="inOrderStatusTxN" type="java.lang.String">
+            <column name="INORDERSTATUSTXN" />
+        </property>
+        <property name="inOrderStatusCodeInN" type="int">
+            <column name="INORDERSTATUSCODEINN" />
+        </property>
+        <property name="inSourceIdN" type="java.lang.Integer">
+            <column name="INSOURCEIDN" />
+        </property>
+        <property name="inStockLevelsUpdatedBl" type="boolean">
+            <column name="INSTOCKLEVELSUPDATEDBL" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01DtDestinationId" table="S01DTDESTINATIONID">
+        <id name="dtVideoTxN" type="java.lang.String">
+            <column name="DTVIDEOTXN" />
+            <generator class="assigned" />
+        </id>
+        <property name="dtDestinationId" type="int">
+            <column name="DTDESTINATIONID" />
+        </property>
+        <property name="dtDestinationTx" type="java.lang.String">
+            <column name="DTDESTINATIONTX" />
+        </property>
+        <property name="dtUnavailableBl" type="boolean">
+            <column name="DTUNAVAILABLEBL" />
+        </property>
+        <property name="dtMinNoIn" type="short">
+            <column name="DTMINNOIN" />
+        </property>
+        <property name="dtMaxNoIn" type="short">
+            <column name="DTMAXNOIN" />
+        </property>
+        <property name="dtLastUpdatedDate" type="java.util.Date">
+            <column name="DTLASTUPDATEDDATE" />
+        </property>
+        <property name="dtRequiredBl" type="boolean">
+            <column name="DTREQUIREDBL" />
+        </property>
+        <property name="dtCreationDate" type="java.util.Date">
+            <column name="DTCREATIONDATE" />
+        </property>
+        <property name="dtForeColorIn" type="int">
+            <column name="DTFORECOLORIN" />
+        </property>
+        <property name="dtBackColorIn" type="int">
+            <column name="DTBACKCOLORIN" />
+        </property>
+        <property name="dtPrefixTx" type="java.lang.String">
+            <column name="DTPREFIXTX" />
+        </property>
+        <property name="dtUrltxN" type="java.lang.String">
+            <column name="DTURLTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

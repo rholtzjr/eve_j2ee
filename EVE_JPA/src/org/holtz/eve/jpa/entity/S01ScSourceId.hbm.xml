@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01ScSourceId" table="S01SCSOURCEID">
+        <id name="scSourceId" type="int">
+            <column name="SCSOURCEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="scSourceTx" type="java.lang.String">
+            <column name="SCSOURCETX" />
+        </property>
+        <property name="scUnavailableBl" type="boolean">
+            <column name="SCUNAVAILABLEBL" />
+        </property>
+        <property name="scLastUpdatedDate" type="java.util.Date">
+            <column name="SCLASTUPDATEDDATE" />
+        </property>
+        <property name="scRequiredBl" type="boolean">
+            <column name="SCREQUIREDBL" />
+        </property>
+        <property name="scCreationDate" type="java.util.Date">
+            <column name="SCCREATIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

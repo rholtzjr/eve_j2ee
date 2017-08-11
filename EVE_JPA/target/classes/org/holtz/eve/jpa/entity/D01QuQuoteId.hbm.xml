@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01QuQuoteId" table="D01QUQUOTEID">
+        <id name="quPcid" type="short">
+            <column name="QUPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="quQuoteId" type="int">
+            <column name="QUQUOTEID" />
+        </property>
+        <property name="quCustId" type="int">
+            <column name="QUCUSTID" />
+        </property>
+        <property name="quStoreId" type="short">
+            <column name="QUSTOREID" />
+        </property>
+        <property name="quCostCenterId" type="int">
+            <column name="QUCOSTCENTERID" />
+        </property>
+        <property name="quCreationDate" type="java.util.Date">
+            <column name="QUCREATIONDATE" />
+        </property>
+        <property name="quExpiryDate" type="java.util.Date">
+            <column name="QUEXPIRYDATE" />
+        </property>
+        <property name="quActualExpiryDateN" type="java.util.Date">
+            <column name="QUACTUALEXPIRYDATEN" />
+        </property>
+        <property name="quEmpId" type="int">
+            <column name="QUEMPID" />
+        </property>
+        <property name="quSubTotalMn" type="double">
+            <column name="QUSUBTOTALMN" />
+        </property>
+        <property name="quTaxMn" type="double">
+            <column name="QUTAXMN" />
+        </property>
+        <property name="quCurrencyId" type="short">
+            <column name="QUCURRENCYID" />
+        </property>
+        <property name="quExchangeRateFl" type="float">
+            <column name="QUEXCHANGERATEFL" />
+        </property>
+        <property name="quLastUpdatedDate" type="java.util.Date">
+            <column name="QULASTUPDATEDDATE" />
+        </property>
+        <property name="quTransStatusId" type="int">
+            <column name="QUTRANSSTATUSID" />
+        </property>
+        <property name="quNotesTxN" type="java.lang.String">
+            <column name="QUNOTESTXN" />
+        </property>
+        <property name="quVoidDateN" type="java.util.Date">
+            <column name="QUVOIDDATEN" />
+        </property>
+        <property name="quVoidReasonTxN" type="java.lang.String">
+            <column name="QUVOIDREASONTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

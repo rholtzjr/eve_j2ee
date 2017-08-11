@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01RbrentalBookingId" table="S01RBRENTALBOOKINGID">
+        <id name="rbempId" type="int">
+            <column name="RBEMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="rbrentalBookingId" type="int">
+            <column name="RBRENTALBOOKINGID" />
+        </property>
+        <property name="rbinvoiceIdN" type="java.lang.Integer">
+            <column name="RBINVOICEIDN" />
+        </property>
+        <property name="rbstoreId" type="short">
+            <column name="RBSTOREID" />
+        </property>
+        <property name="rbcostCenterIdN" type="java.lang.Integer">
+            <column name="RBCOSTCENTERIDN" />
+        </property>
+        <property name="rbcustId" type="int">
+            <column name="RBCUSTID" />
+        </property>
+        <property name="rbcreationDate" type="java.util.Date">
+            <column name="RBCREATIONDATE" />
+        </property>
+        <property name="rbbookingAmountMn" type="java.math.BigDecimal">
+            <column name="RBBOOKINGAMOUNTMN" />
+        </property>
+        <property name="rbbookingTaxMn" type="java.math.BigDecimal">
+            <column name="RBBOOKINGTAXMN" />
+        </property>
+        <property name="rbcurrencyId" type="short">
+            <column name="RBCURRENCYID" />
+        </property>
+        <property name="rbexchangeRateFl" type="float">
+            <column name="RBEXCHANGERATEFL" />
+        </property>
+        <property name="rblastUpdatedDate" type="java.util.Date">
+            <column name="RBLASTUPDATEDDATE" />
+        </property>
+        <property name="rbnotesTxN" type="java.lang.String">
+            <column name="RBNOTESTXN" />
+        </property>
+        <property name="rbstatusId" type="int">
+            <column name="RBSTATUSID" />
+        </property>
+        <property name="rbvoidDateN" type="java.util.Date">
+            <column name="RBVOIDDATEN" />
+        </property>
+        <property name="rbvoidReasonTxN" type="java.lang.String">
+            <column name="RBVOIDREASONTXN" />
+        </property>
+        <property name="rbdueStartDate" type="java.util.Date">
+            <column name="RBDUESTARTDATE" />
+        </property>
+        <property name="rbdueEndDate" type="java.util.Date">
+            <column name="RBDUEENDDATE" />
+        </property>
+        <property name="rbbagNoInN" type="java.lang.Short">
+            <column name="RBBAGNOINN" />
+        </property>
+        <property name="rbpenaltyBl" type="boolean">
+            <column name="RBPENALTYBL" />
+        </property>
+    </class>
+</hibernate-mapping>

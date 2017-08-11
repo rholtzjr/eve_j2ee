@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01TbtaxBandId" table="S01TBTAXBANDID">
+        <id name="tbtaxBandId" type="int">
+            <column name="TBTAXBANDID" />
+            <generator class="assigned" />
+        </id>
+        <property name="tbtaxBandTx" type="java.lang.String">
+            <column name="TBTAXBANDTX" />
+        </property>
+        <property name="tbtaxRateFl" type="float">
+            <column name="TBTAXRATEFL" />
+        </property>
+        <property name="tbunavailableBl" type="boolean">
+            <column name="TBUNAVAILABLEBL" />
+        </property>
+        <property name="tblastUpdatedDate" type="java.util.Date">
+            <column name="TBLASTUPDATEDDATE" />
+        </property>
+        <property name="tbrequiredBl" type="boolean">
+            <column name="TBREQUIREDBL" />
+        </property>
+        <property name="tbglaccountIdN" type="java.lang.Integer">
+            <column name="TBGLACCOUNTIDN" />
+        </property>
+        <property name="tbsupplierIdN" type="java.lang.Integer">
+            <column name="TBSUPPLIERIDN" />
+        </property>
+        <property name="tbcreationDate" type="java.util.Date">
+            <column name="TBCREATIONDATE" />
+        </property>
+        <property name="tballowExemptionBl" type="boolean">
+            <column name="TBALLOWEXEMPTIONBL" />
+        </property>
+        <property name="tbnonSalesAccountIdN" type="java.lang.Integer">
+            <column name="TBNONSALESACCOUNTIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

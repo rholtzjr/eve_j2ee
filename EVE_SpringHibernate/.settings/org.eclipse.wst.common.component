@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EVE_SpringHibernate">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/resources/META-INF"/>
+        <dependent-module archiveName="EVE_JPA.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EVE_JPA/EVE_JPA">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/classes" handle="module:/org.jboss.ide.eclipse.archives.webtools.filesets.vcf.FilesetComponentResolver/path=%2FEVE_JPA%2Fsrc%2FMETA-INF&amp;includes=**&amp;excludes=">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/EVE_SpringHibernate/target/classes"/>
+        <property name="context-root" value="EVE"/>
+    </wb-module>
+</project-modules>

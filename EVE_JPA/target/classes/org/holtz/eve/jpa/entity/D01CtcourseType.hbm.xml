@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01CtcourseType" table="D01CTCOURSETYPE">
+        <id name="id" type="org.holtz.eve.jpa.entity.D01CtcourseTypeId">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+    </class>
+</hibernate-mapping>

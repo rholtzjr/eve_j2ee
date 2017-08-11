@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01CtcourseTypeId" table="D01CTCOURSETYPEID">
+        <id name="ctvideoTxN" type="java.lang.String">
+            <column name="CTVIDEOTXN" />
+            <generator class="assigned" />
+        </id>
+        <property name="ctcourseTypeId" type="int">
+            <column name="CTCOURSETYPEID" />
+        </property>
+        <property name="ctcourseTypeTx" type="java.lang.String">
+            <column name="CTCOURSETYPETX" />
+        </property>
+        <property name="ctprefixTx" type="java.lang.String">
+            <column name="CTPREFIXTX" />
+        </property>
+        <property name="ctminNoIn" type="short">
+            <column name="CTMINNOIN" />
+        </property>
+        <property name="ctmaxNoIn" type="short">
+            <column name="CTMAXNOIN" />
+        </property>
+        <property name="ctcurrencyId" type="short">
+            <column name="CTCURRENCYID" />
+        </property>
+        <property name="ctexchangeRateFl" type="float">
+            <column name="CTEXCHANGERATEFL" />
+        </property>
+        <property name="ctprerequisiteIdN" type="java.lang.Integer">
+            <column name="CTPREREQUISITEIDN" />
+        </property>
+        <property name="ctcertifyingAgencyIdN" type="java.lang.Integer">
+            <column name="CTCERTIFYINGAGENCYIDN" />
+        </property>
+        <property name="ctpadicourseTypeIdN" type="java.lang.Integer">
+            <column name="CTPADICOURSETYPEIDN" />
+        </property>
+        <property name="ctunavailableBl" type="boolean">
+            <column name="CTUNAVAILABLEBL" />
+        </property>
+        <property name="ctlastUpdatedDate" type="java.util.Date">
+            <column name="CTLASTUPDATEDDATE" />
+        </property>
+        <property name="ctpadikeyTxN" type="java.lang.String">
+            <column name="CTPADIKEYTXN" />
+        </property>
+        <property name="ctdistinctiveBl" type="boolean">
+            <column name="CTDISTINCTIVEBL" />
+        </property>
+        <property name="ctuploadableBl" type="boolean">
+            <column name="CTUPLOADABLEBL" />
+        </property>
+        <property name="ctinstructorPercentFl" type="float">
+            <column name="CTINSTRUCTORPERCENTFL" />
+        </property>
+        <property name="ctrequiredBl" type="boolean">
+            <column name="CTREQUIREDBL" />
+        </property>
+        <property name="ctmlgfolderTxN" type="java.lang.String">
+            <column name="CTMLGFOLDERTXN" />
+        </property>
+        <property name="ctmlgbl" type="boolean">
+            <column name="CTMLGBL" />
+        </property>
+        <property name="ctcreationDate" type="java.util.Date">
+            <column name="CTCREATIONDATE" />
+        </property>
+        <property name="ctforeColorIn" type="int">
+            <column name="CTFORECOLORIN" />
+        </property>
+        <property name="ctbackColorIn" type="int">
+            <column name="CTBACKCOLORIN" />
+        </property>
+        <property name="ctdefaultEmpIdsN" type="java.lang.String">
+            <column name="CTDEFAULTEMPIDSN" />
+        </property>
+        <property name="ctempTypeIdsN" type="java.lang.String">
+            <column name="CTEMPTYPEIDSN" />
+        </property>
+        <property name="cturltxN" type="java.lang.String">
+            <column name="CTURLTXN" />
+        </property>
+        <property name="ctcertPriorityInN" type="java.lang.Integer">
+            <column name="CTCERTPRIORITYINN" />
+        </property>
+        <property name="ctwaitingListCapacityIn" type="int">
+            <column name="CTWAITINGLISTCAPACITYIN" />
+        </property>
+        <property name="ctpictypeId" type="int">
+            <column name="CTPICTYPEID" />
+        </property>
+        <property name="ctnewPadikeyInN" type="java.lang.Integer">
+            <column name="CTNEWPADIKEYINN" />
+        </property>
+        <property name="ctdefPiccardTypeIdN" type="java.lang.Integer">
+            <column name="CTDEFPICCARDTYPEIDN" />
+        </property>
+        <property name="cttabModulesBl" type="boolean">
+            <column name="CTTABMODULESBL" />
+        </property>
+        <property name="cttabDatesBl" type="boolean">
+            <column name="CTTABDATESBL" />
+        </property>
+        <property name="cttabTimesBl" type="boolean">
+            <column name="CTTABTIMESBL" />
+        </property>
+        <property name="cttabStaffBl" type="boolean">
+            <column name="CTTABSTAFFBL" />
+        </property>
+        <property name="cttabLocationsBl" type="boolean">
+            <column name="CTTABLOCATIONSBL" />
+        </property>
+        <property name="cttabSummaryBl" type="boolean">
+            <column name="CTTABSUMMARYBL" />
+        </property>
+        <property name="cttabCustomersBl" type="boolean">
+            <column name="CTTABCUSTOMERSBL" />
+        </property>
+        <property name="cttabOptionsBl" type="boolean">
+            <column name="CTTABOPTIONSBL" />
+        </property>
+        <property name="cttabExpensesBl" type="boolean">
+            <column name="CTTABEXPENSESBL" />
+        </property>
+        <property name="cttabStockItemsBl" type="boolean">
+            <column name="CTTABSTOCKITEMSBL" />
+        </property>
+        <property name="ctshowDatesBl" type="boolean">
+            <column name="CTSHOWDATESBL" />
+        </property>
+        <property name="ctshowSwimOptionsBl" type="boolean">
+            <column name="CTSHOWSWIMOPTIONSBL" />
+        </property>
+        <property name="cttabRequirementsBl" type="boolean">
+            <column name="CTTABREQUIREMENTSBL" />
+        </property>
+    </class>
+</hibernate-mapping>

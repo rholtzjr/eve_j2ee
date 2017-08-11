@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01TkTaskId" table="D01TKTASKID">
+        <id name="tkEmpIdN" type="java.lang.Integer">
+            <column name="TKEMPIDN" />
+            <generator class="assigned" />
+        </id>
+        <property name="tkTaskId" type="int">
+            <column name="TKTASKID" />
+        </property>
+        <property name="tkDueStartDate" type="java.util.Date">
+            <column name="TKDUESTARTDATE" />
+        </property>
+        <property name="tkDueEndDate" type="java.util.Date">
+            <column name="TKDUEENDDATE" />
+        </property>
+        <property name="tkReminderDate" type="java.util.Date">
+            <column name="TKREMINDERDATE" />
+        </property>
+        <property name="tkNotesTxN" type="java.lang.String">
+            <column name="TKNOTESTXN" />
+        </property>
+        <property name="tkTaskTypeId" type="int">
+            <column name="TKTASKTYPEID" />
+        </property>
+        <property name="tkTaskStatusId" type="int">
+            <column name="TKTASKSTATUSID" />
+        </property>
+        <property name="tkCreationDate" type="java.util.Date">
+            <column name="TKCREATIONDATE" />
+        </property>
+        <property name="tkLastUpdatedDate" type="java.util.Date">
+            <column name="TKLASTUPDATEDDATE" />
+        </property>
+        <property name="tkStoreId" type="short">
+            <column name="TKSTOREID" />
+        </property>
+        <property name="tkActualStartDateN" type="java.util.Date">
+            <column name="TKACTUALSTARTDATEN" />
+        </property>
+        <property name="tkActualEndDateN" type="java.util.Date">
+            <column name="TKACTUALENDDATEN" />
+        </property>
+        <property name="tkSmsreminderBl" type="boolean">
+            <column name="TKSMSREMINDERBL" />
+        </property>
+        <property name="tkSmssentDate" type="java.util.Date">
+            <column name="TKSMSSENTDATE" />
+        </property>
+        <property name="tkFromEmpIdN" type="java.lang.Integer">
+            <column name="TKFROMEMPIDN" />
+        </property>
+        <property name="tkCommissionClosingIdN" type="java.lang.Integer">
+            <column name="TKCOMMISSIONCLOSINGIDN" />
+        </property>
+        <property name="tkAssignedByEmpId" type="int">
+            <column name="TKASSIGNEDBYEMPID" />
+        </property>
+    </class>
+</hibernate-mapping>

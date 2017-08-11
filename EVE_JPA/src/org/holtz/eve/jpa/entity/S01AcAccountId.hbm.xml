@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01AcAccountId" table="S01ACACCOUNTID">
+        <id name="acCustId" type="int">
+            <column name="ACCUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="acAccountId" type="int">
+            <column name="ACACCOUNTID" />
+        </property>
+        <property name="acAccountTypeId" type="int">
+            <column name="ACACCOUNTTYPEID" />
+        </property>
+        <property name="acAccountNameTx" type="java.lang.String">
+            <column name="ACACCOUNTNAMETX" />
+        </property>
+        <property name="acCreationDate" type="java.util.Date">
+            <column name="ACCREATIONDATE" />
+        </property>
+        <property name="acCreditLimitMn" type="java.math.BigDecimal">
+            <column name="ACCREDITLIMITMN" />
+        </property>
+        <property name="acCostCenterId" type="int">
+            <column name="ACCOSTCENTERID" />
+        </property>
+        <property name="acClosedDateN" type="java.util.Date">
+            <column name="ACCLOSEDDATEN" />
+        </property>
+        <property name="acLastUpdatedDate" type="java.util.Date">
+            <column name="ACLASTUPDATEDDATE" />
+        </property>
+        <property name="acCurrencyId" type="short">
+            <column name="ACCURRENCYID" />
+        </property>
+        <property name="acExchangeRateFl" type="float">
+            <column name="ACEXCHANGERATEFL" />
+        </property>
+        <property name="acBalanceMn" type="java.math.BigDecimal">
+            <column name="ACBALANCEMN" />
+        </property>
+        <property name="acStoreId" type="short">
+            <column name="ACSTOREID" />
+        </property>
+    </class>
+</hibernate-mapping>

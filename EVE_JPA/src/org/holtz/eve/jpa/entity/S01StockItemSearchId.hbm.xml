@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01StockItemSearchId" table="S01STOCKITEMSEARCHID">
+        <id name="sistockItemId" type="int">
+            <column name="SISTOCKITEMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="suSupplierId" type="int">
+            <column name="SUSUPPLIERID" />
+        </property>
+        <property name="sistockItemTx" type="java.lang.String">
+            <column name="SISTOCKITEMTX" />
+        </property>
+        <property name="sistockNoTx" type="java.lang.String">
+            <column name="SISTOCKNOTX" />
+        </property>
+        <property name="suSupplierTx" type="java.lang.String">
+            <column name="SUSUPPLIERTX" />
+        </property>
+        <property name="ststockTypeTx" type="java.lang.String">
+            <column name="STSTOCKTYPETX" />
+        </property>
+        <property name="sibarcodeNoTxN" type="java.lang.String">
+            <column name="SIBARCODENOTXN" />
+        </property>
+        <property name="zlNoInStockInX" type="int">
+            <column name="ZLNOINSTOCKINX" />
+        </property>
+        <property name="zlNoOnOrderInX" type="int">
+            <column name="ZLNOONORDERINX" />
+        </property>
+        <property name="simanufacturerId" type="int">
+            <column name="SIMANUFACTURERID" />
+        </property>
+        <property name="sistockTypeId" type="int">
+            <column name="SISTOCKTYPEID" />
+        </property>
+        <property name="zlStockItemId" type="int">
+            <column name="ZLSTOCKITEMID" />
+        </property>
+        <property name="ststockTypeId" type="int">
+            <column name="STSTOCKTYPEID" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01TpTripId" table="D01TPTRIPID">
+        <id name="tpTripId" type="int">
+            <column name="TPTRIPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="tpTripNoTx" type="java.lang.String">
+            <column name="TPTRIPNOTX" />
+        </property>
+        <property name="tpDestinationIdN" type="java.lang.Integer">
+            <column name="TPDESTINATIONIDN" />
+        </property>
+        <property name="tpBoatIdN" type="java.lang.Integer">
+            <column name="TPBOATIDN" />
+        </property>
+        <property name="tpStartDateN" type="java.util.Date">
+            <column name="TPSTARTDATEN" />
+        </property>
+        <property name="tpEndDateN" type="java.util.Date">
+            <column name="TPENDDATEN" />
+        </property>
+        <property name="tpNotesTxN" type="java.lang.String">
+            <column name="TPNOTESTXN" />
+        </property>
+        <property name="tpMinNoIn" type="short">
+            <column name="TPMINNOIN" />
+        </property>
+        <property name="tpMaxNoIn" type="short">
+            <column name="TPMAXNOIN" />
+        </property>
+        <property name="tpParentTripIdN" type="java.lang.Integer">
+            <column name="TPPARENTTRIPIDN" />
+        </property>
+        <property name="tpStoreId" type="short">
+            <column name="TPSTOREID" />
+        </property>
+        <property name="tpCreationDate" type="java.util.Date">
+            <column name="TPCREATIONDATE" />
+        </property>
+        <property name="tpWaiverRequiredBl" type="boolean">
+            <column name="TPWAIVERREQUIREDBL" />
+        </property>
+        <property name="tpMeetingPointTxN" type="java.lang.String">
+            <column name="TPMEETINGPOINTTXN" />
+        </property>
+        <property name="tpPassportRequiredBl" type="boolean">
+            <column name="TPPASSPORTREQUIREDBL" />
+        </property>
+        <property name="tpTripStatusId" type="int">
+            <column name="TPTRIPSTATUSID" />
+        </property>
+        <property name="tpLastUpdatedDate" type="java.util.Date">
+            <column name="TPLASTUPDATEDDATE" />
+        </property>
+        <property name="tpTripTypeId" type="short">
+            <column name="TPTRIPTYPEID" />
+        </property>
+        <property name="tpArrivalMinsIn" type="int">
+            <column name="TPARRIVALMINSIN" />
+        </property>
+        <property name="tpNoOfDivesInN" type="java.lang.Short">
+            <column name="TPNOOFDIVESINN" />
+        </property>
+        <property name="tpRentalBookingIdN" type="java.lang.Integer">
+            <column name="TPRENTALBOOKINGIDN" />
+        </property>
+        <property name="tpCertPriorityInN" type="java.lang.Integer">
+            <column name="TPCERTPRIORITYINN" />
+        </property>
+        <property name="tpPrivateNotesTxN" type="java.lang.String">
+            <column name="TPPRIVATENOTESTXN" />
+        </property>
+        <property name="tpPlacesAvailableIn" type="int">
+            <column name="TPPLACESAVAILABLEIN" />
+        </property>
+        <property name="tpMoreInfoTxN" type="java.lang.String">
+            <column name="TPMOREINFOTXN" />
+        </property>
+        <property name="tpVanIdN" type="java.lang.Integer">
+            <column name="TPVANIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01RkRoomBookingId" table="D01RKROOMBOOKINGID">
+        <id name="rkEmpId" type="int">
+            <column name="RKEMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="rkRoomBookingId" type="int">
+            <column name="RKROOMBOOKINGID" />
+        </property>
+        <property name="rkHotelIdN" type="java.lang.Integer">
+            <column name="RKHOTELIDN" />
+        </property>
+        <property name="rkRoomIdN" type="java.lang.Integer">
+            <column name="RKROOMIDN" />
+        </property>
+        <property name="rkRoomNoTxN" type="java.lang.String">
+            <column name="RKROOMNOTXN" />
+        </property>
+        <property name="rkCustId" type="int">
+            <column name="RKCUSTID" />
+        </property>
+        <property name="rkStatusId" type="int">
+            <column name="RKSTATUSID" />
+        </property>
+        <property name="rkStartDate" type="java.util.Date">
+            <column name="RKSTARTDATE" />
+        </property>
+        <property name="rkEndDate" type="java.util.Date">
+            <column name="RKENDDATE" />
+        </property>
+        <property name="rkCheckedInDateN" type="java.util.Date">
+            <column name="RKCHECKEDINDATEN" />
+        </property>
+        <property name="rkCheckedOutDateN" type="java.util.Date">
+            <column name="RKCHECKEDOUTDATEN" />
+        </property>
+        <property name="rkNotesTxN" type="java.lang.String">
+            <column name="RKNOTESTXN" />
+        </property>
+        <property name="rkRatePerNightMnN" type="java.lang.Double">
+            <column name="RKRATEPERNIGHTMNN" />
+        </property>
+        <property name="rkGroupIdN" type="java.lang.Integer">
+            <column name="RKGROUPIDN" />
+        </property>
+        <property name="rkFlightNoInTxN" type="java.lang.String">
+            <column name="RKFLIGHTNOINTXN" />
+        </property>
+        <property name="rkFlightNoOutTxN" type="java.lang.String">
+            <column name="RKFLIGHTNOOUTTXN" />
+        </property>
+        <property name="rkFlightArrivalDateN" type="java.util.Date">
+            <column name="RKFLIGHTARRIVALDATEN" />
+        </property>
+        <property name="rkFlightDepartureDateN" type="java.util.Date">
+            <column name="RKFLIGHTDEPARTUREDATEN" />
+        </property>
+        <property name="rkLastUpdatedDate" type="java.util.Date">
+            <column name="RKLASTUPDATEDDATE" />
+        </property>
+        <property name="rkCreationDate" type="java.util.Date">
+            <column name="RKCREATIONDATE" />
+        </property>
+        <property name="rkInvoiceIdN" type="java.lang.Integer">
+            <column name="RKINVOICEIDN" />
+        </property>
+        <property name="rkStoreId" type="short">
+            <column name="RKSTOREID" />
+        </property>
+        <property name="rkRoomPriceMn" type="double">
+            <column name="RKROOMPRICEMN" />
+        </property>
+        <property name="rkRoomTaxMn" type="double">
+            <column name="RKROOMTAXMN" />
+        </property>
+        <property name="rkPricePaidMn" type="double">
+            <column name="RKPRICEPAIDMN" />
+        </property>
+        <property name="rkTaxPaidMn" type="double">
+            <column name="RKTAXPAIDMN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01PfProfitCenterId" table="D01PFPROFITCENTERID">
+        <id name="pfGlaccountIdN" type="java.lang.Integer">
+            <column name="PFGLACCOUNTIDN" />
+            <generator class="assigned" />
+        </id>
+        <property name="pfProfitCenterId" type="int">
+            <column name="PFPROFITCENTERID" />
+        </property>
+        <property name="pfProfitCenterTx" type="java.lang.String">
+            <column name="PFPROFITCENTERTX" />
+        </property>
+        <property name="pfUnavailableBl" type="boolean">
+            <column name="PFUNAVAILABLEBL" />
+        </property>
+        <property name="pfLastUpdatedDate" type="java.util.Date">
+            <column name="PFLASTUPDATEDDATE" />
+        </property>
+        <property name="pfRequiredBl" type="boolean">
+            <column name="PFREQUIREDBL" />
+        </property>
+        <property name="pfGlcodeTxN" type="java.lang.String">
+            <column name="PFGLCODETXN" />
+        </property>
+        <property name="pfCreationDate" type="java.util.Date">
+            <column name="PFCREATIONDATE" />
+        </property>
+        <property name="pfReportMemoBl" type="boolean">
+            <column name="PFREPORTMEMOBL" />
+        </property>
+        <property name="pfCogsaccountIdN" type="java.lang.Integer">
+            <column name="PFCOGSACCOUNTIDN" />
+        </property>
+        <property name="pfInventoryAccountIdN" type="java.lang.Integer">
+            <column name="PFINVENTORYACCOUNTIDN" />
+        </property>
+        <property name="pfNonSalesAccountIdN" type="java.lang.Integer">
+            <column name="PFNONSALESACCOUNTIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01DnDenominationId" table="S01DNDENOMINATIONID">
+        <id name="dnDenominationId" type="int">
+            <column name="DNDENOMINATIONID" />
+            <generator class="assigned" />
+        </id>
+        <property name="dnValueMn" type="double">
+            <column name="DNVALUEMN" />
+        </property>
+        <property name="dnDescriptionTx" type="java.lang.String">
+            <column name="DNDESCRIPTIONTX" />
+        </property>
+        <property name="dnUnavailableBl" type="boolean">
+            <column name="DNUNAVAILABLEBL" />
+        </property>
+        <property name="dnCreationDate" type="java.util.Date">
+            <column name="DNCREATIONDATE" />
+        </property>
+        <property name="dnLastUpdatedDate" type="java.util.Date">
+            <column name="DNLASTUPDATEDDATE" />
+        </property>
+        <property name="dnSortOrderIn" type="int">
+            <column name="DNSORTORDERIN" />
+        </property>
+        <property name="dnRequiredBl" type="boolean">
+            <column name="DNREQUIREDBL" />
+        </property>
+    </class>
+</hibernate-mapping>

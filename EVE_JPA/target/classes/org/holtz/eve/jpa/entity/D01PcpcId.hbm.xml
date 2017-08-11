@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01PcpcId" table="D01PCPCID">
+        <id name="pcid" type="short">
+            <column name="PCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="pcnameTx" type="java.lang.String">
+            <column name="PCNAMETX" />
+        </property>
+        <property name="pcstoreId" type="short">
+            <column name="PCSTOREID" />
+        </property>
+        <property name="pclastUpdatedDate" type="java.util.Date">
+            <column name="PCLASTUPDATEDDATE" />
+        </property>
+        <property name="pccashDrawerBl" type="boolean">
+            <column name="PCCASHDRAWERBL" />
+        </property>
+        <property name="pcopeningBalanceMn" type="double">
+            <column name="PCOPENINGBALANCEMN" />
+        </property>
+        <property name="pcnumberTxN" type="java.lang.String">
+            <column name="PCNUMBERTXN" />
+        </property>
+        <property name="pccreationDate" type="java.util.Date">
+            <column name="PCCREATIONDATE" />
+        </property>
+        <property name="pcunavailableBl" type="boolean">
+            <column name="PCUNAVAILABLEBL" />
+        </property>
+        <property name="pcrefreshDateN" type="java.util.Date">
+            <column name="PCREFRESHDATEN" />
+        </property>
+        <property name="pcuiconfigIdN" type="java.lang.Integer">
+            <column name="PCUICONFIGIDN" />
+        </property>
+        <property name="pcstoreViewIdN" type="java.lang.Integer">
+            <column name="PCSTOREVIEWIDN" />
+        </property>
+        <property name="pcaliasTxN" type="java.lang.String">
+            <column name="PCALIASTXN" />
+        </property>
+        <property name="pcstationNoTxN" type="java.lang.String">
+            <column name="PCSTATIONNOTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01SistockItemId" table="D01SISTOCKITEMID">
+        <id name="sisizeIdN" type="java.lang.Integer">
+            <column name="SISIZEIDN" />
+            <generator class="assigned" />
+        </id>
+        <property name="sistockItemId" type="int">
+            <column name="SISTOCKITEMID" />
+        </property>
+        <property name="sistockItemTx" type="java.lang.String">
+            <column name="SISTOCKITEMTX" />
+        </property>
+        <property name="sistockNoTx" type="java.lang.String">
+            <column name="SISTOCKNOTX" />
+        </property>
+        <property name="simanufacturerId" type="int">
+            <column name="SIMANUFACTURERID" />
+        </property>
+        <property name="sistockTypeId" type="int">
+            <column name="SISTOCKTYPEID" />
+        </property>
+        <property name="sisubStockTypeIdN" type="java.lang.Integer">
+            <column name="SISUBSTOCKTYPEIDN" />
+        </property>
+        <property name="siprimaryColorIdN" type="java.lang.Integer">
+            <column name="SIPRIMARYCOLORIDN" />
+        </property>
+        <property name="sisecondaryColorIdN" type="java.lang.Integer">
+            <column name="SISECONDARYCOLORIDN" />
+        </property>
+        <property name="siunavailableBl" type="boolean">
+            <column name="SIUNAVAILABLEBL" />
+        </property>
+        <property name="sibarcodeNoTxN" type="java.lang.String">
+            <column name="SIBARCODENOTXN" />
+        </property>
+        <property name="sivideoTxN" type="java.lang.String">
+            <column name="SIVIDEOTXN" />
+        </property>
+        <property name="silastUpdatedDate" type="java.util.Date">
+            <column name="SILASTUPDATEDDATE" />
+        </property>
+        <property name="sicommissionRateFl" type="float">
+            <column name="SICOMMISSIONRATEFL" />
+        </property>
+        <property name="siserialNosBl" type="boolean">
+            <column name="SISERIALNOSBL" />
+        </property>
+        <property name="simaintainStockLevelBl" type="boolean">
+            <column name="SIMAINTAINSTOCKLEVELBL" />
+        </property>
+        <property name="sipackageBl" type="boolean">
+            <column name="SIPACKAGEBL" />
+        </property>
+        <property name="sipackageItemsIncludedBl" type="boolean">
+            <column name="SIPACKAGEITEMSINCLUDEDBL" />
+        </property>
+        <property name="sirequiredBl" type="boolean">
+            <column name="SIREQUIREDBL" />
+        </property>
+        <property name="siimageTxN" type="java.lang.String">
+            <column name="SIIMAGETXN" />
+        </property>
+        <property name="siponotesTxN" type="java.lang.String">
+            <column name="SIPONOTESTXN" />
+        </property>
+        <property name="simultiSaleBl" type="boolean">
+            <column name="SIMULTISALEBL" />
+        </property>
+        <property name="simultiSaleQtyIn" type="short">
+            <column name="SIMULTISALEQTYIN" />
+        </property>
+        <property name="sidepositMn" type="double">
+            <column name="SIDEPOSITMN" />
+        </property>
+        <property name="sicreationDate" type="java.util.Date">
+            <column name="SICREATIONDATE" />
+        </property>
+        <property name="siinheritFromMasterBl" type="boolean">
+            <column name="SIINHERITFROMMASTERBL" />
+        </property>
+        <property name="siroomBookRelatedBl" type="boolean">
+            <column name="SIROOMBOOKRELATEDBL" />
+        </property>
+        <property name="siclubRelatedBl" type="boolean">
+            <column name="SICLUBRELATEDBL" />
+        </property>
+        <property name="sistockItem2txN" type="java.lang.String">
+            <column name="SISTOCKITEM2TXN" />
+        </property>
+        <property name="sinotesTxN" type="java.lang.String">
+            <column name="SINOTESTXN" />
+        </property>
+        <property name="siforPobl" type="boolean">
+            <column name="SIFORPOBL" />
+        </property>
+        <property name="sidescriptionTxN" type="java.lang.String">
+            <column name="SIDESCRIPTIONTXN" />
+        </property>
+        <property name="sispecialOfferTxN" type="java.lang.String">
+            <column name="SISPECIALOFFERTXN" />
+        </property>
+        <property name="siweightFlN" type="java.lang.Double">
+            <column name="SIWEIGHTFLN" />
+        </property>
+        <property name="sishowPriceInEolbl" type="boolean">
+            <column name="SISHOWPRICEINEOLBL" />
+        </property>
+        <property name="sicalcTaxOnShippingAddressBl" type="boolean">
+            <column name="SICALCTAXONSHIPPINGADDRESSBL" />
+        </property>
+        <property name="sishippingPeriodIn" type="int">
+            <column name="SISHIPPINGPERIODIN" />
+        </property>
+        <property name="siparentIdN" type="java.lang.Integer">
+            <column name="SIPARENTIDN" />
+        </property>
+        <property name="sidisplayOrderIn" type="int">
+            <column name="SIDISPLAYORDERIN" />
+        </property>
+        <property name="sieventDataTypeIdN" type="java.lang.Short">
+            <column name="SIEVENTDATATYPEIDN" />
+        </property>
+        <property name="siimage2txN" type="java.lang.String">
+            <column name="SIIMAGE2TXN" />
+        </property>
+        <property name="siimage3txN" type="java.lang.String">
+            <column name="SIIMAGE3TXN" />
+        </property>
+        <property name="siuseEventRulesBl" type="boolean">
+            <column name="SIUSEEVENTRULESBL" />
+        </property>
+        <property name="siclickActionId" type="int">
+            <column name="SICLICKACTIONID" />
+        </property>
+        <property name="siclickUrlTextTxN" type="java.lang.String">
+            <column name="SICLICKURLTEXTTXN" />
+        </property>
+        <property name="siclickActionParamsTxN" type="java.lang.String">
+            <column name="SICLICKACTIONPARAMSTXN" />
+        </property>
+        <property name="siclickActionPromptTxN" type="java.lang.String">
+            <column name="SICLICKACTIONPROMPTTXN" />
+        </property>
+        <property name="sideliverToRoomBl" type="boolean">
+            <column name="SIDELIVERTOROOMBL" />
+        </property>
+        <property name="sieolshowPackagePageBl" type="boolean">
+            <column name="SIEOLSHOWPACKAGEPAGEBL" />
+        </property>
+        <property name="sirelatedProductsIn" type="int">
+            <column name="SIRELATEDPRODUCTSIN" />
+        </property>
+        <property name="siimage4txN" type="java.lang.String">
+            <column name="SIIMAGE4TXN" />
+        </property>
+        <property name="siimage5txN" type="java.lang.String">
+            <column name="SIIMAGE5TXN" />
+        </property>
+        <property name="siforeColorIn" type="int">
+            <column name="SIFORECOLORIN" />
+        </property>
+        <property name="sibackColorIn" type="int">
+            <column name="SIBACKCOLORIN" />
+        </property>
+        <property name="silengthFl" type="double">
+            <column name="SILENGTHFL" />
+        </property>
+        <property name="siwidthFl" type="double">
+            <column name="SIWIDTHFL" />
+        </property>
+        <property name="siheightFl" type="double">
+            <column name="SIHEIGHTFL" />
+        </property>
+        <property name="sipricingMethodId" type="int">
+            <column name="SIPRICINGMETHODID" />
+        </property>
+        <property name="siloyaltyRateFl" type="java.lang.Float">
+            <column name="SILOYALTYRATEFL" />
+        </property>
+        <property name="sieoltabCaptionTxN" type="java.lang.String">
+            <column name="SIEOLTABCAPTIONTXN" />
+        </property>
+        <property name="sieoltabCaption2txN" type="java.lang.String">
+            <column name="SIEOLTABCAPTION2TXN" />
+        </property>
+        <property name="sieoltabCaption3txN" type="java.lang.String">
+            <column name="SIEOLTABCAPTION3TXN" />
+        </property>
+        <property name="sieoltabCaption4txN" type="java.lang.String">
+            <column name="SIEOLTABCAPTION4TXN" />
+        </property>
+        <property name="sieoldescription2txN" type="java.lang.String">
+            <column name="SIEOLDESCRIPTION2TXN" />
+        </property>
+        <property name="sieoldescription3txN" type="java.lang.String">
+            <column name="SIEOLDESCRIPTION3TXN" />
+        </property>
+        <property name="sieoldescription4txN" type="java.lang.String">
+            <column name="SIEOLDESCRIPTION4TXN" />
+        </property>
+    </class>
+</hibernate-mapping>

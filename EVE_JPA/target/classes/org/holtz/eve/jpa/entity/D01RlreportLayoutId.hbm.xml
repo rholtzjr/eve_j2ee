@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01RlreportLayoutId" table="D01RLREPORTLAYOUTID">
+        <id name="rltmpId" type="int">
+            <column name="RLTMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="rlreportLayoutId" type="int">
+            <column name="RLREPORTLAYOUTID" />
+        </property>
+        <property name="rlreportLayoutTx" type="java.lang.String">
+            <column name="RLREPORTLAYOUTTX" />
+        </property>
+        <property name="rlreportTypeId" type="int">
+            <column name="RLREPORTTYPEID" />
+        </property>
+        <property name="rlpaperSizeId" type="int">
+            <column name="RLPAPERSIZEID" />
+        </property>
+        <property name="rldestinationId" type="short">
+            <column name="RLDESTINATIONID" />
+        </property>
+        <property name="rlcopiesIn" type="short">
+            <column name="RLCOPIESIN" />
+        </property>
+        <property name="rllandscapeBl" type="boolean">
+            <column name="RLLANDSCAPEBL" />
+        </property>
+        <property name="rluseMarginsBl" type="boolean">
+            <column name="RLUSEMARGINSBL" />
+        </property>
+        <property name="rlunavailableBl" type="boolean">
+            <column name="RLUNAVAILABLEBL" />
+        </property>
+        <property name="rlscaleToFitXbl" type="boolean">
+            <column name="RLSCALETOFITXBL" />
+        </property>
+        <property name="rlscaleToFitYbl" type="boolean">
+            <column name="RLSCALETOFITYBL" />
+        </property>
+        <property name="rluseDbpaperSizeBl" type="boolean">
+            <column name="RLUSEDBPAPERSIZEBL" />
+        </property>
+        <property name="rlleftMarginIn" type="int">
+            <column name="RLLEFTMARGININ" />
+        </property>
+        <property name="rltopMarginIn" type="int">
+            <column name="RLTOPMARGININ" />
+        </property>
+        <property name="rllanguageId" type="int">
+            <column name="RLLANGUAGEID" />
+        </property>
+        <property name="rltmpNameTxN" type="java.lang.String">
+            <column name="RLTMPNAMETXN" />
+        </property>
+    </class>
+</hibernate-mapping>

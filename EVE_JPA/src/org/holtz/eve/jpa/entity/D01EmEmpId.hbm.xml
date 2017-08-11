@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01EmEmpId" table="D01EMEMPID">
+        <id name="emEmpId" type="int">
+            <column name="EMEMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="emInitialsTxN" type="java.lang.String">
+            <column name="EMINITIALSTXN" />
+        </property>
+        <property name="emInstructorNoTxN" type="java.lang.String">
+            <column name="EMINSTRUCTORNOTXN" />
+        </property>
+        <property name="emInstructorBl" type="boolean">
+            <column name="EMINSTRUCTORBL" />
+        </property>
+        <property name="emTechnicianBl" type="boolean">
+            <column name="EMTECHNICIANBL" />
+        </property>
+        <property name="emUserBl" type="boolean">
+            <column name="EMUSERBL" />
+        </property>
+        <property name="emPasswordTxN" type="java.lang.String">
+            <column name="EMPASSWORDTXN" />
+        </property>
+        <property name="emSsntxN" type="java.lang.String">
+            <column name="EMSSNTXN" />
+        </property>
+        <property name="emPadikeyTxN" type="java.lang.String">
+            <column name="EMPADIKEYTXN" />
+        </property>
+        <property name="emCommissionRateFl" type="float">
+            <column name="EMCOMMISSIONRATEFL" />
+        </property>
+        <property name="emForeColorIn" type="int">
+            <column name="EMFORECOLORIN" />
+        </property>
+        <property name="emBackColorIn" type="int">
+            <column name="EMBACKCOLORIN" />
+        </property>
+        <property name="emNotesTxN" type="java.lang.String">
+            <column name="EMNOTESTXN" />
+        </property>
+        <property name="emUrltxN" type="java.lang.String">
+            <column name="EMURLTXN" />
+        </property>
+        <property name="emUnavailableBl" type="boolean">
+            <column name="EMUNAVAILABLEBL" />
+        </property>
+        <property name="emAgentCommissionRateFl" type="float">
+            <column name="EMAGENTCOMMISSIONRATEFL" />
+        </property>
+        <property name="emPrevLastLoginDateN" type="java.util.Date">
+            <column name="EMPREVLASTLOGINDATEN" />
+        </property>
+        <property name="emLastLoginDateN" type="java.util.Date">
+            <column name="EMLASTLOGINDATEN" />
+        </property>
+        <property name="emTechNoTxN" type="java.lang.String">
+            <column name="EMTECHNOTXN" />
+        </property>
+        <property name="emPreferredUiidN" type="java.lang.Integer">
+            <column name="EMPREFERREDUIIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

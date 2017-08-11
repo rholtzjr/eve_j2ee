@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01MmMembershipTypeId" table="S01MMMEMBERSHIPTYPEID">
+        <id name="mmMembershipTypeId" type="int">
+            <column name="MMMEMBERSHIPTYPEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="mmMembershipTypeTx" type="java.lang.String">
+            <column name="MMMEMBERSHIPTYPETX" />
+        </property>
+        <property name="mmUnavailableBl" type="boolean">
+            <column name="MMUNAVAILABLEBL" />
+        </property>
+        <property name="mmLastUpdatedDate" type="java.util.Date">
+            <column name="MMLASTUPDATEDDATE" />
+        </property>
+        <property name="mmRequiredBl" type="boolean">
+            <column name="MMREQUIREDBL" />
+        </property>
+        <property name="mmCreationDate" type="java.util.Date">
+            <column name="MMCREATIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

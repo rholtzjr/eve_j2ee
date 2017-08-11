@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01C1custCourseId" table="S01C1CUSTCOURSEID">
+        <id name="c1custId" type="int">
+            <column name="C1CUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="c1custCourseId" type="int">
+            <column name="C1CUSTCOURSEID" />
+        </property>
+        <property name="c1custNoIn" type="short">
+            <column name="C1CUSTNOIN" />
+        </property>
+        <property name="c1courseTypeId" type="int">
+            <column name="C1COURSETYPEID" />
+        </property>
+        <property name="c1courseIdN" type="java.lang.Integer">
+            <column name="C1COURSEIDN" />
+        </property>
+        <property name="c1courseNoTxNx" type="java.lang.String">
+            <column name="C1COURSENOTXNX" />
+        </property>
+        <property name="c1instructorIdN" type="java.lang.Integer">
+            <column name="C1INSTRUCTORIDN" />
+        </property>
+        <property name="c1certificationDateN" type="java.util.Date">
+            <column name="C1CERTIFICATIONDATEN" />
+        </property>
+        <property name="c1certSentDateN" type="java.util.Date">
+            <column name="C1CERTSENTDATEN" />
+        </property>
+        <property name="c1certReceivedDateN" type="java.util.Date">
+            <column name="C1CERTRECEIVEDDATEN" />
+        </property>
+        <property name="c1pricePaidMn" type="double">
+            <column name="C1PRICEPAIDMN" />
+        </property>
+        <property name="c1taxPaidMn" type="double">
+            <column name="C1TAXPAIDMN" />
+        </property>
+        <property name="c1qualificationTypeIdN" type="java.lang.Integer">
+            <column name="C1QUALIFICATIONTYPEIDN" />
+        </property>
+        <property name="c1certificationNoTxN" type="java.lang.String">
+            <column name="C1CERTIFICATIONNOTXN" />
+        </property>
+        <property name="c1compStatusId" type="short">
+            <column name="C1COMPSTATUSID" />
+        </property>
+        <property name="c1notifStatusId" type="short">
+            <column name="C1NOTIFSTATUSID" />
+        </property>
+        <property name="c1currencyId" type="short">
+            <column name="C1CURRENCYID" />
+        </property>
+        <property name="c1exchangeRateFl" type="float">
+            <column name="C1EXCHANGERATEFL" />
+        </property>
+        <property name="c1lastUpdatedDate" type="java.util.Date">
+            <column name="C1LASTUPDATEDDATE" />
+        </property>
+        <property name="c1referralBl" type="boolean">
+            <column name="C1REFERRALBL" />
+        </property>
+        <property name="c1referralStoreNoTxN" type="java.lang.String">
+            <column name="C1REFERRALSTORENOTXN" />
+        </property>
+        <property name="c1preRegistrationBl" type="boolean">
+            <column name="C1PREREGISTRATIONBL" />
+        </property>
+        <property name="c1certNotesTxN" type="java.lang.String">
+            <column name="C1CERTNOTESTXN" />
+        </property>
+        <property name="c1coursePriceMn" type="double">
+            <column name="C1COURSEPRICEMN" />
+        </property>
+        <property name="c1courseTaxMn" type="double">
+            <column name="C1COURSETAXMN" />
+        </property>
+        <property name="c1addOnPricePaidMn" type="double">
+            <column name="C1ADDONPRICEPAIDMN" />
+        </property>
+        <property name="c1addOnTaxPaidMn" type="double">
+            <column name="C1ADDONTAXPAIDMN" />
+        </property>
+        <property name="c1creationDate" type="java.util.Date">
+            <column name="C1CREATIONDATE" />
+        </property>
+        <property name="c1confirmedDateN" type="java.util.Date">
+            <column name="C1CONFIRMEDDATEN" />
+        </property>
+        <property name="c1enrollmentStatusId" type="int">
+            <column name="C1ENROLLMENTSTATUSID" />
+        </property>
+        <property name="c1depositPaidMn" type="double">
+            <column name="C1DEPOSITPAIDMN" />
+        </property>
+        <property name="c1qualifiedHereBl" type="boolean">
+            <column name="C1QUALIFIEDHEREBL" />
+        </property>
+        <property name="c1pickedUpByCustDateN" type="java.util.Date">
+            <column name="C1PICKEDUPBYCUSTDATEN" />
+        </property>
+        <property name="c1pickUpMethodIdN" type="java.lang.Integer">
+            <column name="C1PICKUPMETHODIDN" />
+        </property>
+        <property name="c1moveLocationIdN" type="java.lang.Integer">
+            <column name="C1MOVELOCATIONIDN" />
+        </property>
+        <property name="c1enrollmentStatusUpdatedDate" type="java.util.Date">
+            <column name="C1ENROLLMENTSTATUSUPDATEDDATE" />
+        </property>
+        <property name="c1elearnerBl" type="boolean">
+            <column name="C1ELEARNERBL" />
+        </property>
+        <property name="c1storeId" type="short">
+            <column name="C1STOREID" />
+        </property>
+        <property name="c1origStoreNameTxN" type="java.lang.String">
+            <column name="C1ORIGSTORENAMETXN" />
+        </property>
+        <property name="c1origStoreEmailTxN" type="java.lang.String">
+            <column name="C1ORIGSTOREEMAILTXN" />
+        </property>
+        <property name="c1picsentByIdN" type="java.lang.Integer">
+            <column name="C1PICSENTBYIDN" />
+        </property>
+        <property name="c1piccardIdN" type="java.lang.Integer">
+            <column name="C1PICCARDIDN" />
+        </property>
+        <property name="c1returnCardToIdN" type="java.lang.Integer">
+            <column name="C1RETURNCARDTOIDN" />
+        </property>
+        <property name="c1fatherNameTxN" type="java.lang.String">
+            <column name="C1FATHERNAMETXN" />
+        </property>
+        <property name="c1seatNoIn" type="int">
+            <column name="C1SEATNOIN" />
+        </property>
+        <property name="c1courseNoTxN" type="java.lang.String">
+            <column name="C1COURSENOTXN" />
+        </property>
+        <property name="c1referringInstNoInN" type="java.lang.Integer">
+            <column name="C1REFERRINGINSTNOINN" />
+        </property>
+        <property name="c1touchIdN" type="java.lang.Integer">
+            <column name="C1TOUCHIDN" />
+        </property>
+        <property name="c1digitalCodeTxN" type="java.lang.String">
+            <column name="C1DIGITALCODETXN" />
+        </property>
+        <property name="c1inWaterDateN" type="java.util.Date">
+            <column name="C1INWATERDATEN" />
+        </property>
+        <property name="c1certTypeId" type="int">
+            <column name="C1CERTTYPEID" />
+        </property>
+    </class>
+</hibernate-mapping>

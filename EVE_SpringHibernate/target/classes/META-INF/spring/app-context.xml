@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	<context:component-scan base-package="org.holtz.eve" />
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<bean
+				class="org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter">
+				<property name="objectMapper" ref="xmlMapper">
+				</property>
+			</bean>
+			<bean
+				class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="objectMapper">
+					<bean class="org.holtz.eve.util.HibernateAwareObjectMapper" />
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<bean id="xmlMapper" parent="objectMapper">
+		<property name="createXmlMapper" value="true" />
+	</bean>
+	<bean id="objectMapper"
+		class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+		<property name="indentOutput" value="true" />
+		<!-- <property name="failOnEmptyBeans" value="false"/> -->
+	</bean>
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/WEB-INF/jsp/**" p:suffix=".jsp" />
+
+	<bean id="eveDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url"
+			value="jdbc:sqlserver://localhost:1433;databaseName=eve" />
+		<property name="username" value="sa" />
+		<property name="password" value="adminadmin" />
+	</bean>
+
+	<bean id="eveSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="eveDataSource" />
+		<property name="packagesToScan" value="org.holtz.eve" />
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">none</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+
+	<bean id="stockItemDAO" class="org.holtz.eve.jpa.dao.impl.StockItemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="storeStockItemDAO" class="org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="customerDAO" class="org.holtz.eve.jpa.dao.impl.CustomerDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="accountDAO" class="org.holtz.eve.jpa.dao.impl.AccountDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="addressDAO" class="org.holtz.eve.jpa.dao.impl.AddressDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="accountPaymentDAO" class="org.holtz.eve.jpa.dao.impl.AccountPaymentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="accountTypeDAO" class="org.holtz.eve.jpa.dao.impl.AccountTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc0companyDAO" class="org.holtz.eve.jpa.dao.impl.TC0companyDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc1custCourseDAO" class="org.holtz.eve.jpa.dao.impl.TC1custCourseDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc3custCreditCardDAO" class="org.holtz.eve.jpa.dao.impl.TC3custCreditCardDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc4custCustTypedDAO" class="org.holtz.eve.jpa.dao.impl.TC4custCustTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc5custEquipmentDAO" class="org.holtz.eve.jpa.dao.impl.TC5custEquipmentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc6custPopUpDAO" class="org.holtz.eve.jpa.dao.impl.TC6custPopUpDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc7costCenterStockTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TC7costCenterStockTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc8custInterestDAO"
+		class="org.holtz.eve.jpa.dao.impl.TC8custInterestDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tc9custMailingListDAO"
+		class="org.holtz.eve.jpa.dao.impl.TC9custMailingListDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcacertAgencyDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCacertAgencyDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcbClubDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCbClubDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcccostCenterDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCccostCenterDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcdCustOrderDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCdCustOrderDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tceCostPriceDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCeCostPriceDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcfCustClubDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCfCustClubDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcgcustGroupDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCgcustGroupDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tchCustTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TChCustTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tciCustCourseChecklistDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCiCustCourseChecklistDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcjcourseStatusDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCjCourseStatusDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tckcustTripChecklistDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCkCustTripChecklistDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tclColorDAO"
+		class="org.holtz.eve.jpa.dao.impl.TClColorDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcmcontactMethodDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCmcontactMethodDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcmcontactDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCnContactDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcocompStatusDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCoCompStatusDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcpcustTripDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCpCustTripDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcrcurrencyDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCrCurrencyDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcscourseDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCsCourseDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tctcourseTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCtcourseTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcuCustDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCuCustDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcvCustTypeDiscountBandDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCvCustTypeDiscountBandDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tcyCountryDAO"
+		class="org.holtz.eve.jpa.dao.impl.TCyCountryDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdaDataDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDaDataDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdbdiscountBandDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDbdiscountBandDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdcDocumentdDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDcDocumentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdfDefaultdDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDfDefaultDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdiDiveProfiledDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDiDiveProfileDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdldocumentLinkDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDldocumentLinkDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdmdataTypeMenuDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDmdataTypeMenuDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdnDenominationDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDnDenominationDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdpdataPcDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDpdataPcDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdpdataPcdefaultsDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDpdataPcdefaultsDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdtDestinationDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDtDestinationDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdtdataTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDtdataTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdvdefaultValueDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDvdefaultValueDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tdyDocumentLinkTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TDyDocumentLinkTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="te2emailQueueDAO"
+		class="org.holtz.eve.jpa.dao.impl.TE2emailQueueDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="te3emailAgentDAO"
+		class="org.holtz.eve.jpa.dao.impl.TE3emailAgentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="te4emailHistoryDAO"
+		class="org.holtz.eve.jpa.dao.impl.TE4emailHistoryDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="te5emailFilterDAO"
+		class="org.holtz.eve.jpa.dao.impl.TE5emailFilterDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="te6groupDAO"
+		class="org.holtz.eve.jpa.dao.impl.TE6groupDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tecempModuleCostDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEcempModuleCostDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tedEmpModuleDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEdEmpModuleDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="teempCourseDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEeEmpCourseDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="teheolheaderDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEheolheaderDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tekEmpClockInDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEkEmpClockInDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="temEmpDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEmEmpDOAImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tenEnrollmentStatusDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEnEnrollmentStatusDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tepempPrivilegeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEpempPrivilegeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="teqEquipmentDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEqEquipmentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="terempRoleDAO"
+		class="org.holtz.eve.jpa.dao.impl.TErempRoleDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tesempScheduleDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEsempScheduleDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tetempTripDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEtempTripDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="teuEquipmentRentalPriceDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEuEquipmentRentalPriceDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="texExpenseDAO"
+		class="org.holtz.eve.jpa.dao.impl.TExExpenseDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="teyEntryDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEyEntryDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tezSizeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TEzSizeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tfafollowUpActionDAO"
+		class="org.holtz.eve.jpa.dao.impl.TFafollowUpActionDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tfoformOptDAO"
+		class="org.holtz.eve.jpa.dao.impl.TFoformOptDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tfpformPropertyDAO"
+		class="org.holtz.eve.jpa.dao.impl.TFpformPropertyDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tfvFavoriteDAO"
+		class="org.holtz.eve.jpa.dao.impl.TFvFavoriteDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tgcgiftCertDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGcgiftCertDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tgdGiftCardDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGdGiftCardDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tgigiftTypeAllowedItemDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGigiftTypeAllowedItemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tglaccountDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGlaccountDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tgpGroupDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGpGroupDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tgrgiftRegistryDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGrgiftRegistryDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tgtgiftCardTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TGtgiftCardTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="thlHolidayDAO"
+		class="org.holtz.eve.jpa.dao.impl.THlHolidayDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="thtHotelDAO"
+		class="org.holtz.eve.jpa.dao.impl.THtHotelDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tiaimportAttemptDAO"
+		class="org.holtz.eve.jpa.dao.impl.TIaimportAttemptDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tibInstallationDAO"
+		class="org.holtz.eve.jpa.dao.impl.TIbInstallationDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="ticInventoryLocationDAO"
+		class="org.holtz.eve.jpa.dao.impl.TIcInventoryLocationDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tieitemCommissionDAO"
+		class="org.holtz.eve.jpa.dao.impl.TIeitemCommissionDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tifinterestFollowUpDAO"
+		class="org.holtz.eve.jpa.dao.impl.TIfinterestFollowUpDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="StockItemApplication" class="org.holtz.eve.view.stockitem.StockItemApplication" />
+
+</beans>

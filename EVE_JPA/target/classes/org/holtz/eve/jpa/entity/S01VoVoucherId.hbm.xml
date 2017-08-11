@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01VoVoucherId" table="S01VOVOUCHERID">
+        <id name="voPcid" type="short">
+            <column name="VOPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="voVoucherId" type="int">
+            <column name="VOVOUCHERID" />
+        </property>
+        <property name="voCustId" type="int">
+            <column name="VOCUSTID" />
+        </property>
+        <property name="voStoreId" type="short">
+            <column name="VOSTOREID" />
+        </property>
+        <property name="voCostCenterId" type="int">
+            <column name="VOCOSTCENTERID" />
+        </property>
+        <property name="voFaultyInvoiceId" type="int">
+            <column name="VOFAULTYINVOICEID" />
+        </property>
+        <property name="voUsedInvoiceIdN" type="java.lang.Integer">
+            <column name="VOUSEDINVOICEIDN" />
+        </property>
+        <property name="voCreationDate" type="java.util.Date">
+            <column name="VOCREATIONDATE" />
+        </property>
+        <property name="voExpiryDate" type="java.util.Date">
+            <column name="VOEXPIRYDATE" />
+        </property>
+        <property name="voActualExpiryDateN" type="java.util.Date">
+            <column name="VOACTUALEXPIRYDATEN" />
+        </property>
+        <property name="voEmpId" type="int">
+            <column name="VOEMPID" />
+        </property>
+        <property name="voCommissionEmployeeId" type="int">
+            <column name="VOCOMMISSIONEMPLOYEEID" />
+        </property>
+        <property name="voCommissionRateFl" type="float">
+            <column name="VOCOMMISSIONRATEFL" />
+        </property>
+        <property name="voCommissionableBl" type="boolean">
+            <column name="VOCOMMISSIONABLEBL" />
+        </property>
+        <property name="voAmountMn" type="double">
+            <column name="VOAMOUNTMN" />
+        </property>
+        <property name="voCurrencyId" type="short">
+            <column name="VOCURRENCYID" />
+        </property>
+        <property name="voExchangeRateFl" type="float">
+            <column name="VOEXCHANGERATEFL" />
+        </property>
+        <property name="voLastUpdatedDate" type="java.util.Date">
+            <column name="VOLASTUPDATEDDATE" />
+        </property>
+        <property name="voTransStatusId" type="int">
+            <column name="VOTRANSSTATUSID" />
+        </property>
+        <property name="voNotesTxN" type="java.lang.String">
+            <column name="VONOTESTXN" />
+        </property>
+        <property name="voVoidDateN" type="java.util.Date">
+            <column name="VOVOIDDATEN" />
+        </property>
+        <property name="voVoidReasonTxN" type="java.lang.String">
+            <column name="VOVOIDREASONTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

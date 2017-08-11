@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01MlmailingListId" table="S01MLMAILINGLISTID">
+        <id name="mlmailingListId" type="int">
+            <column name="MLMAILINGLISTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="mlmailingListTx" type="java.lang.String">
+            <column name="MLMAILINGLISTTX" />
+        </property>
+        <property name="mlunavailableBl" type="boolean">
+            <column name="MLUNAVAILABLEBL" />
+        </property>
+        <property name="mllastUpdatedDate" type="java.util.Date">
+            <column name="MLLASTUPDATEDDATE" />
+        </property>
+        <property name="mlrequiredBl" type="boolean">
+            <column name="MLREQUIREDBL" />
+        </property>
+        <property name="mlcreationDate" type="java.util.Date">
+            <column name="MLCREATIONDATE" />
+        </property>
+        <property name="mlshowInEolbl" type="boolean">
+            <column name="MLSHOWINEOLBL" />
+        </property>
+    </class>
+</hibernate-mapping>

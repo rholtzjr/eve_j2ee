@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01EqEquipmentId" table="D01EQEQUIPMENTID">
+        <id name="eqCustId" type="int">
+            <column name="EQCUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="eqEquipmentId" type="int">
+            <column name="EQEQUIPMENTID" />
+        </property>
+        <property name="eqStockTypeId" type="int">
+            <column name="EQSTOCKTYPEID" />
+        </property>
+        <property name="eqRefNoTxN" type="java.lang.String">
+            <column name="EQREFNOTXN" />
+        </property>
+        <property name="eqSerialNoTxN" type="java.lang.String">
+            <column name="EQSERIALNOTXN" />
+        </property>
+        <property name="eqManufacturerIdN" type="java.lang.Integer">
+            <column name="EQMANUFACTURERIDN" />
+        </property>
+        <property name="eqDescriptionTxN" type="java.lang.String">
+            <column name="EQDESCRIPTIONTXN" />
+        </property>
+        <property name="eqSizeIdN" type="java.lang.Integer">
+            <column name="EQSIZEIDN" />
+        </property>
+        <property name="eqPrimaryColorIdN" type="java.lang.Integer">
+            <column name="EQPRIMARYCOLORIDN" />
+        </property>
+        <property name="eqSecondaryColorIdN" type="java.lang.Integer">
+            <column name="EQSECONDARYCOLORIDN" />
+        </property>
+        <property name="eqNetWorthMn" type="double">
+            <column name="EQNETWORTHMN" />
+        </property>
+        <property name="eqCurrencyId" type="short">
+            <column name="EQCURRENCYID" />
+        </property>
+        <property name="eqExchangeRateFl" type="float">
+            <column name="EQEXCHANGERATEFL" />
+        </property>
+        <property name="eqBarcodeNoTxN" type="java.lang.String">
+            <column name="EQBARCODENOTXN" />
+        </property>
+        <property name="eqPurchasedDateN" type="java.util.Date">
+            <column name="EQPURCHASEDDATEN" />
+        </property>
+        <property name="eqSoldDateN" type="java.util.Date">
+            <column name="EQSOLDDATEN" />
+        </property>
+        <property name="eqNextServiceDateN" type="java.util.Date">
+            <column name="EQNEXTSERVICEDATEN" />
+        </property>
+        <property name="eqUnavailableBl" type="boolean">
+            <column name="EQUNAVAILABLEBL" />
+        </property>
+        <property name="eqLastUpdatedDate" type="java.util.Date">
+            <column name="EQLASTUPDATEDDATE" />
+        </property>
+        <property name="eqRequiredBl" type="boolean">
+            <column name="EQREQUIREDBL" />
+        </property>
+        <property name="eqCreationDate" type="java.util.Date">
+            <column name="EQCREATIONDATE" />
+        </property>
+        <property name="eqPackageBl" type="boolean">
+            <column name="EQPACKAGEBL" />
+        </property>
+        <property name="eqBypassDblBookingCheckBl" type="boolean">
+            <column name="EQBYPASSDBLBOOKINGCHECKBL" />
+        </property>
+        <property name="eqManufacturedDateN" type="java.util.Date">
+            <column name="EQMANUFACTUREDDATEN" />
+        </property>
+        <property name="eqCylMaterialId" type="int">
+            <column name="EQCYLMATERIALID" />
+        </property>
+        <property name="eqCylValveId" type="int">
+            <column name="EQCYLVALVEID" />
+        </property>
+        <property name="eqCylTypeId" type="int">
+            <column name="EQCYLTYPEID" />
+        </property>
+        <property name="eqCylValveOtherTxN" type="java.lang.String">
+            <column name="EQCYLVALVEOTHERTXN" />
+        </property>
+        <property name="eqCylTypeOtherTxN" type="java.lang.String">
+            <column name="EQCYLTYPEOTHERTXN" />
+        </property>
+        <property name="eqCylBootBl" type="java.lang.Boolean">
+            <column name="EQCYLBOOTBL" />
+        </property>
+        <property name="eqCylBackpackBl" type="java.lang.Boolean">
+            <column name="EQCYLBACKPACKBL" />
+        </property>
+        <property name="eqCylWorkPressureTxN" type="java.lang.String">
+            <column name="EQCYLWORKPRESSURETXN" />
+        </property>
+        <property name="eqCylLabnoTxN" type="java.lang.String">
+            <column name="EQCYLLABNOTXN" />
+        </property>
+        <property name="eqCylTestPressureTxN" type="java.lang.String">
+            <column name="EQCYLTESTPRESSURETXN" />
+        </property>
+        <property name="eqCylWaterCapTxN" type="java.lang.String">
+            <column name="EQCYLWATERCAPTXN" />
+        </property>
+        <property name="eqAddPackageItemsBl" type="boolean">
+            <column name="EQADDPACKAGEITEMSBL" />
+        </property>
+        <property name="eqCylHydroDateN" type="java.util.Date">
+            <column name="EQCYLHYDRODATEN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01PaPodeliveryItemId" table="D01PAPODELIVERYITEMID">
+        <id name="paStoreId" type="short">
+            <column name="PASTOREID" />
+            <generator class="assigned" />
+        </id>
+        <property name="paPodeliveryItemId" type="int">
+            <column name="PAPODELIVERYITEMID" />
+        </property>
+        <property name="paPodeliveryIdN" type="java.lang.Integer">
+            <column name="PAPODELIVERYIDN" />
+        </property>
+        <property name="paPoitemIdN" type="java.lang.Integer">
+            <column name="PAPOITEMIDN" />
+        </property>
+        <property name="paStockItemId" type="int">
+            <column name="PASTOCKITEMID" />
+        </property>
+        <property name="paReceivedDate" type="java.util.Date">
+            <column name="PARECEIVEDDATE" />
+        </property>
+        <property name="paQtyReceivedIn" type="int">
+            <column name="PAQTYRECEIVEDIN" />
+        </property>
+        <property name="paQtyInStockIn" type="int">
+            <column name="PAQTYINSTOCKIN" />
+        </property>
+        <property name="paCostPriceMn" type="double">
+            <column name="PACOSTPRICEMN" />
+        </property>
+        <property name="paAccountingPeriodIdN" type="java.lang.Integer">
+            <column name="PAACCOUNTINGPERIODIDN" />
+        </property>
+        <property name="paTransferIdN" type="java.lang.Integer">
+            <column name="PATRANSFERIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

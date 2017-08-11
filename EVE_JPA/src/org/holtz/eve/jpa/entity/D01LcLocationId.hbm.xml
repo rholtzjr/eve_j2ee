@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01LcLocationId" table="D01LCLOCATIONID">
+        <id name="lcStateIdN" type="java.lang.Integer">
+            <column name="LCSTATEIDN" />
+            <generator class="assigned" />
+        </id>
+        <property name="lcLocationId" type="int">
+            <column name="LCLOCATIONID" />
+        </property>
+        <property name="lcLocationTx" type="java.lang.String">
+            <column name="LCLOCATIONTX" />
+        </property>
+        <property name="lcUnavailableBl" type="boolean">
+            <column name="LCUNAVAILABLEBL" />
+        </property>
+        <property name="lcLastUpdatedDate" type="java.util.Date">
+            <column name="LCLASTUPDATEDDATE" />
+        </property>
+        <property name="lcRequiredBl" type="boolean">
+            <column name="LCREQUIREDBL" />
+        </property>
+        <property name="lcDoubleBookingCountIn" type="short">
+            <column name="LCDOUBLEBOOKINGCOUNTIN" />
+        </property>
+        <property name="lcCreationDate" type="java.util.Date">
+            <column name="LCCREATIONDATE" />
+        </property>
+        <property name="lcForeColorIn" type="int">
+            <column name="LCFORECOLORIN" />
+        </property>
+        <property name="lcBackColorIn" type="int">
+            <column name="LCBACKCOLORIN" />
+        </property>
+        <property name="lcUrltxN" type="java.lang.String">
+            <column name="LCURLTXN" />
+        </property>
+        <property name="lcAddress1txN" type="java.lang.String">
+            <column name="LCADDRESS1TXN" />
+        </property>
+        <property name="lcAddress2txN" type="java.lang.String">
+            <column name="LCADDRESS2TXN" />
+        </property>
+        <property name="lcAddress3txN" type="java.lang.String">
+            <column name="LCADDRESS3TXN" />
+        </property>
+        <property name="lcAddress4txN" type="java.lang.String">
+            <column name="LCADDRESS4TXN" />
+        </property>
+        <property name="lcPostCodeTxN" type="java.lang.String">
+            <column name="LCPOSTCODETXN" />
+        </property>
+        <property name="lcCountryIdN" type="java.lang.Integer">
+            <column name="LCCOUNTRYIDN" />
+        </property>
+        <property name="lcWaitingListCapacityIn" type="int">
+            <column name="LCWAITINGLISTCAPACITYIN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01CacertAgencyId" table="D01CACERTAGENCYID">
+        <id name="cacertAgencyId" type="int">
+            <column name="CACERTAGENCYID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cacontactTxN" type="java.lang.String">
+            <column name="CACONTACTTXN" />
+        </property>
+        <property name="cacertAgencyTx" type="java.lang.String">
+            <column name="CACERTAGENCYTX" />
+        </property>
+        <property name="caaddress1txN" type="java.lang.String">
+            <column name="CAADDRESS1TXN" />
+        </property>
+        <property name="caaddress2txN" type="java.lang.String">
+            <column name="CAADDRESS2TXN" />
+        </property>
+        <property name="caaddress3txN" type="java.lang.String">
+            <column name="CAADDRESS3TXN" />
+        </property>
+        <property name="caaddress4txN" type="java.lang.String">
+            <column name="CAADDRESS4TXN" />
+        </property>
+        <property name="capostcodeTxN" type="java.lang.String">
+            <column name="CAPOSTCODETXN" />
+        </property>
+        <property name="cacountryTxN" type="java.lang.String">
+            <column name="CACOUNTRYTXN" />
+        </property>
+        <property name="catelTxN" type="java.lang.String">
+            <column name="CATELTXN" />
+        </property>
+        <property name="cafaxTxN" type="java.lang.String">
+            <column name="CAFAXTXN" />
+        </property>
+        <property name="caemailTxN" type="java.lang.String">
+            <column name="CAEMAILTXN" />
+        </property>
+        <property name="caurltxN" type="java.lang.String">
+            <column name="CAURLTXN" />
+        </property>
+        <property name="calastUpdatedDate" type="java.util.Date">
+            <column name="CALASTUPDATEDDATE" />
+        </property>
+        <property name="caunavailableBl" type="boolean">
+            <column name="CAUNAVAILABLEBL" />
+        </property>
+        <property name="capicurltxN" type="java.lang.String">
+            <column name="CAPICURLTXN" />
+        </property>
+        <property name="carequiredBl" type="boolean">
+            <column name="CAREQUIREDBL" />
+        </property>
+        <property name="cacreationDate" type="java.util.Date">
+            <column name="CACREATIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

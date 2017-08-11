@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01EkEmpClockInId" table="S01EKEMPCLOCKINID">
+        <id name="ekPcid" type="short">
+            <column name="EKPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="ekEmpClockInId" type="int">
+            <column name="EKEMPCLOCKINID" />
+        </property>
+        <property name="ekEmpId" type="int">
+            <column name="EKEMPID" />
+        </property>
+        <property name="ekClockInDate" type="java.util.Date">
+            <column name="EKCLOCKINDATE" />
+        </property>
+        <property name="ekClockOutDateN" type="java.util.Date">
+            <column name="EKCLOCKOUTDATEN" />
+        </property>
+        <property name="ekCommentsTxN" type="java.lang.String">
+            <column name="EKCOMMENTSTXN" />
+        </property>
+        <property name="ekStoreId" type="short">
+            <column name="EKSTOREID" />
+        </property>
+        <property name="ekTaskTypeIdN" type="java.lang.Integer">
+            <column name="EKTASKTYPEIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01SbserviceBookingId" table="D01SBSERVICEBOOKINGID">
+        <id name="sbempId" type="int">
+            <column name="SBEMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="sbserviceBookingId" type="int">
+            <column name="SBSERVICEBOOKINGID" />
+        </property>
+        <property name="sbinvoiceIdN" type="java.lang.Integer">
+            <column name="SBINVOICEIDN" />
+        </property>
+        <property name="sbstoreId" type="short">
+            <column name="SBSTOREID" />
+        </property>
+        <property name="sbcostCenterId" type="int">
+            <column name="SBCOSTCENTERID" />
+        </property>
+        <property name="sbcustId" type="int">
+            <column name="SBCUSTID" />
+        </property>
+        <property name="sbcreationDate" type="java.util.Date">
+            <column name="SBCREATIONDATE" />
+        </property>
+        <property name="sbcurrencyId" type="short">
+            <column name="SBCURRENCYID" />
+        </property>
+        <property name="sbexchangeRateFl" type="float">
+            <column name="SBEXCHANGERATEFL" />
+        </property>
+        <property name="sblastUpdatedDate" type="java.util.Date">
+            <column name="SBLASTUPDATEDDATE" />
+        </property>
+        <property name="sbnotesTxN" type="java.lang.String">
+            <column name="SBNOTESTXN" />
+        </property>
+        <property name="sbstatusId" type="int">
+            <column name="SBSTATUSID" />
+        </property>
+        <property name="sbvoidDateN" type="java.util.Date">
+            <column name="SBVOIDDATEN" />
+        </property>
+        <property name="sbvoidReasonTxN" type="java.lang.String">
+            <column name="SBVOIDREASONTXN" />
+        </property>
+        <property name="sbpartsAmountMn" type="java.math.BigDecimal">
+            <column name="SBPARTSAMOUNTMN" />
+        </property>
+        <property name="sbpartTaxMn" type="java.math.BigDecimal">
+            <column name="SBPARTTAXMN" />
+        </property>
+        <property name="sbbookingLaborMn" type="java.math.BigDecimal">
+            <column name="SBBOOKINGLABORMN" />
+        </property>
+        <property name="sbbookingLaborTaxMn" type="java.math.BigDecimal">
+            <column name="SBBOOKINGLABORTAXMN" />
+        </property>
+        <property name="sbbookingHandlingMn" type="java.math.BigDecimal">
+            <column name="SBBOOKINGHANDLINGMN" />
+        </property>
+        <property name="sbbookingHandlingTaxMn" type="java.math.BigDecimal">
+            <column name="SBBOOKINGHANDLINGTAXMN" />
+        </property>
+        <property name="sbdueStartDate" type="java.util.Date">
+            <column name="SBDUESTARTDATE" />
+        </property>
+        <property name="sbdueEndDate" type="java.util.Date">
+            <column name="SBDUEENDDATE" />
+        </property>
+        <property name="sbticketNoInN" type="java.lang.Integer">
+            <column name="SBTICKETNOINN" />
+        </property>
+    </class>
+</hibernate-mapping>

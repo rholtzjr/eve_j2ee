@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01BtBoatId" table="S01BTBOATID">
+        <id name="btBoatId" type="int">
+            <column name="BTBOATID" />
+            <generator class="assigned" />
+        </id>
+        <property name="btBoatNameTx" type="java.lang.String">
+            <column name="BTBOATNAMETX" />
+        </property>
+        <property name="btCapacityIn" type="short">
+            <column name="BTCAPACITYIN" />
+        </property>
+        <property name="btCallSignTxN" type="java.lang.String">
+            <column name="BTCALLSIGNTXN" />
+        </property>
+        <property name="btUnavailableBl" type="boolean">
+            <column name="BTUNAVAILABLEBL" />
+        </property>
+        <property name="btLastUpdatedDate" type="java.util.Date">
+            <column name="BTLASTUPDATEDDATE" />
+        </property>
+        <property name="btRequiredBl" type="boolean">
+            <column name="BTREQUIREDBL" />
+        </property>
+        <property name="btLeftFl" type="float">
+            <column name="BTLEFTFL" />
+        </property>
+        <property name="btTopFl" type="float">
+            <column name="BTTOPFL" />
+        </property>
+        <property name="btWidthFl" type="float">
+            <column name="BTWIDTHFL" />
+        </property>
+        <property name="btHeightFl" type="float">
+            <column name="BTHEIGHTFL" />
+        </property>
+        <property name="btImageIdx" type="short">
+            <column name="BTIMAGEIDX" />
+        </property>
+        <property name="btCreationDate" type="java.util.Date">
+            <column name="BTCREATIONDATE" />
+        </property>
+        <property name="btNotesTxN" type="java.lang.String">
+            <column name="BTNOTESTXN" />
+        </property>
+        <property name="btForeColorIn" type="int">
+            <column name="BTFORECOLORIN" />
+        </property>
+        <property name="btBackColorIn" type="int">
+            <column name="BTBACKCOLORIN" />
+        </property>
+        <property name="btPrefixTx" type="java.lang.String">
+            <column name="BTPREFIXTX" />
+        </property>
+        <property name="btUrltxN" type="java.lang.String">
+            <column name="BTURLTXN" />
+        </property>
+        <property name="btMinNoIn" type="short">
+            <column name="BTMINNOIN" />
+        </property>
+        <property name="btSeatConfigTxN" type="java.lang.String">
+            <column name="BTSEATCONFIGTXN" />
+        </property>
+        <property name="btBoatGraphicTxN" type="java.lang.String">
+            <column name="BTBOATGRAPHICTXN" />
+        </property>
+        <property name="btBoatIconGraphicTxN" type="java.lang.String">
+            <column name="BTBOATICONGRAPHICTXN" />
+        </property>
+        <property name="btBoatGraphicLeftIn" type="int">
+            <column name="BTBOATGRAPHICLEFTIN" />
+        </property>
+        <property name="btBoatGraphicWidthIn" type="int">
+            <column name="BTBOATGRAPHICWIDTHIN" />
+        </property>
+        <property name="btBoatGraphicHeightIn" type="int">
+            <column name="BTBOATGRAPHICHEIGHTIN" />
+        </property>
+    </class>
+</hibernate-mapping>

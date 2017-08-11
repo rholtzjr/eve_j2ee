@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01CnContactId" table="S01CNCONTACTID">
+        <id name="cnCustId" type="int">
+            <column name="CNCUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cnContactId" type="int">
+            <column name="CNCONTACTID" />
+        </property>
+        <property name="cnCustInterestIdN" type="java.lang.Integer">
+            <column name="CNCUSTINTERESTIDN" />
+        </property>
+        <property name="cnCreationDate" type="java.util.Date">
+            <column name="CNCREATIONDATE" />
+        </property>
+        <property name="cnLastUpdatedDate" type="java.util.Date">
+            <column name="CNLASTUPDATEDDATE" />
+        </property>
+        <property name="cnContactMethodId" type="int">
+            <column name="CNCONTACTMETHODID" />
+        </property>
+        <property name="cnEmpIdN" type="java.lang.Integer">
+            <column name="CNEMPIDN" />
+        </property>
+        <property name="cnActionId" type="int">
+            <column name="CNACTIONID" />
+        </property>
+        <property name="cnNotesTxN" type="java.lang.String">
+            <column name="CNNOTESTXN" />
+        </property>
+        <property name="cnActualDateN" type="java.util.Date">
+            <column name="CNACTUALDATEN" />
+        </property>
+        <property name="cnProposedDate" type="java.util.Date">
+            <column name="CNPROPOSEDDATE" />
+        </property>
+        <property name="cnReminderDate" type="java.util.Date">
+            <column name="CNREMINDERDATE" />
+        </property>
+        <property name="cnSmsreminderBl" type="boolean">
+            <column name="CNSMSREMINDERBL" />
+        </property>
+        <property name="cnSmssentDate" type="java.util.Date">
+            <column name="CNSMSSENTDATE" />
+        </property>
+        <property name="cnProposedEndDateN" type="java.util.Date">
+            <column name="CNPROPOSEDENDDATEN" />
+        </property>
+        <property name="cnActualEndDateN" type="java.util.Date">
+            <column name="CNACTUALENDDATEN" />
+        </property>
+        <property name="cnStoreId" type="short">
+            <column name="CNSTOREID" />
+        </property>
+        <property name="cnOrigInvoiceIdN" type="java.lang.Integer">
+            <column name="CNORIGINVOICEIDN" />
+        </property>
+        <property name="cnStreetAddressTxN" type="java.lang.String">
+            <column name="CNSTREETADDRESSTXN" />
+        </property>
+        <property name="cnPostcodeTxN" type="java.lang.String">
+            <column name="CNPOSTCODETXN" />
+        </property>
+    </class>
+</hibernate-mapping>

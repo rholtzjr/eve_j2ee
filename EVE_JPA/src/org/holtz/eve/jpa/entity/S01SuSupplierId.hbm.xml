@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01SuSupplierId" table="S01SUSUPPLIERID">
+        <id name="suSupplierId" type="int">
+            <column name="SUSUPPLIERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="suSupplierTx" type="java.lang.String">
+            <column name="SUSUPPLIERTX" />
+        </property>
+        <property name="suContactTxN" type="java.lang.String">
+            <column name="SUCONTACTTXN" />
+        </property>
+        <property name="suSalesmanTxN" type="java.lang.String">
+            <column name="SUSALESMANTXN" />
+        </property>
+        <property name="suAddress1txN" type="java.lang.String">
+            <column name="SUADDRESS1TXN" />
+        </property>
+        <property name="suAddress2txN" type="java.lang.String">
+            <column name="SUADDRESS2TXN" />
+        </property>
+        <property name="suAddress3txN" type="java.lang.String">
+            <column name="SUADDRESS3TXN" />
+        </property>
+        <property name="suAddress4txN" type="java.lang.String">
+            <column name="SUADDRESS4TXN" />
+        </property>
+        <property name="suPostcodeTxN" type="java.lang.String">
+            <column name="SUPOSTCODETXN" />
+        </property>
+        <property name="suCountryTxN" type="java.lang.String">
+            <column name="SUCOUNTRYTXN" />
+        </property>
+        <property name="suTelephone1txN" type="java.lang.String">
+            <column name="SUTELEPHONE1TXN" />
+        </property>
+        <property name="suTelephone2txN" type="java.lang.String">
+            <column name="SUTELEPHONE2TXN" />
+        </property>
+        <property name="suFaxTxN" type="java.lang.String">
+            <column name="SUFAXTXN" />
+        </property>
+        <property name="suEmailTxN" type="java.lang.String">
+            <column name="SUEMAILTXN" />
+        </property>
+        <property name="suWebTxN" type="java.lang.String">
+            <column name="SUWEBTXN" />
+        </property>
+        <property name="suUnavailableBl" type="boolean">
+            <column name="SUUNAVAILABLEBL" />
+        </property>
+        <property name="suLastUpdatedDate" type="java.util.Date">
+            <column name="SULASTUPDATEDDATE" />
+        </property>
+        <property name="suRequiredBl" type="boolean">
+            <column name="SUREQUIREDBL" />
+        </property>
+        <property name="suCreationDate" type="java.util.Date">
+            <column name="SUCREATIONDATE" />
+        </property>
+        <property name="suB2bfnTxN" type="java.lang.String">
+            <column name="SUB2BFNTXN" />
+        </property>
+        <property name="suB2bemailTxN" type="java.lang.String">
+            <column name="SUB2BEMAILTXN" />
+        </property>
+        <property name="suContact2txN" type="java.lang.String">
+            <column name="SUCONTACT2TXN" />
+        </property>
+        <property name="suContact3txN" type="java.lang.String">
+            <column name="SUCONTACT3TXN" />
+        </property>
+        <property name="suNotesTxN" type="java.lang.String">
+            <column name="SUNOTESTXN" />
+        </property>
+        <property name="suDisplayOrderIn" type="int">
+            <column name="SUDISPLAYORDERIN" />
+        </property>
+    </class>
+</hibernate-mapping>

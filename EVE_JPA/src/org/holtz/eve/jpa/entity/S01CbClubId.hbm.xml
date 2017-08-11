@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01CbClubId" table="S01CBCLUBID">
+        <id name="cbClubId" type="int">
+            <column name="CBCLUBID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cbClubNameTx" type="java.lang.String">
+            <column name="CBCLUBNAMETX" />
+        </property>
+        <property name="cbRegionId" type="int">
+            <column name="CBREGIONID" />
+        </property>
+        <property name="cbPoolTimeTxN" type="java.lang.String">
+            <column name="CBPOOLTIMETXN" />
+        </property>
+        <property name="cbPoolLocationTxN" type="java.lang.String">
+            <column name="CBPOOLLOCATIONTXN" />
+        </property>
+        <property name="cbDryTimeTxN" type="java.lang.String">
+            <column name="CBDRYTIMETXN" />
+        </property>
+        <property name="cbDryLocationTxN" type="java.lang.String">
+            <column name="CBDRYLOCATIONTXN" />
+        </property>
+        <property name="cbYearPaidInN" type="java.lang.Short">
+            <column name="CBYEARPAIDINN" />
+        </property>
+        <property name="cbClubOpenTxN" type="java.lang.String">
+            <column name="CBCLUBOPENTXN" />
+        </property>
+        <property name="cbNotesTxN" type="java.lang.String">
+            <column name="CBNOTESTXN" />
+        </property>
+        <property name="cbUnavailableBl" type="boolean">
+            <column name="CBUNAVAILABLEBL" />
+        </property>
+        <property name="cbCertificatePrintedDate" type="java.util.Date">
+            <column name="CBCERTIFICATEPRINTEDDATE" />
+        </property>
+        <property name="cbLastUpdatedDate" type="java.util.Date">
+            <column name="CBLASTUPDATEDDATE" />
+        </property>
+        <property name="cbRequiredBl" type="boolean">
+            <column name="CBREQUIREDBL" />
+        </property>
+        <property name="cbCreationDate" type="java.util.Date">
+            <column name="CBCREATIONDATE" />
+        </property>
+        <property name="cbNextMemberNoIn" type="int">
+            <column name="CBNEXTMEMBERNOIN" />
+        </property>
+        <property name="cbEolclubBl" type="boolean">
+            <column name="CBEOLCLUBBL" />
+        </property>
+    </class>
+</hibernate-mapping>

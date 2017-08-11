@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01LqlabelQueueId" table="D01LQLABELQUEUEID">
+        <id name="lqid" type="int">
+            <column name="LQID" />
+            <generator class="assigned" />
+        </id>
+        <property name="lqbarcodeNoTxN" type="java.lang.String">
+            <column name="LQBARCODENOTXN" />
+        </property>
+        <property name="lqstockNoTxN" type="java.lang.String">
+            <column name="LQSTOCKNOTXN" />
+        </property>
+        <property name="lqstockItemTxN" type="java.lang.String">
+            <column name="LQSTOCKITEMTXN" />
+        </property>
+        <property name="lqmanufacturerTxN" type="java.lang.String">
+            <column name="LQMANUFACTURERTXN" />
+        </property>
+        <property name="lqstockTypeTxN" type="java.lang.String">
+            <column name="LQSTOCKTYPETXN" />
+        </property>
+        <property name="lqsizeTxN" type="java.lang.String">
+            <column name="LQSIZETXN" />
+        </property>
+        <property name="lqprimaryColorTxN" type="java.lang.String">
+            <column name="LQPRIMARYCOLORTXN" />
+        </property>
+        <property name="lqsecondaryColorTxN" type="java.lang.String">
+            <column name="LQSECONDARYCOLORTXN" />
+        </property>
+        <property name="lqpriceTxN" type="java.lang.String">
+            <column name="LQPRICETXN" />
+        </property>
+        <property name="lqpcidN" type="java.lang.Short">
+            <column name="LQPCIDN" />
+        </property>
+        <property name="lqstoreId" type="short">
+            <column name="LQSTOREID" />
+        </property>
+        <property name="lqblankBl" type="boolean">
+            <column name="LQBLANKBL" />
+        </property>
+        <property name="lqimageTxN" type="java.lang.String">
+            <column name="LQIMAGETXN" />
+        </property>
+        <property name="lqvideoTxN" type="java.lang.String">
+            <column name="LQVIDEOTXN" />
+        </property>
+        <property name="lqmultiSaleQtyIn" type="short">
+            <column name="LQMULTISALEQTYIN" />
+        </property>
+        <property name="lqdepositTxN" type="java.lang.String">
+            <column name="LQDEPOSITTXN" />
+        </property>
+        <property name="lqstockItem2txN" type="java.lang.String">
+            <column name="LQSTOCKITEM2TXN" />
+        </property>
+        <property name="lqnotesTxN" type="java.lang.String">
+            <column name="LQNOTESTXN" />
+        </property>
+        <property name="lqprice2txN" type="java.lang.String">
+            <column name="LQPRICE2TXN" />
+        </property>
+        <property name="lqprice3txN" type="java.lang.String">
+            <column name="LQPRICE3TXN" />
+        </property>
+        <property name="lqprice4txN" type="java.lang.String">
+            <column name="LQPRICE4TXN" />
+        </property>
+    </class>
+</hibernate-mapping>

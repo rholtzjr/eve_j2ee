@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01CccostCenterId" table="S01CCCOSTCENTERID">
+        <id name="cccostCenterId" type="int">
+            <column name="CCCOSTCENTERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cccostCenterTx" type="java.lang.String">
+            <column name="CCCOSTCENTERTX" />
+        </property>
+        <property name="cctaxRegNoTxN" type="java.lang.String">
+            <column name="CCTAXREGNOTXN" />
+        </property>
+        <property name="ccsloganTxN" type="java.lang.String">
+            <column name="CCSLOGANTXN" />
+        </property>
+        <property name="ccunavailableBl" type="boolean">
+            <column name="CCUNAVAILABLEBL" />
+        </property>
+        <property name="cclastUpdatedDate" type="java.util.Date">
+            <column name="CCLASTUPDATEDDATE" />
+        </property>
+        <property name="ccrequiredBl" type="boolean">
+            <column name="CCREQUIREDBL" />
+        </property>
+        <property name="cccoRegNoTxN" type="java.lang.String">
+            <column name="CCCOREGNOTXN" />
+        </property>
+        <property name="cccompanyFileTxN" type="java.lang.String">
+            <column name="CCCOMPANYFILETXN" />
+        </property>
+        <property name="cccreationDate" type="java.util.Date">
+            <column name="CCCREATIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

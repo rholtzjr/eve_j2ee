@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01SoStoreId" table="D01SOSTOREID">
+        <id name="soEolpcid" type="short">
+            <column name="SOEOLPCID" />
+            <generator class="assigned" />
+        </id>
+        <property name="soStoreId" type="short">
+            <column name="SOSTOREID" />
+        </property>
+        <property name="soStoreNameTx" type="java.lang.String">
+            <column name="SOSTORENAMETX" />
+        </property>
+        <property name="soResortTxN" type="java.lang.String">
+            <column name="SORESORTTXN" />
+        </property>
+        <property name="soStoreNoTx" type="java.lang.String">
+            <column name="SOSTORENOTX" />
+        </property>
+        <property name="soAddress1txN" type="java.lang.String">
+            <column name="SOADDRESS1TXN" />
+        </property>
+        <property name="soAddress2txN" type="java.lang.String">
+            <column name="SOADDRESS2TXN" />
+        </property>
+        <property name="soAddress3txN" type="java.lang.String">
+            <column name="SOADDRESS3TXN" />
+        </property>
+        <property name="soAddress4txN" type="java.lang.String">
+            <column name="SOADDRESS4TXN" />
+        </property>
+        <property name="soStateIdN" type="java.lang.Integer">
+            <column name="SOSTATEIDN" />
+        </property>
+        <property name="soPostcodeTxN" type="java.lang.String">
+            <column name="SOPOSTCODETXN" />
+        </property>
+        <property name="soCountryIdN" type="java.lang.Integer">
+            <column name="SOCOUNTRYIDN" />
+        </property>
+        <property name="soTelephone1txN" type="java.lang.String">
+            <column name="SOTELEPHONE1TXN" />
+        </property>
+        <property name="soTelephone2txN" type="java.lang.String">
+            <column name="SOTELEPHONE2TXN" />
+        </property>
+        <property name="soFaxTxN" type="java.lang.String">
+            <column name="SOFAXTXN" />
+        </property>
+        <property name="soEmailTxN" type="java.lang.String">
+            <column name="SOEMAILTXN" />
+        </property>
+        <property name="soWebTxN" type="java.lang.String">
+            <column name="SOWEBTXN" />
+        </property>
+        <property name="soPaditerritoryIdN" type="java.lang.Short">
+            <column name="SOPADITERRITORYIDN" />
+        </property>
+        <property name="soDiveCheckNoTxN" type="java.lang.String">
+            <column name="SODIVECHECKNOTXN" />
+        </property>
+        <property name="soUnavailableBl" type="boolean">
+            <column name="SOUNAVAILABLEBL" />
+        </property>
+        <property name="soLastUpdatedDate" type="java.util.Date">
+            <column name="SOLASTUPDATEDDATE" />
+        </property>
+        <property name="soRequiredBl" type="boolean">
+            <column name="SOREQUIREDBL" />
+        </property>
+        <property name="soOpeningTimeTxN" type="java.lang.String">
+            <column name="SOOPENINGTIMETXN" />
+        </property>
+        <property name="soClosingTimeTxN" type="java.lang.String">
+            <column name="SOCLOSINGTIMETXN" />
+        </property>
+        <property name="soMasterBl" type="boolean">
+            <column name="SOMASTERBL" />
+        </property>
+        <property name="soCreationDate" type="java.util.Date">
+            <column name="SOCREATIONDATE" />
+        </property>
+        <property name="soPoleDisplayTxN" type="java.lang.String">
+            <column name="SOPOLEDISPLAYTXN" />
+        </property>
+        <property name="soLastUploadDateN" type="java.util.Date">
+            <column name="SOLASTUPLOADDATEN" />
+        </property>
+        <property name="soAccountNameTxN" type="java.lang.String">
+            <column name="SOACCOUNTNAMETXN" />
+        </property>
+        <property name="soPasswordTxN" type="java.lang.String">
+            <column name="SOPASSWORDTXN" />
+        </property>
+        <property name="soRentalStartTimeTxN" type="java.lang.String">
+            <column name="SORENTALSTARTTIMETXN" />
+        </property>
+        <property name="soRentalEndTimeTxN" type="java.lang.String">
+            <column name="SORENTALENDTIMETXN" />
+        </property>
+        <property name="soTaxDateN" type="java.util.Date">
+            <column name="SOTAXDATEN" />
+        </property>
+        <property name="soWebCurrencyIdN" type="java.lang.Integer">
+            <column name="SOWEBCURRENCYIDN" />
+        </property>
+        <property name="soCountryTaxExemptIdsTxN" type="java.lang.String">
+            <column name="SOCOUNTRYTAXEXEMPTIDSTXN" />
+        </property>
+        <property name="soStateTaxExemptIdsTxN" type="java.lang.String">
+            <column name="SOSTATETAXEXEMPTIDSTXN" />
+        </property>
+        <property name="soGenericTaxExemptIdsTxN" type="java.lang.String">
+            <column name="SOGENERICTAXEXEMPTIDSTXN" />
+        </property>
+        <property name="soOnLineStoreBl" type="boolean">
+            <column name="SOONLINESTOREBL" />
+        </property>
+        <property name="soEolproductImagesDirTxN" type="java.lang.String">
+            <column name="SOEOLPRODUCTIMAGESDIRTXN" />
+        </property>
+        <property name="soEolproductThumbsDirTxN" type="java.lang.String">
+            <column name="SOEOLPRODUCTTHUMBSDIRTXN" />
+        </property>
+        <property name="soEolmediaDirTxN" type="java.lang.String">
+            <column name="SOEOLMEDIADIRTXN" />
+        </property>
+        <property name="soEolproductXmlPathTxN" type="java.lang.String">
+            <column name="SOEOLPRODUCTXMLPATHTXN" />
+        </property>
+        <property name="soEolshopEmailRecipientListTxN" type="java.lang.String">
+            <column name="SOEOLSHOPEMAILRECIPIENTLISTTXN" />
+        </property>
+        <property name="soEolterrestrialStoreId" type="short">
+            <column name="SOEOLTERRESTRIALSTOREID" />
+        </property>
+        <property name="soEolcostCenterId" type="int">
+            <column name="SOEOLCOSTCENTERID" />
+        </property>
+        <property name="soEolempId" type="int">
+            <column name="SOEOLEMPID" />
+        </property>
+        <property name="soEoluseQsstoreParamsBl" type="boolean">
+            <column name="SOEOLUSEQSSTOREPARAMSBL" />
+        </property>
+        <property name="soEolshippingStockTypeId" type="int">
+            <column name="SOEOLSHIPPINGSTOCKTYPEID" />
+        </property>
+        <property name="soEolreadOnlyBl" type="boolean">
+            <column name="SOEOLREADONLYBL" />
+        </property>
+        <property name="soEolcourseEnrollStatusIdN" type="java.lang.Integer">
+            <column name="SOEOLCOURSEENROLLSTATUSIDN" />
+        </property>
+        <property name="soEoltripEnrollStatusIdN" type="java.lang.Integer">
+            <column name="SOEOLTRIPENROLLSTATUSIDN" />
+        </property>
+        <property name="soCultureTxN" type="java.lang.String">
+            <column name="SOCULTURETXN" />
+        </property>
+        <property name="soPadiuserIdtxN" type="java.lang.String">
+            <column name="SOPADIUSERIDTXN" />
+        </property>
+        <property name="soPadipwtxN" type="java.lang.String">
+            <column name="SOPADIPWTXN" />
+        </property>
+        <property name="soUserDefined1txN" type="java.lang.String">
+            <column name="SOUSERDEFINED1TXN" />
+        </property>
+        <property name="soUserDefined2txN" type="java.lang.String">
+            <column name="SOUSERDEFINED2TXN" />
+        </property>
+        <property name="soUserDefined3txN" type="java.lang.String">
+            <column name="SOUSERDEFINED3TXN" />
+        </property>
+        <property name="soEolcustTypeIdeolpriceIn" type="int">
+            <column name="SOEOLCUSTTYPEIDEOLPRICEIN" />
+        </property>
+        <property name="soEolcustTypeIdregularPriceIn" type="int">
+            <column name="SOEOLCUSTTYPEIDREGULARPRICEIN" />
+        </property>
+        <property name="soEolcustTypeIdminPriceIn" type="int">
+            <column name="SOEOLCUSTTYPEIDMINPRICEIN" />
+        </property>
+        <property name="soPicstoreIdN" type="java.lang.Short">
+            <column name="SOPICSTOREIDN" />
+        </property>
+        <property name="soImageTxN" type="java.lang.String">
+            <column name="SOIMAGETXN" />
+        </property>
+        <property name="soFacebookTxN" type="java.lang.String">
+            <column name="SOFACEBOOKTXN" />
+        </property>
+        <property name="soCheckInTimeTxN" type="java.lang.String">
+            <column name="SOCHECKINTIMETXN" />
+        </property>
+        <property name="soCheckOutTimeTxN" type="java.lang.String">
+            <column name="SOCHECKOUTTIMETXN" />
+        </property>
+    </class>
+</hibernate-mapping>

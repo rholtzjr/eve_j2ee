@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01CdCustOrderId" table="D01CDCUSTORDERID">
+        <id name="cdEmpId" type="int">
+            <column name="CDEMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cdCustOrderId" type="int">
+            <column name="CDCUSTORDERID" />
+        </property>
+        <property name="cdCustId" type="int">
+            <column name="CDCUSTID" />
+        </property>
+        <property name="cdStockItemId" type="int">
+            <column name="CDSTOCKITEMID" />
+        </property>
+        <property name="cdStoreId" type="short">
+            <column name="CDSTOREID" />
+        </property>
+        <property name="cdCreationDate" type="java.util.Date">
+            <column name="CDCREATIONDATE" />
+        </property>
+        <property name="cdPoidN" type="java.lang.Integer">
+            <column name="CDPOIDN" />
+        </property>
+        <property name="cdQtyIn" type="short">
+            <column name="CDQTYIN" />
+        </property>
+        <property name="cdPickedUpDateN" type="java.util.Date">
+            <column name="CDPICKEDUPDATEN" />
+        </property>
+        <property name="cdNotifiedDateN" type="java.util.Date">
+            <column name="CDNOTIFIEDDATEN" />
+        </property>
+        <property name="cdContactMethodIdN" type="java.lang.Integer">
+            <column name="CDCONTACTMETHODIDN" />
+        </property>
+        <property name="cdNotesTxN" type="java.lang.String">
+            <column name="CDNOTESTXN" />
+        </property>
+        <property name="cdPonotesTxN" type="java.lang.String">
+            <column name="CDPONOTESTXN" />
+        </property>
+        <property name="cdLastUpdatedDate" type="java.util.Date">
+            <column name="CDLASTUPDATEDDATE" />
+        </property>
+        <property name="cdLocationTxN" type="java.lang.String">
+            <column name="CDLOCATIONTXN" />
+        </property>
+        <property name="cdInvoiceItemIdN" type="java.lang.Integer">
+            <column name="CDINVOICEITEMIDN" />
+        </property>
+        <property name="cdRequiredByDateN" type="java.util.Date">
+            <column name="CDREQUIREDBYDATEN" />
+        </property>
+    </class>
+</hibernate-mapping>

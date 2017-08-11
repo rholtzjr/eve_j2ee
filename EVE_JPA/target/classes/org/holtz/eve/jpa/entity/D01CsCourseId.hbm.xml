@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.D01CsCourseId" table="D01CSCOURSEID">
+        <id name="csStoreId" type="short">
+            <column name="CSSTOREID" />
+            <generator class="assigned" />
+        </id>
+        <property name="csCourseId" type="int">
+            <column name="CSCOURSEID" />
+        </property>
+        <property name="csCourseTypeId" type="int">
+            <column name="CSCOURSETYPEID" />
+        </property>
+        <property name="csCourseNoTx" type="java.lang.String">
+            <column name="CSCOURSENOTX" />
+        </property>
+        <property name="csStartDate" type="java.util.Date">
+            <column name="CSSTARTDATE" />
+        </property>
+        <property name="csEndDate" type="java.util.Date">
+            <column name="CSENDDATE" />
+        </property>
+        <property name="csNotesTxN" type="java.lang.String">
+            <column name="CSNOTESTXN" />
+        </property>
+        <property name="csLastUpdatedDate" type="java.util.Date">
+            <column name="CSLASTUPDATEDDATE" />
+        </property>
+        <property name="csMinNoIn" type="short">
+            <column name="CSMINNOIN" />
+        </property>
+        <property name="csMaxNoIn" type="short">
+            <column name="CSMAXNOIN" />
+        </property>
+        <property name="csCreationDate" type="java.util.Date">
+            <column name="CSCREATIONDATE" />
+        </property>
+        <property name="csCourseStatusId" type="java.lang.Integer">
+            <column name="CSCOURSESTATUSID" />
+        </property>
+        <property name="csLanguageIdN" type="java.lang.Integer">
+            <column name="CSLANGUAGEIDN" />
+        </property>
+        <property name="csPrivateNotesTxN" type="java.lang.String">
+            <column name="CSPRIVATENOTESTXN" />
+        </property>
+        <property name="csLocationIdN" type="java.lang.Integer">
+            <column name="CSLOCATIONIDN" />
+        </property>
+        <property name="csWaitingListCapacityIn" type="int">
+            <column name="CSWAITINGLISTCAPACITYIN" />
+        </property>
+        <property name="csAvailableWaitingListPlacesIn" type="int">
+            <column name="CSAVAILABLEWAITINGLISTPLACESIN" />
+        </property>
+        <property name="csTermIdN" type="java.lang.Integer">
+            <column name="CSTERMIDN" />
+        </property>
+        <property name="csPreviousTermPreviousCourseIdN" type="java.lang.Integer">
+            <column name="CSPREVIOUSTERMPREVIOUSCOURSEIDN" />
+        </property>
+        <property name="csCurrentTermPreviousCourseIdN" type="java.lang.Integer">
+            <column name="CSCURRENTTERMPREVIOUSCOURSEIDN" />
+        </property>
+        <property name="csMoreInfoTxN" type="java.lang.String">
+            <column name="CSMOREINFOTXN" />
+        </property>
+    </class>
+</hibernate-mapping>

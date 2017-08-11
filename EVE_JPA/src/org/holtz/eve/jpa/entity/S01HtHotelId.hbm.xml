@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01HtHotelId" table="S01HTHOTELID">
+        <id name="htHotelId" type="int">
+            <column name="HTHOTELID" />
+            <generator class="assigned" />
+        </id>
+        <property name="htHotelTx" type="java.lang.String">
+            <column name="HTHOTELTX" />
+        </property>
+        <property name="htTel1txN" type="java.lang.String">
+            <column name="HTTEL1TXN" />
+        </property>
+        <property name="htTel2txN" type="java.lang.String">
+            <column name="HTTEL2TXN" />
+        </property>
+        <property name="htFaxTxN" type="java.lang.String">
+            <column name="HTFAXTXN" />
+        </property>
+        <property name="htEmailTxN" type="java.lang.String">
+            <column name="HTEMAILTXN" />
+        </property>
+        <property name="htAddress1txN" type="java.lang.String">
+            <column name="HTADDRESS1TXN" />
+        </property>
+        <property name="htAddress2txN" type="java.lang.String">
+            <column name="HTADDRESS2TXN" />
+        </property>
+        <property name="htAddress3txN" type="java.lang.String">
+            <column name="HTADDRESS3TXN" />
+        </property>
+        <property name="htAddress4txN" type="java.lang.String">
+            <column name="HTADDRESS4TXN" />
+        </property>
+        <property name="htPostcodeTxN" type="java.lang.String">
+            <column name="HTPOSTCODETXN" />
+        </property>
+        <property name="htCountryTxN" type="java.lang.String">
+            <column name="HTCOUNTRYTXN" />
+        </property>
+        <property name="htRatesTxN" type="java.lang.String">
+            <column name="HTRATESTXN" />
+        </property>
+        <property name="htUnavailableBl" type="boolean">
+            <column name="HTUNAVAILABLEBL" />
+        </property>
+        <property name="htLastUpdatedDate" type="java.util.Date">
+            <column name="HTLASTUPDATEDDATE" />
+        </property>
+        <property name="htCreationDate" type="java.util.Date">
+            <column name="HTCREATIONDATE" />
+        </property>
+        <property name="htForeColorIn" type="int">
+            <column name="HTFORECOLORIN" />
+        </property>
+        <property name="htBackColorIn" type="int">
+            <column name="HTBACKCOLORIN" />
+        </property>
+        <property name="htWebTxN" type="java.lang.String">
+            <column name="HTWEBTXN" />
+        </property>
+        <property name="htPredefinedRoomsBl" type="boolean">
+            <column name="HTPREDEFINEDROOMSBL" />
+        </property>
+        <property name="htCheckInTxN" type="java.lang.String">
+            <column name="HTCHECKINTXN" />
+        </property>
+        <property name="htCheckOutTxN" type="java.lang.String">
+            <column name="HTCHECKOUTTXN" />
+        </property>
+        <property name="htRequiredBl" type="boolean">
+            <column name="HTREQUIREDBL" />
+        </property>
+        <property name="htRegionIdN" type="java.lang.Integer">
+            <column name="HTREGIONIDN" />
+        </property>
+    </class>
+</hibernate-mapping>

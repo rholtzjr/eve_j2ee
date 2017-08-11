@@ -1,0 +1,18 @@
+<wicket:extend xmlns:wicket="http://wicket.apache.org">
+
+<span style="display: block; border: 1px solid black;">
+</span>	
+    <span wicket:id="resultLabel"></span>    
+    <form wicket:id="filterForm">
+     <div wicket:id="stockitemmodalwindow" style="display:block;"></div>
+    
+        <fieldset style="display: inline-table;">
+            <legend>Filter</legend>
+            <span style="float: left;">Stock Id: <input wicket:id="stockItemId"/></span> <br/>
+            <span style="float: left;">Stock Name: <input wicket:id="stockItemName"/></span><br/>
+            <span style="float: left;">Supplier: <input wicket:id="stockItemSupplier"/></span> <br/>
+            <span style="float: left;">Barcode : <input wicket:id="stockItemBarcode"/></span>
+        </fieldset>
+        <table class="dataview" wicket:id="stockItemTable"></table>   
+    </form>
+</wicket:extend>

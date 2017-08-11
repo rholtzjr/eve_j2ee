@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 5, 2017 6:58:07 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.holtz.eve.jpa.entity.S01PmpaymentMethodId" table="S01PMPAYMENTMETHODID">
+        <id name="pmglaccountIdN" type="java.lang.Integer">
+            <column name="PMGLACCOUNTIDN" />
+            <generator class="assigned" />
+        </id>
+        <property name="pmpaymentMethodId" type="int">
+            <column name="PMPAYMENTMETHODID" />
+        </property>
+        <property name="pmpaymentMethodTx" type="java.lang.String">
+            <column name="PMPAYMENTMETHODTX" />
+        </property>
+        <property name="pmccpromptBl" type="boolean">
+            <column name="PMCCPROMPTBL" />
+        </property>
+        <property name="pmopenCashDrawerBl" type="boolean">
+            <column name="PMOPENCASHDRAWERBL" />
+        </property>
+        <property name="pmauthorizationRequiredBl" type="boolean">
+            <column name="PMAUTHORIZATIONREQUIREDBL" />
+        </property>
+        <property name="pmcustomerRequiredBl" type="boolean">
+            <column name="PMCUSTOMERREQUIREDBL" />
+        </property>
+        <property name="pmidrequiredBl" type="boolean">
+            <column name="PMIDREQUIREDBL" />
+        </property>
+        <property name="pmchqNoPromptBl" type="boolean">
+            <column name="PMCHQNOPROMPTBL" />
+        </property>
+        <property name="pmchqNoMandatoryBl" type="boolean">
+            <column name="PMCHQNOMANDATORYBL" />
+        </property>
+        <property name="pmgiftCardPromptBl" type="boolean">
+            <column name="PMGIFTCARDPROMPTBL" />
+        </property>
+        <property name="pmunavailableBl" type="boolean">
+            <column name="PMUNAVAILABLEBL" />
+        </property>
+        <property name="pmlastUpdatedDate" type="java.util.Date">
+            <column name="PMLASTUPDATEDDATE" />
+        </property>
+        <property name="pmrequiredBl" type="boolean">
+            <column name="PMREQUIREDBL" />
+        </property>
+        <property name="pmccrequiredOnFileBl" type="boolean">
+            <column name="PMCCREQUIREDONFILEBL" />
+        </property>
+        <property name="pmccprefixTxN" type="java.lang.String">
+            <column name="PMCCPREFIXTXN" />
+        </property>
+        <property name="pmccallowedLenTxN" type="java.lang.String">
+            <column name="PMCCALLOWEDLENTXN" />
+        </property>
+        <property name="pmcreationDate" type="java.util.Date">
+            <column name="PMCREATIONDATE" />
+        </property>
+        <property name="pmgraphicTxN" type="java.lang.String">
+            <column name="PMGRAPHICTXN" />
+        </property>
+        <property name="pmccnoMandatoryBl" type="boolean">
+            <column name="PMCCNOMANDATORYBL" />
+        </property>
+        <property name="pmexpDateMandatoryBl" type="boolean">
+            <column name="PMEXPDATEMANDATORYBL" />
+        </property>
+        <property name="pmauthNoMandatoryBl" type="boolean">
+            <column name="PMAUTHNOMANDATORYBL" />
+        </property>
+        <property name="pmgiftCertPromptBl" type="boolean">
+            <column name="PMGIFTCERTPROMPTBL" />
+        </property>
+        <property name="pmvoucherPromptBl" type="boolean">
+            <column name="PMVOUCHERPROMPTBL" />
+        </property>
+        <property name="pmaccountPromptBl" type="boolean">
+            <column name="PMACCOUNTPROMPTBL" />
+        </property>
+        <property name="pminvoiceTextTxN" type="java.lang.String">
+            <column name="PMINVOICETEXTTXN" />
+        </property>
+        <property name="pmtransmitCcbl" type="boolean">
+            <column name="PMTRANSMITCCBL" />
+        </property>
+        <property name="pmtransmitDcbl" type="boolean">
+            <column name="PMTRANSMITDCBL" />
+        </property>
+        <property name="pmcreditCardBl" type="boolean">
+            <column name="PMCREDITCARDBL" />
+        </property>
+        <property name="pmadditionalPrintCopiesIn" type="short">
+            <column name="PMADDITIONALPRINTCOPIESIN" />
+        </property>
+        <property name="pmvalidFromAndIssueNoMandatoryBl" type="boolean">
+            <column name="PMVALIDFROMANDISSUENOMANDATORYBL" />
+        </property>
+        <property name="pmnonSalesAccountIdN" type="java.lang.Integer">
+            <column name="PMNONSALESACCOUNTIDN" />
+        </property>
+        <property name="pmsurchargeStockItemIdN" type="java.lang.Integer">
+            <column name="PMSURCHARGESTOCKITEMIDN" />
+        </property>
+        <property name="pmsurchargeAmountMnN" type="java.lang.Double">
+            <column name="PMSURCHARGEAMOUNTMNN" />
+        </property>
+        <property name="pmsurchargePercentFlN" type="java.lang.Double">
+            <column name="PMSURCHARGEPERCENTFLN" />
+        </property>
+        <property name="pmquickPayBl" type="boolean">
+            <column name="PMQUICKPAYBL" />
+        </property>
+    </class>
+</hibernate-mapping>
