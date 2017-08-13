@@ -474,6 +474,62 @@
 		class="org.holtz.eve.jpa.dao.impl.TLhLookupCacheDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />
 	</bean>
+	<bean id="tlployaltyProgramCreditDAO"
+		class="org.holtz.eve.jpa.dao.impl.TLployaltyProgramCreditDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tlqlabelQueueDAO"
+		class="org.holtz.eve.jpa.dao.impl.TLqlabelQueueDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tlvSeasonDAO"
+		class="org.holtz.eve.jpa.dao.impl.TLvSeasonDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tm2menuStatisticsDAO"
+		class="org.holtz.eve.jpa.dao.impl.TM2menuStatisticsDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmaMessagingMailerDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMaMessagingMailerDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmeMultiSaleDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMeMultiSaleDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmimultiSaleItemDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMimultiSaleItemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmlmailingListDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMlmailingListDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmmMembershipTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMmMembershipTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmnMenuDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMnMenuDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmsmaritalStatusDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMsmaritalStatusDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmoModuleDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMoModuleDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tmtmoduleTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TMtmoduleTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tndNodeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TNdNodeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
 	<bean id="StockItemApplication" class="org.holtz.eve.view.stockitem.StockItemApplication" />
 
 </beans>
