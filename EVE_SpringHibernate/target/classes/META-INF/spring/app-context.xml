@@ -530,6 +530,86 @@
 		class="org.holtz.eve.jpa.dao.impl.TNdNodeDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />
 	</bean>
+	<bean id="tnmNodeMenuDAO"
+		class="org.holtz.eve.jpa.dao.impl.TNmNodeMenuDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tnsnotifStatusDAO"
+		class="org.holtz.eve.jpa.dao.impl.TNsnotifStatusDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tocoptionalColDAO"
+		class="org.holtz.eve.jpa.dao.impl.TOcoptionalColDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="toponlineProcessorDAO"
+		class="org.holtz.eve.jpa.dao.impl.TOponlineProcessorDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="totoptionTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TOtoptionTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp1processorCoDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP1processorCoDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp2pcreportTypeCoDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP2pcreportTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp3packageGroupCoDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP3packageGroupDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp4piccardCoDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP4piccardDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp5pictypeCoDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP5pictypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp6picsendCardToDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP6picsendCardToDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp7podeliveryItemDetailDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP7podeliveryItemDetailDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tp8certTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TP8certTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpaPodeliveryItemDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPaPodeliveryItemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpbPccashDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPbPccashDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpcPcDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPcpcDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpdPaditerritoryDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPdPaditerritoryDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpePodeliveryDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPePodeliveryDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpfProfitCenterDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPfProfitCenterDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpgPackageDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPgPackageDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
 	<bean id="StockItemApplication" class="org.holtz.eve.view.stockitem.StockItemApplication" />
 
 </beans>
