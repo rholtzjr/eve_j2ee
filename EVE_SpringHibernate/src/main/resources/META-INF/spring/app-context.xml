@@ -610,6 +610,98 @@
 		class="org.holtz.eve.jpa.dao.impl.TPgPackageDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />
 	</bean>
+	<bean id="tpiPrivilegeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPiPrivilegeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpipoitemDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPipoitemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpjPrivilegeModulesDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPjPrivilegeModulesDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpmpaymentMethodDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPmpaymentMethodDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpnPcprinterDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPnPcprinterDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpopoDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPopoDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tppPaymentProviderDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPpPaymentProviderDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpppopaymentDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPppopaymentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpqPackageDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPqPackageDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tprProfileDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPrProfileDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpsPaymentProviderSettingsDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPsPaymentProviderSettingsDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpspostatusDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPspostatusDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tptpaymentTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPtpaymentTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpvPoinvoiceDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPvPoinvoiceDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpyPaymentDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPyPaymentDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tpzPaperSizeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TPzPaperSizeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tq1internalExamAlDAO"
+		class="org.holtz.eve.jpa.dao.impl.TQ1internalExamAlDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tq2internalExamStDAO"
+		class="org.holtz.eve.jpa.dao.impl.TQ2internalExamStDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tqiquoteItemDAO"
+		class="org.holtz.eve.jpa.dao.impl.TQiquoteItemDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tqssqlDAO"
+		class="org.holtz.eve.jpa.dao.impl.TQssqlDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tqtqualificationTypeDAO"
+		class="org.holtz.eve.jpa.dao.impl.TQtqualificationTypeDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="tquQuoteDAO"
+		class="org.holtz.eve.jpa.dao.impl.TQuQuoteDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
+	<bean id="trbrentalBookingDAO"
+		class="org.holtz.eve.jpa.dao.impl.TRbrentalBookingDAOImpl">
+		<property name="sessionFactory" ref="eveSessionFactory" />
+	</bean>
 	<bean id="StockItemApplication" class="org.holtz.eve.view.stockitem.StockItemApplication" />
 
 </beans>
