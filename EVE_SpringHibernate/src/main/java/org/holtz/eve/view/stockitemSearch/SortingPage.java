@@ -1,4 +1,4 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view.stockitemSearch;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more

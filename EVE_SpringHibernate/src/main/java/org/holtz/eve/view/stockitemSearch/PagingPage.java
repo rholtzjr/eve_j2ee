@@ -1,8 +1,7 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view.stockitemSearch;
 
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
-import org.holtz.eve.view.stockitem.BasePage;
-
+import org.holtz.eve.view.stockitemSearch.BasePage;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.navigation.paging.PagingNavigator;

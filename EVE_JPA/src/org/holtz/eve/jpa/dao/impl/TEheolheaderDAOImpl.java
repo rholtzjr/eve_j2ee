@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEheolheaderDAO;
 import org.holtz.eve.jpa.entity.TEheolheader;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TEheolheader;
 
 public class TEheolheaderDAOImpl implements TEheolheaderDAO {
@@ -63,6 +64,7 @@ public class TEheolheaderDAOImpl implements TEheolheaderDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

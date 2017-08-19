@@ -38,7 +38,7 @@ public class WicketJaasSession extends AuthenticatedWebSession {
 	public static final String ROLES_GROUP_NAME = "Roles";
 
 	/** This name maps to the name of the application-policy in the JBoss login-config.xml */
-	public static final String JBOSS_APPLICATION_POLICY_NAME = "mysecuritydomain";
+	public static final String APPLICATION_POLICY_NAME = "mysecuritydomain";
 
 	private final static Logger log = Logger.getLogger(WicketJaasSession.class);
 	
@@ -58,7 +58,7 @@ public class WicketJaasSession extends AuthenticatedWebSession {
     	boolean authenticated = false;
     	LoginCallbackHandler handler = new LoginCallbackHandler(username, password);
     	try {
-    		LoginContext ctx = new LoginContext(JBOSS_APPLICATION_POLICY_NAME, handler);
+    		LoginContext ctx = new LoginContext(APPLICATION_POLICY_NAME, handler);
 			ctx.login();
 			authenticated = true;
 			subject = ctx.getSubject();

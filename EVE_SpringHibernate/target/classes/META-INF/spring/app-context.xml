@@ -1066,6 +1066,6 @@
 		class="org.holtz.eve.jpa.dao.impl.VrandNumberDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />
 	</bean>
-	<bean id="StockItemApplication" class="org.holtz.eve.view.stockitem.StockItemApplication" />
+	<bean id="StockItemApplication" class="org.holtz.eve.view.EveApplication" />
 
 </beans>

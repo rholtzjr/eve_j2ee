@@ -1,4 +1,4 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view.stockitemSearch;
 
 import org.apache.wicket.Page;
 import org.apache.wicket.Session;
@@ -46,6 +46,7 @@ public abstract class BasePage extends WebPage
 	 * Constructor
 	 */
 	public BasePage() {
+		add(new Label("currentUser", new PropertyModel<>(this, "session.user")));
 		add(new Label("selectedLabel", new PropertyModel<>(this, "selectedItem")));
 		add(new Label("editSelectedLabel", new PropertyModel<>(this, "editSelected")));
 		add(new FeedbackPanel("feedback"));

@@ -1,4 +1,4 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view.stockitemSearch;
 
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
@@ -9,11 +9,6 @@ public class DetachableStockItemSearchModel extends LoadableDetachableModel<S01S
 {
 
     private final long id;
-
-//    protected StockItemDatabase getContactsDB()
-//    {
-//        return DatabaseLocator.getDatabase();
-//    }
 
     /**
      * @param c
@@ -75,8 +70,6 @@ public class DetachableStockItemSearchModel extends LoadableDetachableModel<S01S
     @Override
     protected S01StockItemSearch load()
     {
-       // loads contact from the database
-  //      return getContactsDB().get(id);
         return getObject();
     }
 }

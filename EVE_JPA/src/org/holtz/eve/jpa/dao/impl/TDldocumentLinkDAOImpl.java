@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDldocumentLinkDAO;
 import org.holtz.eve.jpa.entity.TDldocumentLink;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TDldocumentLink;
 
 public class TDldocumentLinkDAOImpl implements TDldocumentLinkDAO {
@@ -65,6 +66,7 @@ public class TDldocumentLinkDAOImpl implements TDldocumentLinkDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

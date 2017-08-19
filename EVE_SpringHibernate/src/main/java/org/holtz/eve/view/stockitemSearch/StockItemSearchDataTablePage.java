@@ -1,4 +1,4 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view.stockitemSearch;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -51,7 +51,7 @@ import org.holtz.eve.jpa.entity.TZlStoreStockItem;
  * @author igor
  * 
  */
-public class DataTablePage extends BasePage
+public class StockItemSearchDataTablePage extends BasePage
 {
     /**
 	 * 
@@ -65,7 +65,7 @@ public class DataTablePage extends BasePage
      * constructor
      */
     @SuppressWarnings({ "unchecked", "rawtypes" })
-	public DataTablePage()
+	public StockItemSearchDataTablePage()
     {
    			
       final Label resultLabel = new Label("resultLabel", new Model<>(getEditSelected()));

@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEkEmpClockInDAO;
 import org.holtz.eve.jpa.entity.TEkEmpClockIn;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TEkEmpClockIn;
 
 public class TEkEmpClockInDAOImpl implements TEkEmpClockInDAO {
@@ -63,6 +64,7 @@ public class TEkEmpClockInDAOImpl implements TEkEmpClockInDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

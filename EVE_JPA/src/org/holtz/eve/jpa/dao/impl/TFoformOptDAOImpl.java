@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TFoformOptDAO;
 import org.holtz.eve.jpa.entity.TFoformOpt;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TFoformOpt;
 
 public class TFoformOptDAOImpl implements TFoformOptDAO {
@@ -65,6 +66,7 @@ public class TFoformOptDAOImpl implements TFoformOptDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

@@ -1,4 +1,4 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view.stockitemSearch;
 
 import org.apache.wicket.PageReference;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
@@ -17,7 +17,7 @@ public class StockItemModalContentPage extends WebPage {
 
 	public StockItemModalContentPage(final PageReference modalWindowPage, final ModalWindow window) {
 		
-//		String passValue = ((DataTablePage) modalWindowPage.getPage()).getEditModal().getMarkupId();
+//		String passValue = ((StockItemSearchDataTablePage) modalWindowPage.getPage()).getEditModal().getMarkupId();
 //		final Label modalPage = new Label("modalPage", new Model<>(""));
 //		modalPage.setOutputMarkupId(true);
 //        add(modalPage);

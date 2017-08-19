@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEqEquipmentDAO;
 import org.holtz.eve.jpa.entity.TEqEquipment;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TEqEquipment;
 
 public class TEqEquipmentDAOImpl implements TEqEquipmentDAO {
@@ -23,7 +24,7 @@ public class TEqEquipmentDAOImpl implements TEqEquipmentDAO {
 
 	@Override
 	public TEqEquipment getEquipmentById(int id) {
-		String queryString = "from TEqEquipment equipment where equipment.eqEquipmentIdd = :id";
+		String queryString = "from TEqEquipment equipment where equipment.eqEquipmentId = :id";
 		TEqEquipment equipment = new TEqEquipment();
 		query = session.createQuery(queryString);
 		query.setInteger("id", id);
@@ -63,6 +64,7 @@ public class TEqEquipmentDAOImpl implements TEqEquipmentDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

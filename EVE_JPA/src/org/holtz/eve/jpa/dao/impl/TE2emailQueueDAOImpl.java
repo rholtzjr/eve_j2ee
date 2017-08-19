@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TE2emailQueueDAO;
 import org.holtz.eve.jpa.entity.TE2emailQueue;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TE2emailQueue;
 
 public class TE2emailQueueDAOImpl implements TE2emailQueueDAO {
@@ -63,6 +64,7 @@ public class TE2emailQueueDAOImpl implements TE2emailQueueDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

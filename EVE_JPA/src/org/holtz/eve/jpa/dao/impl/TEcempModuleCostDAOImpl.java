@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEcempModuleCostDAO;
 import org.holtz.eve.jpa.entity.TEcempModuleCost;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TEcempModuleCost;
 
 public class TEcempModuleCostDAOImpl implements TEcempModuleCostDAO {
@@ -65,6 +66,7 @@ public class TEcempModuleCostDAOImpl implements TEcempModuleCostDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

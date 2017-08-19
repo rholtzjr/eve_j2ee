@@ -1,4 +1,4 @@
-package org.holtz.eve.view.stockitem;
+package org.holtz.eve.view;
 
 
 import java.util.List;
@@ -11,15 +11,18 @@ import org.apache.wicket.response.filter.ServerAndClientTimeFilter;
 import org.apache.wicket.settings.RequestCycleSettings;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
+import org.holtz.eve.view.stockitemSearch.StockItemSearchDataTablePage;
+import org.holtz.eve.view.stockitemSearch.StockItemDatabase;
 
-public class StockItemApplication extends WebApplication {
+public class EveApplication extends WebApplication {
 
 	
 	private StockItemDatabase stockItemDB = null;
 	@Override
 	public Class<? extends Page> getHomePage() {
 
-		return DataTablePage.class; // return default page
+		return Index.class;
+		//return StockItemSearchDataTablePage.class; // return default page
 	}
 	
 	@Override

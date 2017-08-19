@@ -25,7 +25,7 @@
     <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
     <init-param>
             <param-name>applicationClassName</param-name>
-			<param-value>org.holtz.eve.view.stockitem.StockItemApplication</param-value>
+			<param-value>org.holtz.eve.view.stockitemSearch.StockItemApplication</param-value>
     </init-param>
 </filter>
 
