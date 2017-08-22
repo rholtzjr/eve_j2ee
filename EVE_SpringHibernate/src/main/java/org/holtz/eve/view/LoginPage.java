@@ -1,65 +1,66 @@
 package org.holtz.eve.view;
 
 import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
-import org.apache.wicket.authroles.authentication.panel.SignInPanel;
+import org.apache.wicket.feedback.ComponentFeedbackMessageFilter;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.PasswordTextField;
-import org.apache.wicket.markup.html.form.TextField;
+import org.apache.wicket.markup.html.form.RequiredTextField;
+import org.apache.wicket.markup.html.form.StatelessForm;
+import org.apache.wicket.markup.html.panel.ComponentFeedbackPanel;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.CompoundPropertyModel;
+import org.hibernate.Session;
 
-/**
- * This Login page might not be the most elegant way to log into Wicket. It works, but refactoring it is a bit lower on our current to-do list.
- */
 public class LoginPage extends WebPage {
-    private String username;
-
-    private String password;
-
-    public LoginPage() {
-        setDefaultModel(new CompoundPropertyModel(this));
-
-        Form form = new Form("signInForm") {
-            @Override
-            protected void onSubmit() {
-                if (signIn(username, password)) {
-                    onSignInSucceeded();
-                } else {
-                    onSignInFailed();
-                }
-            }
-        };
-
-        form.add(new TextField("username").setRequired(true));
-        form.add(new PasswordTextField("password").setRequired(true));
-
-        add(new FeedbackPanel("feedback"));
-        add(form);
-    }
 
     /**
-     * Sign in user if possible.
-     *
-     * @param username The username
-     * @param password The password
-     * @return True if signin was successful
-     */
-    public boolean signIn(String username, String password) {
-        return AuthenticatedWebSession.get().signIn(username, password);
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public LoginPage() {
+	final LoginForm form = new LoginForm("loginForm");
+	add(form);
+
     }
 
-    protected void onSignInFailed() {
-        // Try the component based localizer first. If not found try the
-        // application localizer. Else use the default
-        error(getLocalizer().getString("signInFailed", this, "Sign in failed"));
+    private static class LoginForm extends StatelessForm {
+
+	private static final long serialVersionUID = -1L;
+
+	private String username;
+	private String password;
+
+	public LoginForm(String id) {
+	    super(id);
+	    setModel(new CompoundPropertyModel(this));
+	    add(new Label("usernameLabel", getString("login.username.label", null, "Username")));
+	    add(new RequiredTextField("username"));
+	    add(new Label("passwordLabel", getString("login.password.label", null, "Username")));
+	    add(new PasswordTextField("password"));
+	    add(new FeedbackPanel("feedback"));
+
+	}
+
+	@Override
+	protected void onSubmit() {
+	    AuthenticatedWebSession session = AuthenticatedWebSession.get();
+	    if (session.signIn(username, password)) {
+	    setDefaultResponsePageIfNecessary();
+		
+	    } else {
+		error(getString("login.failed.badcredentials"));
+	    }
+	}
+
+	private void setDefaultResponsePageIfNecessary() {
+		AuthenticatedWebSession session = AuthenticatedWebSession.get();
+		if (! session.isSignedIn()) {
+		setResponsePage(getApplication().getHomePage());
+		session.invalidate();
+	    }
+	}
     }
 
-    protected void onSignInSucceeded() {
-        // If login has been called because the user was not yet
-        // logged in, than continue to the original destination,
-        // otherwise to the Home page
-   // 	setResponsePage(getApplication().getSessionSettings().getPageFactory().newPage(getApplication().getHomePage(), (PageParameters) null));
-    	continueToOriginalDestination();
-    } 
 }

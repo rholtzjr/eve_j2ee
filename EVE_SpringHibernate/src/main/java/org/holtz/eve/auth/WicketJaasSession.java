@@ -38,7 +38,7 @@ public class WicketJaasSession extends AuthenticatedWebSession {
 	public static final String ROLES_GROUP_NAME = "Roles";
 
 	/** This name maps to the name of the application-policy in the JBoss login-config.xml */
-	public static final String APPLICATION_POLICY_NAME = "mysecuritydomain";
+	public static final String APPLICATION_POLICY_NAME = "evedomain";
 
 	private final static Logger log = Logger.getLogger(WicketJaasSession.class);
 	

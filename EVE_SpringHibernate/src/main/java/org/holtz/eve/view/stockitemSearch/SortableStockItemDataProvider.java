@@ -21,6 +21,7 @@ import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
+import org.holtz.eve.view.DatabaseLocator;
 
 public class SortableStockItemDataProvider extends SortableDataProvider<S01StockItemSearch, String> implements IFilterStateLocator<StockItemFilter>, Serializable 
 {
@@ -44,7 +45,7 @@ public class SortableStockItemDataProvider extends SortableDataProvider<S01Stock
 
     protected StockItemDatabase getStockItemDB()
     {
-    	DatabaseLocator.getDatabase(stockItemList);
+    	DatabaseLocator.getStockItemDatabase(stockItemList);
     	return new StockItemDatabase(stockItemList);
     }
 

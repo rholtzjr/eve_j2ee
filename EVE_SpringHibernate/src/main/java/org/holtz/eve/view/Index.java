@@ -11,7 +11,12 @@ import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.view.stockitemSearch.StockItemSearchDataTablePage;
 
 public class Index extends WebPage {
-//	private S01StockItemSearch stockItemSearch;
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	//	private S01StockItemSearch stockItemSearch;
 	public Index() {
         add(new Link("stockItemSearchLink")
         {
@@ -19,6 +24,30 @@ public class Index extends WebPage {
             public void onClick()
             {
                 setResponsePage(new StockItemSearchDataTablePage());
+            }
+        });
+        add(new Link("customerLink")
+        {
+            @Override
+            public void onClick()
+            {
+             //   setResponsePage(new StockItemSearchDataTablePage());
+            }
+        });
+        add(new Link("invoiceLink")
+        {
+            @Override
+            public void onClick()
+            {
+              //  setResponsePage(new StockItemSearchDataTablePage());
+            }
+        });
+        add(new Link("purchaseOrderLink")
+        {
+            @Override
+            public void onClick()
+            {
+              //  setResponsePage(new StockItemSearchDataTablePage());
             }
         });
 	}

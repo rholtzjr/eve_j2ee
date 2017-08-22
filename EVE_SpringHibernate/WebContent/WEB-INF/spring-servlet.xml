@@ -49,6 +49,6 @@
 		<property name="stockItemDAO" ref="stockItemDAO" />	
 	</bean>
 	-->
-	<bean name="/wicket/*" class="org.holtz.eve.view.stockitemSearch.StockItemApplication"></bean>
+	<bean name="/wicket/*" class="org.holtz.eve.view.EveApplication"></bean>
 
 </beans>

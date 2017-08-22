@@ -11,13 +11,16 @@ import org.apache.wicket.response.filter.ServerAndClientTimeFilter;
 import org.apache.wicket.settings.RequestCycleSettings;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
+import org.holtz.eve.jpa.entity.TCuCust;
 import org.holtz.eve.view.stockitemSearch.StockItemSearchDataTablePage;
+import org.holtz.eve.view.customer.CustomerDatabase;
 import org.holtz.eve.view.stockitemSearch.StockItemDatabase;
 
 public class EveApplication extends WebApplication {
 
 	
 	private StockItemDatabase stockItemDB = null;
+	private CustomerDatabase custItemDB = null;
 	@Override
 	public Class<? extends Page> getHomePage() {
 
@@ -42,5 +45,9 @@ public class EveApplication extends WebApplication {
 	public StockItemDatabase getStockItemDB(List<S01StockItemSearch> list)
 	{
 	   return stockItemDB = new StockItemDatabase(list);
+	}
+	public CustomerDatabase getCustItemDB(List<TCuCust> list)
+	{
+	   return custItemDB = new CustomerDatabase(list);
 	}
 }

@@ -67,6 +67,7 @@ public class StockItemDetailPanel extends Panel {
 			editForm.addOrReplace(new AjaxButton("close") {
 				public void onSubmit(AjaxRequestTarget target, String contentId) {
 					onCancel(target);
+				
 				}
 			});
 			editForm.addOrReplace(new AjaxButton("save") {
