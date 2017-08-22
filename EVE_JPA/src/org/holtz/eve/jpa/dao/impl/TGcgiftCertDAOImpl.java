@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TGcgiftCertDAO;
 import org.holtz.eve.jpa.entity.TGcgiftCert;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TGcgiftCert;
 
 public class TGcgiftCertDAOImpl implements TGcgiftCertDAO {
@@ -63,6 +64,7 @@ public class TGcgiftCertDAOImpl implements TGcgiftCertDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

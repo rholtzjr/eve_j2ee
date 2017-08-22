@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TLcLocationDAO;
 import org.holtz.eve.jpa.entity.TLcLocation;
+import org.holtz.jpa.util.HibernateUtil;
 
 public class TLcLocationDAOImpl implements TLcLocationDAO {
 
@@ -62,6 +63,7 @@ public class TLcLocationDAOImpl implements TLcLocationDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

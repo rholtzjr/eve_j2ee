@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTbtaxBandDAO;
 import org.holtz.eve.jpa.entity.TTbtaxBand;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TTbtaxBand;
 
 public class TTbtaxBandDAOImpl implements TTbtaxBandDAO {
@@ -63,6 +64,7 @@ public class TTbtaxBandDAOImpl implements TTbtaxBandDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

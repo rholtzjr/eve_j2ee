@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TLqlabelQueueDAO;
 import org.holtz.eve.jpa.entity.TLqlabelQueue;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TLqlabelQueue;
 
 public class TLqlabelQueueDAOImpl implements TLqlabelQueueDAO {
@@ -63,6 +64,7 @@ public class TLqlabelQueueDAOImpl implements TLqlabelQueueDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

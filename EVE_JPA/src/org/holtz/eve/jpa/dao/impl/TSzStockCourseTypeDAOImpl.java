@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSzStockCourseTypeDAO;
 import org.holtz.eve.jpa.entity.TSzStockCourseType;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TSzStockCourseType;
 
 public class TSzStockCourseTypeDAOImpl implements TSzStockCourseTypeDAO {
@@ -65,6 +66,7 @@ public class TSzStockCourseTypeDAOImpl implements TSzStockCourseTypeDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

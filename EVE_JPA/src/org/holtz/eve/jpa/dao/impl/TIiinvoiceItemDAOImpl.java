@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIiinvoiceItemDAO;
 import org.holtz.eve.jpa.entity.TIiinvoiceItem;
+import org.holtz.jpa.util.HibernateUtil;
 
 public class TIiinvoiceItemDAOImpl implements TIiinvoiceItemDAO {
 
@@ -62,6 +63,7 @@ public class TIiinvoiceItemDAOImpl implements TIiinvoiceItemDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TT3ticketRuleDAO;
 import org.holtz.eve.jpa.entity.TT3ticketRule;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.TT3ticketRule;
 
 public class TT3ticketRuleDAOImpl implements TT3ticketRuleDAO {
@@ -66,6 +67,7 @@ public class TT3ticketRuleDAOImpl implements TT3ticketRuleDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 
