@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.S01CuCustDAO;
 import org.holtz.eve.jpa.entity.S01CuCust;
+import org.holtz.jpa.util.HibernateUtil;
 import org.holtz.eve.jpa.entity.S01CuCust;
 
 public class S01CuCustDAOImpl implements S01CuCustDAO {
@@ -63,6 +64,7 @@ public class S01CuCustDAOImpl implements S01CuCustDAO {
 	}
 
 	public SessionFactory getSessionFactory() {
+		sessionFactory = HibernateUtil.getSessionFactory();
 		return sessionFactory;
 	}
 

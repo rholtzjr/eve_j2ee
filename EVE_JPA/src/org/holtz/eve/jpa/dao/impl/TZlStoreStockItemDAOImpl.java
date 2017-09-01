@@ -7,6 +7,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
+import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.holtz.jpa.util.HibernateUtil;
 
@@ -52,6 +53,17 @@ public class TZlStoreStockItemDAOImpl implements TZlStoreStockItemDAO {
 		return storeStockItemList;
 	}
 
+	public TZlStoreStockItem getStockItemById(int id) {
+		TZlStoreStockItem returnItem = new TZlStoreStockItem();
+
+		String queryString = "from TZlStoreStockItem as ssi where ssi.TSistockItem.sistockItemId = :id";
+		query = session.createQuery(queryString);
+		query.setInteger("id", id);		
+		returnItem = (TZlStoreStockItem)query.uniqueResult();
+//		siStockItem.add(returnItem);
+		
+		return returnItem;
+	}
 	@Override
 	public void save(TZlStoreStockItem storeStockItem) {
 		// TODO Auto-generated method stub

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="EVE_JPA" transaction-type="RESOURCE_LOCAL">
-		<class>org.holtz.eve.jpa.entity.AqCourseSearch</class>
-		<class>org.holtz.eve.jpa.entity.AqCourseSearchId</class>
 		<class>org.holtz.eve.jpa.entity.AqCustModuleView</class>
-		<class>org.holtz.eve.jpa.entity.AqCustModuleViewId</class>
 		<class>org.holtz.eve.jpa.entity.AqEmpModuleView</class>
 		<class>org.holtz.eve.jpa.entity.AqEmpModuleViewId</class>
 		<class>org.holtz.eve.jpa.entity.AspnetSchemaVersions</class>
@@ -172,8 +169,6 @@
 		<class>org.holtz.eve.jpa.entity.S01CsCourseId</class>
 		<class>org.holtz.eve.jpa.entity.S01CtcourseType</class>
 		<class>org.holtz.eve.jpa.entity.S01CtcourseTypeId</class>
-		<class>org.holtz.eve.jpa.entity.S01CuCust</class>
-		<class>org.holtz.eve.jpa.entity.S01CuCustId</class>
 		<class>org.holtz.eve.jpa.entity.S01DnDenomination</class>
 		<class>org.holtz.eve.jpa.entity.S01DnDenominationId</class>
 		<class>org.holtz.eve.jpa.entity.S01DtDestination</class>
@@ -239,7 +234,6 @@
 		<class>org.holtz.eve.jpa.entity.S01SoStore</class>
 		<class>org.holtz.eve.jpa.entity.S01SoStoreId</class>
 		<class>org.holtz.eve.jpa.entity.S01StockItemSearch</class>
-		<class>org.holtz.eve.jpa.entity.S01StockItemSearchId</class>
 		<class>org.holtz.eve.jpa.entity.S01StstockType</class>
 		<class>org.holtz.eve.jpa.entity.S01StstockTypeId</class>
 		<class>org.holtz.eve.jpa.entity.S01SuSupplier</class>
@@ -567,7 +561,6 @@
 		<class>org.holtz.eve.jpa.entity.TXcshippingCountry</class>
 		<class>org.holtz.eve.jpa.entity.TXpPostcodeLookup</class>
 		<class>org.holtz.eve.jpa.entity.TXpPostcodeLookupId</class>
-		<class>org.holtz.eve.jpa.entity.TXswo</class>
 		<class>org.holtz.eve.jpa.entity.TXxexport</class>
 		<class>org.holtz.eve.jpa.entity.TXyexportError</class>
 		<class>org.holtz.eve.jpa.entity.TXyexportErrorId</class>
@@ -581,7 +574,11 @@
 		<class>org.holtz.eve.jpa.entity.Tables1</class>
 		<class>org.holtz.eve.jpa.entity.Tables1Id</class>
 		<class>org.holtz.eve.jpa.entity.VrandNumber</class>
+		<class>org.holtz.eve.jpa.entity.AqCourseSearch</class>
+		<class>org.holtz.eve.jpa.entity.S01CuCust</class>
 		<class>org.holtz.eve.jpa.entity.VwNewCheck</class>
+		<class>org.holtz.eve.jpa.entity.TXswo</class>
+
 		<properties>
 			<property name="hibernate.ejb.cfgfile" value="META-INF/hibernate.cfg.xml"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>

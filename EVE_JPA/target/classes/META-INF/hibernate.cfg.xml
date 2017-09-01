@@ -17,9 +17,7 @@
   <property name="hibernate.session_factory_name">eveSessionFactory</property>
   <property name="hibernate.use_sql_comments">true</property>
   <mapping class="org.holtz.eve.jpa.entity.AqCourseSearch"/>
-  <mapping class="org.holtz.eve.jpa.entity.AqCourseSearchId"/>
   <mapping class="org.holtz.eve.jpa.entity.AqCustModuleView"/>
-  <mapping class="org.holtz.eve.jpa.entity.AqCustModuleViewId"/>
   <mapping class="org.holtz.eve.jpa.entity.AqEmpModuleView"/>
   <mapping class="org.holtz.eve.jpa.entity.AqEmpModuleViewId"/>
   <mapping class="org.holtz.eve.jpa.entity.CmrcImageId"/>
@@ -183,7 +181,6 @@
   <mapping class="org.holtz.eve.jpa.entity.S01CtcourseType"/>
   <mapping class="org.holtz.eve.jpa.entity.S01CtcourseTypeId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01CuCust"/>
-  <mapping class="org.holtz.eve.jpa.entity.S01CuCustId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01DnDenomination"/>
   <mapping class="org.holtz.eve.jpa.entity.S01DnDenominationId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01DtDestination"/>
@@ -242,14 +239,13 @@
   <mapping class="org.holtz.eve.jpa.entity.S01SbserviceBookingId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01ScSource"/>
   <mapping class="org.holtz.eve.jpa.entity.S01ScSourceId"/>
-  <mapping class="org.holtz.eve.jpa.entity.S01SistockItem" resource="org/holtz/eve/jpa/entity/S01SistockItem.hbm.xml"/>
-  <mapping class="org.holtz.eve.jpa.entity.S01SistockItemId" resource="org/holtz/eve/jpa/entity/S01SistockItemId.hbm.xml"/>
+  <mapping class="org.holtz.eve.jpa.entity.S01SistockItem"/>
+  <mapping class="org.holtz.eve.jpa.entity.S01SistockItemId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01SnserialNo"/>
   <mapping class="org.holtz.eve.jpa.entity.S01SnserialNoId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01SoStore"/>
   <mapping class="org.holtz.eve.jpa.entity.S01SoStoreId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01StockItemSearch"/>
-  <mapping class="org.holtz.eve.jpa.entity.S01StockItemSearchId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01StstockType"/>
   <mapping class="org.holtz.eve.jpa.entity.S01StstockTypeId"/>
   <mapping class="org.holtz.eve.jpa.entity.S01SuSupplier"/>
@@ -576,7 +572,6 @@
   <mapping class="org.holtz.eve.jpa.entity.TXcshippingCountry"/>
   <mapping class="org.holtz.eve.jpa.entity.TXpPostcodeLookup"/>
   <mapping class="org.holtz.eve.jpa.entity.TXpPostcodeLookupId"/>
-  <mapping class="org.holtz.eve.jpa.entity.TXswo"/>
   <mapping class="org.holtz.eve.jpa.entity.TXxexport"/>
   <mapping class="org.holtz.eve.jpa.entity.TXyexportError"/>
   <mapping class="org.holtz.eve.jpa.entity.TXyexportErrorId"/>
@@ -591,5 +586,6 @@
   <mapping class="org.holtz.eve.jpa.entity.Tables1Id"/>
   <mapping class="org.holtz.eve.jpa.entity.VrandNumber"/>
   <mapping class="org.holtz.eve.jpa.entity.VwNewCheck"/>
+  <mapping class="org.holtz.eve.jpa.entity.TOrder"/>
  </session-factory>
 </hibernate-configuration>

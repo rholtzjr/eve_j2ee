@@ -13,64 +13,64 @@ import javax.persistence.Id;
 @Embeddable
 public class S01SistockItemId implements java.io.Serializable {
 
-	private int sistockItemId;
+	private Integer sistockItemId;
 	private String sistockItemTx;
 	private String sistockNoTx;
-	private int simanufacturerId;
-	private int sistockTypeId;
+	private Integer simanufacturerId;
+	private Integer sistockTypeId;
 	private Integer sisubStockTypeIdN;
 	private Integer siprimaryColorIdN;
 	private Integer sisecondaryColorIdN;
 	private Integer sisizeIdN;
-	private boolean siunavailableBl;
+	private Boolean siunavailableBl;
 	private String sibarcodeNoTxN;
 	private String sivideoTxN;
 	private Date silastUpdatedDate;
-	private float sicommissionRateFl;
-	private boolean siserialNosBl;
-	private boolean simaintainStockLevelBl;
-	private boolean sipackageBl;
-	private boolean sipackageItemsIncludedBl;
-	private boolean sirequiredBl;
+	private Float sicommissionRateFl;
+	private Boolean siserialNosBl;
+	private Boolean simaintainStockLevelBl;
+	private Boolean sipackageBl;
+	private Boolean sipackageItemsIncludedBl;
+	private Boolean sirequiredBl;
 	private String siimageTxN;
 	private String siponotesTxN;
-	private boolean simultiSaleBl;
-	private short simultiSaleQtyIn;
-	private double sidepositMn;
+	private Boolean simultiSaleBl;
+	private Short simultiSaleQtyIn;
+	private Double sidepositMn;
 	private Date sicreationDate;
-	private boolean siinheritFromMasterBl;
-	private boolean siroomBookRelatedBl;
-	private boolean siclubRelatedBl;
+	private Boolean siinheritFromMasterBl;
+	private Boolean siroomBookRelatedBl;
+	private Boolean siclubRelatedBl;
 	private String sistockItem2txN;
 	private String sinotesTxN;
-	private boolean siforPobl;
+	private Boolean siforPobl;
 	private String sidescriptionTxN;
 	private String sispecialOfferTxN;
 	private Double siweightFlN;
-	private boolean sishowPriceInEolbl;
-	private boolean sicalcTaxOnShippingAddressBl;
-	private int sishippingPeriodIn;
+	private Boolean sishowPriceInEolbl;
+	private Boolean sicalcTaxOnShippingAddressBl;
+	private Integer sishippingPeriodIn;
 	private Integer siparentIdN;
-	private int sidisplayOrderIn;
+	private Integer sidisplayOrderIn;
 	private Short sieventDataTypeIdN;
 	private String siimage2txN;
 	private String siimage3txN;
-	private boolean siuseEventRulesBl;
-	private int siclickActionId;
+	private Boolean siuseEventRulesBl;
+	private Integer siclickActionId;
 	private String siclickUrlTextTxN;
 	private String siclickActionParamsTxN;
 	private String siclickActionPromptTxN;
-	private boolean sideliverToRoomBl;
-	private boolean sieolshowPackagePageBl;
-	private int sirelatedProductsIn;
+	private Boolean sideliverToRoomBl;
+	private Boolean sieolshowPackagePageBl;
+	private Integer sirelatedProductsIn;
 	private String siimage4txN;
 	private String siimage5txN;
-	private int siforeColorIn;
-	private int sibackColorIn;
-	private double silengthFl;
-	private double siwidthFl;
-	private double siheightFl;
-	private int sipricingMethodId;
+	private Integer siforeColorIn;
+	private Integer sibackColorIn;
+	private Double silengthFl;
+	private Double siwidthFl;
+	private Double siheightFl;
+	private Integer sipricingMethodId;
 	private Float siloyaltyRateFl;
 	private String sieoltabCaptionTxN;
 	private String sieoltabCaption2txN;
@@ -82,17 +82,20 @@ public class S01SistockItemId implements java.io.Serializable {
 
 	public S01SistockItemId() {
 	}
-
-	public S01SistockItemId(int sistockItemId, String sistockItemTx, String sistockNoTx,
-			int simanufacturerId, int sistockTypeId, boolean siunavailableBl, Date silastUpdatedDate,
-			float sicommissionRateFl, boolean siserialNosBl, boolean simaintainStockLevelBl, boolean sipackageBl,
-			boolean sipackageItemsIncludedBl, boolean sirequiredBl, boolean simultiSaleBl, short simultiSaleQtyIn,
-			double sidepositMn, Date sicreationDate, boolean siinheritFromMasterBl, boolean siroomBookRelatedBl,
-			boolean siclubRelatedBl, boolean siforPobl, boolean sishowPriceInEolbl,
-			boolean sicalcTaxOnShippingAddressBl, int sishippingPeriodIn, int sidisplayOrderIn,
-			boolean siuseEventRulesBl, int siclickActionId, boolean sideliverToRoomBl, boolean sieolshowPackagePageBl,
-			int sirelatedProductsIn, int siforeColorIn, int sibackColorIn, double silengthFl, double siwidthFl,
-			double siheightFl, int sipricingMethodId) {
+	public S01SistockItemId(Integer sistockItemId) {
+		this.sistockItemId = sistockItemId;
+	}
+	
+	public S01SistockItemId(Integer sistockItemId, String sistockItemTx, String sistockNoTx,
+			Integer simanufacturerId, Integer sistockTypeId, Boolean siunavailableBl, Date silastUpdatedDate,
+			Float sicommissionRateFl, Boolean siserialNosBl, Boolean simaIntegerainStockLevelBl, Boolean sipackageBl,
+			Boolean sipackageItemsIncludedBl, Boolean sirequiredBl, Boolean simultiSaleBl, Short simultiSaleQtyIn,
+			Double sidepositMn, Date sicreationDate, Boolean siinheritFromMasterBl, Boolean siroomBookRelatedBl,
+			Boolean siclubRelatedBl, Boolean siforPobl, Boolean sishowPriceInEolbl,
+			Boolean sicalcTaxOnShippingAddressBl, Integer sishippingPeriodIn, Integer sidisplayOrderIn,
+			Boolean siuseEventRulesBl, Integer siclickActionId, Boolean sideliverToRoomBl, Boolean sieolshowPackagePageBl,
+			Integer sirelatedProductsIn, Integer siforeColorIn, Integer sibackColorIn, Double silengthFl, Double siwidthFl,
+			Double siheightFl, Integer sipricingMethodId) {
 		this.sistockItemId = sistockItemId;
 		this.sistockItemTx = sistockItemTx;
 		this.sistockNoTx = sistockNoTx;
@@ -131,22 +134,22 @@ public class S01SistockItemId implements java.io.Serializable {
 		this.sipricingMethodId = sipricingMethodId;
 	}
 
-	public S01SistockItemId(int sistockItemId, String sistockItemTx, String sistockNoTx,
-			int simanufacturerId, int sistockTypeId, Integer sisubStockTypeIdN, Integer siprimaryColorIdN,
-			Integer sisecondaryColorIdN, Integer sisizeIdN, boolean siunavailableBl, String sibarcodeNoTxN,
-			String sivideoTxN, Date silastUpdatedDate, float sicommissionRateFl, boolean siserialNosBl,
-			boolean simaintainStockLevelBl, boolean sipackageBl, boolean sipackageItemsIncludedBl, boolean sirequiredBl,
-			String siimageTxN, String siponotesTxN, boolean simultiSaleBl, short simultiSaleQtyIn,
-			double sidepositMn, Date sicreationDate, boolean siinheritFromMasterBl, boolean siroomBookRelatedBl,
-			boolean siclubRelatedBl, String sistockItem2txN, String sinotesTxN, boolean siforPobl,
+	public S01SistockItemId(Integer sistockItemId, String sistockItemTx, String sistockNoTx,
+			Integer simanufacturerId, Integer sistockTypeId, Integer sisubStockTypeIdN, Integer siprimaryColorIdN,
+			Integer sisecondaryColorIdN, Integer sisizeIdN, Boolean siunavailableBl, String sibarcodeNoTxN,
+			String sivideoTxN, Date silastUpdatedDate, Float sicommissionRateFl, Boolean siserialNosBl,
+			Boolean simaIntegerainStockLevelBl, Boolean sipackageBl, Boolean sipackageItemsIncludedBl, Boolean sirequiredBl,
+			String siimageTxN, String siponotesTxN, Boolean simultiSaleBl, Short simultiSaleQtyIn,
+			Double sidepositMn, Date sicreationDate, Boolean siinheritFromMasterBl, Boolean siroomBookRelatedBl,
+			Boolean siclubRelatedBl, String sistockItem2txN, String sinotesTxN, Boolean siforPobl,
 			String sidescriptionTxN, String sispecialOfferTxN, Double siweightFlN,
-			boolean sishowPriceInEolbl, boolean sicalcTaxOnShippingAddressBl, int sishippingPeriodIn,
-			Integer siparentIdN, int sidisplayOrderIn, Short sieventDataTypeIdN, String siimage2txN,
-			String siimage3txN, boolean siuseEventRulesBl, int siclickActionId, String siclickUrlTextTxN,
-			String siclickActionParamsTxN, String siclickActionPromptTxN, boolean sideliverToRoomBl,
-			boolean sieolshowPackagePageBl, int sirelatedProductsIn, String siimage4txN, String siimage5txN,
-			int siforeColorIn, int sibackColorIn, double silengthFl, double siwidthFl, double siheightFl,
-			int sipricingMethodId, Float siloyaltyRateFl, String sieoltabCaptionTxN,
+			Boolean sishowPriceInEolbl, Boolean sicalcTaxOnShippingAddressBl, Integer sishippingPeriodIn,
+			Integer siparentIdN, Integer sidisplayOrderIn, Short sieventDataTypeIdN, String siimage2txN,
+			String siimage3txN, Boolean siuseEventRulesBl, Integer siclickActionId, String siclickUrlTextTxN,
+			String siclickActionParamsTxN, String siclickActionPromptTxN, Boolean sideliverToRoomBl,
+			Boolean sieolshowPackagePageBl, Integer sirelatedProductsIn, String siimage4txN, String siimage5txN,
+			Integer siforeColorIn, Integer sibackColorIn, Double silengthFl, Double siwidthFl, Double siheightFl,
+			Integer sipricingMethodId, Float siloyaltyRateFl, String sieoltabCaptionTxN,
 			String sieoltabCaption2txN, String sieoltabCaption3txN, String sieoltabCaption4txN,
 			String sieoldescription2txN, String sieoldescription3txN, String sieoldescription4txN) {
 		this.sistockItemId = sistockItemId;
@@ -218,11 +221,11 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 	
 	@Column(name = "SIStockItemID", nullable = false)
-	public int getSistockItemId() {
+	public Integer getSistockItemId() {
 		return this.sistockItemId;
 	}
 
-	public void setSistockItemId(int sistockItemId) {
+	public void setSistockItemId(Integer sistockItemId) {
 		this.sistockItemId = sistockItemId;
 	}
 
@@ -245,20 +248,20 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIManufacturerID", nullable = false)
-	public int getSimanufacturerId() {
+	public Integer getSimanufacturerId() {
 		return this.simanufacturerId;
 	}
 
-	public void setSimanufacturerId(int simanufacturerId) {
+	public void setSimanufacturerId(Integer simanufacturerId) {
 		this.simanufacturerId = simanufacturerId;
 	}
 
 	@Column(name = "SIStockTypeID", nullable = false)
-	public int getSistockTypeId() {
+	public Integer getSistockTypeId() {
 		return this.sistockTypeId;
 	}
 
-	public void setSistockTypeId(int sistockTypeId) {
+	public void setSistockTypeId(Integer sistockTypeId) {
 		this.sistockTypeId = sistockTypeId;
 	}
 
@@ -299,11 +302,11 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIUnavailableBl", nullable = false)
-	public boolean isSiunavailableBl() {
+	public Boolean isSiunavailableBl() {
 		return this.siunavailableBl;
 	}
 
-	public void setSiunavailableBl(boolean siunavailableBl) {
+	public void setSiunavailableBl(Boolean siunavailableBl) {
 		this.siunavailableBl = siunavailableBl;
 	}
 
@@ -335,56 +338,56 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SICommissionRateFl", nullable = false, precision = 24, scale = 0)
-	public float getSicommissionRateFl() {
+	public Float getSicommissionRateFl() {
 		return this.sicommissionRateFl;
 	}
 
-	public void setSicommissionRateFl(float sicommissionRateFl) {
+	public void setSicommissionRateFl(Float sicommissionRateFl) {
 		this.sicommissionRateFl = sicommissionRateFl;
 	}
 
 	@Column(name = "SISerialNosBl", nullable = false)
-	public boolean isSiserialNosBl() {
+	public Boolean isSiserialNosBl() {
 		return this.siserialNosBl;
 	}
 
-	public void setSiserialNosBl(boolean siserialNosBl) {
+	public void setSiserialNosBl(Boolean siserialNosBl) {
 		this.siserialNosBl = siserialNosBl;
 	}
 
 	@Column(name = "SIMaintainStockLevelBl", nullable = false)
-	public boolean isSimaintainStockLevelBl() {
+	public Boolean isSimaintainStockLevelBl() {
 		return this.simaintainStockLevelBl;
 	}
 
-	public void setSimaintainStockLevelBl(boolean simaintainStockLevelBl) {
+	public void setSimaintainStockLevelBl(Boolean simaintainStockLevelBl) {
 		this.simaintainStockLevelBl = simaintainStockLevelBl;
 	}
 
 	@Column(name = "SIPackageBl", nullable = false)
-	public boolean isSipackageBl() {
+	public Boolean isSipackageBl() {
 		return this.sipackageBl;
 	}
 
-	public void setSipackageBl(boolean sipackageBl) {
+	public void setSipackageBl(Boolean sipackageBl) {
 		this.sipackageBl = sipackageBl;
 	}
 
 	@Column(name = "SIPackageItemsIncludedBl", nullable = false)
-	public boolean isSipackageItemsIncludedBl() {
+	public Boolean isSipackageItemsIncludedBl() {
 		return this.sipackageItemsIncludedBl;
 	}
 
-	public void setSipackageItemsIncludedBl(boolean sipackageItemsIncludedBl) {
+	public void setSipackageItemsIncludedBl(Boolean sipackageItemsIncludedBl) {
 		this.sipackageItemsIncludedBl = sipackageItemsIncludedBl;
 	}
 
 	@Column(name = "SIRequiredBl", nullable = false)
-	public boolean isSirequiredBl() {
+	public Boolean isSirequiredBl() {
 		return this.sirequiredBl;
 	}
 
-	public void setSirequiredBl(boolean sirequiredBl) {
+	public void setSirequiredBl(Boolean sirequiredBl) {
 		this.sirequiredBl = sirequiredBl;
 	}
 
@@ -407,29 +410,29 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIMultiSaleBl", nullable = false)
-	public boolean isSimultiSaleBl() {
+	public Boolean isSimultiSaleBl() {
 		return this.simultiSaleBl;
 	}
 
-	public void setSimultiSaleBl(boolean simultiSaleBl) {
+	public void setSimultiSaleBl(Boolean simultiSaleBl) {
 		this.simultiSaleBl = simultiSaleBl;
 	}
 
 	@Column(name = "SIMultiSaleQtyIn", nullable = false)
-	public short getSimultiSaleQtyIn() {
+	public Short getSimultiSaleQtyIn() {
 		return this.simultiSaleQtyIn;
 	}
 
-	public void setSimultiSaleQtyIn(short simultiSaleQtyIn) {
+	public void setSimultiSaleQtyIn(Short simultiSaleQtyIn) {
 		this.simultiSaleQtyIn = simultiSaleQtyIn;
 	}
 
 	@Column(name = "SIDepositMn", nullable = false, precision = 53, scale = 0)
-	public double getSidepositMn() {
+	public Double getSidepositMn() {
 		return this.sidepositMn;
 	}
 
-	public void setSidepositMn(double sidepositMn) {
+	public void setSidepositMn(Double sidepositMn) {
 		this.sidepositMn = sidepositMn;
 	}
 
@@ -443,29 +446,29 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIInheritFromMasterBl", nullable = false)
-	public boolean isSiinheritFromMasterBl() {
+	public Boolean isSiinheritFromMasterBl() {
 		return this.siinheritFromMasterBl;
 	}
 
-	public void setSiinheritFromMasterBl(boolean siinheritFromMasterBl) {
+	public void setSiinheritFromMasterBl(Boolean siinheritFromMasterBl) {
 		this.siinheritFromMasterBl = siinheritFromMasterBl;
 	}
 
 	@Column(name = "SIRoomBookRelatedBl", nullable = false)
-	public boolean isSiroomBookRelatedBl() {
+	public Boolean isSiroomBookRelatedBl() {
 		return this.siroomBookRelatedBl;
 	}
 
-	public void setSiroomBookRelatedBl(boolean siroomBookRelatedBl) {
+	public void setSiroomBookRelatedBl(Boolean siroomBookRelatedBl) {
 		this.siroomBookRelatedBl = siroomBookRelatedBl;
 	}
 
 	@Column(name = "SIClubRelatedBl", nullable = false)
-	public boolean isSiclubRelatedBl() {
+	public Boolean isSiclubRelatedBl() {
 		return this.siclubRelatedBl;
 	}
 
-	public void setSiclubRelatedBl(boolean siclubRelatedBl) {
+	public void setSiclubRelatedBl(Boolean siclubRelatedBl) {
 		this.siclubRelatedBl = siclubRelatedBl;
 	}
 
@@ -488,11 +491,11 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIForPOBl", nullable = false)
-	public boolean isSiforPobl() {
+	public Boolean isSiforPobl() {
 		return this.siforPobl;
 	}
 
-	public void setSiforPobl(boolean siforPobl) {
+	public void setSiforPobl(Boolean siforPobl) {
 		this.siforPobl = siforPobl;
 	}
 
@@ -524,29 +527,29 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIShowPriceInEOLBl", nullable = false)
-	public boolean isSishowPriceInEolbl() {
+	public Boolean isSishowPriceInEolbl() {
 		return this.sishowPriceInEolbl;
 	}
 
-	public void setSishowPriceInEolbl(boolean sishowPriceInEolbl) {
+	public void setSishowPriceInEolbl(Boolean sishowPriceInEolbl) {
 		this.sishowPriceInEolbl = sishowPriceInEolbl;
 	}
 
 	@Column(name = "SICalcTaxOnShippingAddressBl", nullable = false)
-	public boolean isSicalcTaxOnShippingAddressBl() {
+	public Boolean isSicalcTaxOnShippingAddressBl() {
 		return this.sicalcTaxOnShippingAddressBl;
 	}
 
-	public void setSicalcTaxOnShippingAddressBl(boolean sicalcTaxOnShippingAddressBl) {
+	public void setSicalcTaxOnShippingAddressBl(Boolean sicalcTaxOnShippingAddressBl) {
 		this.sicalcTaxOnShippingAddressBl = sicalcTaxOnShippingAddressBl;
 	}
 
 	@Column(name = "SIShippingPeriodIn", nullable = false)
-	public int getSishippingPeriodIn() {
+	public Integer getSishippingPeriodIn() {
 		return this.sishippingPeriodIn;
 	}
 
-	public void setSishippingPeriodIn(int sishippingPeriodIn) {
+	public void setSishippingPeriodIn(Integer sishippingPeriodIn) {
 		this.sishippingPeriodIn = sishippingPeriodIn;
 	}
 
@@ -560,11 +563,11 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIDisplayOrderIn", nullable = false)
-	public int getSidisplayOrderIn() {
+	public Integer getSidisplayOrderIn() {
 		return this.sidisplayOrderIn;
 	}
 
-	public void setSidisplayOrderIn(int sidisplayOrderIn) {
+	public void setSidisplayOrderIn(Integer sidisplayOrderIn) {
 		this.sidisplayOrderIn = sidisplayOrderIn;
 	}
 
@@ -596,20 +599,20 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIUseEventRulesBl", nullable = false)
-	public boolean isSiuseEventRulesBl() {
+	public Boolean isSiuseEventRulesBl() {
 		return this.siuseEventRulesBl;
 	}
 
-	public void setSiuseEventRulesBl(boolean siuseEventRulesBl) {
+	public void setSiuseEventRulesBl(Boolean siuseEventRulesBl) {
 		this.siuseEventRulesBl = siuseEventRulesBl;
 	}
 
 	@Column(name = "SIClickActionID", nullable = false)
-	public int getSiclickActionId() {
+	public Integer getSiclickActionId() {
 		return this.siclickActionId;
 	}
 
-	public void setSiclickActionId(int siclickActionId) {
+	public void setSiclickActionId(Integer siclickActionId) {
 		this.siclickActionId = siclickActionId;
 	}
 
@@ -641,29 +644,29 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIDeliverToRoomBl", nullable = false)
-	public boolean isSideliverToRoomBl() {
+	public Boolean isSideliverToRoomBl() {
 		return this.sideliverToRoomBl;
 	}
 
-	public void setSideliverToRoomBl(boolean sideliverToRoomBl) {
+	public void setSideliverToRoomBl(Boolean sideliverToRoomBl) {
 		this.sideliverToRoomBl = sideliverToRoomBl;
 	}
 
 	@Column(name = "SIEOLShowPackagePageBl", nullable = false)
-	public boolean isSieolshowPackagePageBl() {
+	public Boolean isSieolshowPackagePageBl() {
 		return this.sieolshowPackagePageBl;
 	}
 
-	public void setSieolshowPackagePageBl(boolean sieolshowPackagePageBl) {
+	public void setSieolshowPackagePageBl(Boolean sieolshowPackagePageBl) {
 		this.sieolshowPackagePageBl = sieolshowPackagePageBl;
 	}
 
 	@Column(name = "SIRelatedProductsIn", nullable = false)
-	public int getSirelatedProductsIn() {
+	public Integer getSirelatedProductsIn() {
 		return this.sirelatedProductsIn;
 	}
 
-	public void setSirelatedProductsIn(int sirelatedProductsIn) {
+	public void setSirelatedProductsIn(Integer sirelatedProductsIn) {
 		this.sirelatedProductsIn = sirelatedProductsIn;
 	}
 
@@ -686,56 +689,56 @@ public class S01SistockItemId implements java.io.Serializable {
 	}
 
 	@Column(name = "SIForeColorIn", nullable = false)
-	public int getSiforeColorIn() {
+	public Integer getSiforeColorIn() {
 		return this.siforeColorIn;
 	}
 
-	public void setSiforeColorIn(int siforeColorIn) {
+	public void setSiforeColorIn(Integer siforeColorIn) {
 		this.siforeColorIn = siforeColorIn;
 	}
 
 	@Column(name = "SIBackColorIn", nullable = false)
-	public int getSibackColorIn() {
+	public Integer getSibackColorIn() {
 		return this.sibackColorIn;
 	}
 
-	public void setSibackColorIn(int sibackColorIn) {
+	public void setSibackColorIn(Integer sibackColorIn) {
 		this.sibackColorIn = sibackColorIn;
 	}
 
 	@Column(name = "SILengthFl", nullable = false, precision = 53, scale = 0)
-	public double getSilengthFl() {
+	public Double getSilengthFl() {
 		return this.silengthFl;
 	}
 
-	public void setSilengthFl(double silengthFl) {
+	public void setSilengthFl(Double silengthFl) {
 		this.silengthFl = silengthFl;
 	}
 
 	@Column(name = "SIWidthFl", nullable = false, precision = 53, scale = 0)
-	public double getSiwidthFl() {
+	public Double getSiwidthFl() {
 		return this.siwidthFl;
 	}
 
-	public void setSiwidthFl(double siwidthFl) {
+	public void setSiwidthFl(Double siwidthFl) {
 		this.siwidthFl = siwidthFl;
 	}
 
 	@Column(name = "SIHeightFl", nullable = false, precision = 53, scale = 0)
-	public double getSiheightFl() {
+	public Double getSiheightFl() {
 		return this.siheightFl;
 	}
 
-	public void setSiheightFl(double siheightFl) {
+	public void setSiheightFl(Double siheightFl) {
 		this.siheightFl = siheightFl;
 	}
 
 	@Column(name = "SIPricingMethodID", nullable = false)
-	public int getSipricingMethodId() {
+	public Integer getSipricingMethodId() {
 		return this.sipricingMethodId;
 	}
 
-	public void setSipricingMethodId(int sipricingMethodId) {
+	public void setSipricingMethodId(Integer sipricingMethodId) {
 		this.sipricingMethodId = sipricingMethodId;
 	}
 
@@ -968,7 +971,7 @@ public class S01SistockItemId implements java.io.Serializable {
 		result = 37 * result + (getSibarcodeNoTxN() == null ? 0 : this.getSibarcodeNoTxN().hashCode());
 		result = 37 * result + (getSivideoTxN() == null ? 0 : this.getSivideoTxN().hashCode());
 		result = 37 * result + (getSilastUpdatedDate() == null ? 0 : this.getSilastUpdatedDate().hashCode());
-		result = 37 * result + (int) this.getSicommissionRateFl();
+		result = 37 * result + (int) this.getSicommissionRateFl().intValue();
 		result = 37 * result + (this.isSiserialNosBl() ? 1 : 0);
 		result = 37 * result + (this.isSimaintainStockLevelBl() ? 1 : 0);
 		result = 37 * result + (this.isSipackageBl() ? 1 : 0);
@@ -978,7 +981,7 @@ public class S01SistockItemId implements java.io.Serializable {
 		result = 37 * result + (getSiponotesTxN() == null ? 0 : this.getSiponotesTxN().hashCode());
 		result = 37 * result + (this.isSimultiSaleBl() ? 1 : 0);
 		result = 37 * result + this.getSimultiSaleQtyIn();
-		result = 37 * result + (int) this.getSidepositMn();
+		result = 37 * result + (int) this.getSidepositMn().intValue();
 		result = 37 * result + (getSicreationDate() == null ? 0 : this.getSicreationDate().hashCode());
 		result = 37 * result + (this.isSiinheritFromMasterBl() ? 1 : 0);
 		result = 37 * result + (this.isSiroomBookRelatedBl() ? 1 : 0);
@@ -1009,9 +1012,9 @@ public class S01SistockItemId implements java.io.Serializable {
 		result = 37 * result + (getSiimage5txN() == null ? 0 : this.getSiimage5txN().hashCode());
 		result = 37 * result + this.getSiforeColorIn();
 		result = 37 * result + this.getSibackColorIn();
-		result = 37 * result + (int) this.getSilengthFl();
-		result = 37 * result + (int) this.getSiwidthFl();
-		result = 37 * result + (int) this.getSiheightFl();
+		result = 37 * result + (int) this.getSilengthFl().intValue();
+		result = 37 * result + (int) this.getSiwidthFl().intValue();
+		result = 37 * result + (int) this.getSiheightFl().intValue();
 		result = 37 * result + this.getSipricingMethodId();
 		result = 37 * result + (getSiloyaltyRateFl() == null ? 0 : this.getSiloyaltyRateFl().hashCode());
 		result = 37 * result + (getSieoltabCaptionTxN() == null ? 0 : this.getSieoltabCaptionTxN().hashCode());

@@ -12,51 +12,51 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class S01InInvoiceId implements java.io.Serializable {
 
-	private int inInvoiceId;
-	private short inInvoiceTypeId;
-	private int inCustId;
-	private short inStoreId;
-	private int inCostCenterId;
+	private Integer inInvoiceId;
+	private Short inInvoiceTypeId;
+	private Integer inCustId;
+	private Short inStoreId;
+	private Integer inCostCenterId;
 	private Integer inAccountIdN;
 	private Date inCreationDate;
 	private Date inCommittedDateN;
 	private Date inClosedDateN;
-	private int inEmpId;
+	private Integer inEmpId;
 	private Integer inCommissionEmpId;
-	private float inCommissionRateFl;
-	private boolean inCommissionableBl;
-	private double inSubTotalMn;
-	private double inTaxMn;
+	private Float inCommissionRateFl;
+	private Boolean inCommissionableBl;
+	private Double inSubTotalMn;
+	private Double inTaxMn;
 	private Double inLegacyAccPayAmountMnN;
-	private short inCurrencyId;
-	private float inExchangeRateFl;
+	private Short inCurrencyId;
+	private Float inExchangeRateFl;
 	private Date inLastUpdatedDate;
-	private short inPcid;
-	private int inTransStatusId;
+	private Short inPcid;
+	private Integer inTransStatusId;
 	private String inNotesTxN;
 	private Date inVoidDateN;
 	private String inVoidReasonTxN;
 	private Date inPaymentDueDateN;
 	private Date inShipDate;
 	private Integer inPostageId;
-	private boolean inProcessedBl;
+	private Boolean inProcessedBl;
 	private String inTicketNoTxN;
 	private Integer inBillingAddressId;
 	private Integer inShippingAddressId;
 	private String inInvoiceNumberTxN;
 	private String inUserIptxN;
 	private String inOrderStatusTxN;
-	private int inOrderStatusCodeInN;
+	private Integer inOrderStatusCodeInN;
 	private Integer inSourceIdN;
-	private boolean inStockLevelsUpdatedBl;
+	private Boolean inStockLevelsUpdatedBl;
 
 	public S01InInvoiceId() {
 	}
 
-	public S01InInvoiceId(int inInvoiceId, short inInvoiceTypeId, int inCustId, short inStoreId, int inCostCenterId,
-			Date inCreationDate, int inEmpId, float inCommissionRateFl, boolean inCommissionableBl, double inSubTotalMn,
-			double inTaxMn, short inCurrencyId, float inExchangeRateFl, Date inLastUpdatedDate, short inPcid,
-			int inTransStatusId, boolean inProcessedBl, int inOrderStatusCodeInN, boolean inStockLevelsUpdatedBl) {
+	public S01InInvoiceId(Integer inInvoiceId, Short inInvoiceTypeId, Integer inCustId, Short inStoreId, Integer inCostCenterId,
+			Date inCreationDate, Integer inEmpId, Float inCommissionRateFl, Boolean inCommissionableBl, Double inSubTotalMn,
+			Double inTaxMn, Short inCurrencyId, Float inExchangeRateFl, Date inLastUpdatedDate, Short inPcid,
+			Integer inTransStatusId, Boolean inProcessedBl, Integer inOrderStatusCodeInN, Boolean inStockLevelsUpdatedBl) {
 		this.inInvoiceId = inInvoiceId;
 		this.inInvoiceTypeId = inInvoiceTypeId;
 		this.inCustId = inCustId;
@@ -78,15 +78,15 @@ public class S01InInvoiceId implements java.io.Serializable {
 		this.inStockLevelsUpdatedBl = inStockLevelsUpdatedBl;
 	}
 
-	public S01InInvoiceId(int inInvoiceId, short inInvoiceTypeId, int inCustId, short inStoreId, int inCostCenterId,
-			Integer inAccountIdN, Date inCreationDate, Date inCommittedDateN, Date inClosedDateN, int inEmpId,
-			Integer inCommissionEmpId, float inCommissionRateFl, boolean inCommissionableBl, double inSubTotalMn,
-			double inTaxMn, Double inLegacyAccPayAmountMnN, short inCurrencyId, float inExchangeRateFl,
-			Date inLastUpdatedDate, short inPcid, int inTransStatusId, String inNotesTxN, Date inVoidDateN,
+	public S01InInvoiceId(Integer inInvoiceId, Short inInvoiceTypeId, Integer inCustId, Short inStoreId, Integer inCostCenterId,
+			Integer inAccountIdN, Date inCreationDate, Date inCommittedDateN, Date inClosedDateN, Integer inEmpId,
+			Integer inCommissionEmpId, Float inCommissionRateFl, Boolean inCommissionableBl, Double inSubTotalMn,
+			Double inTaxMn, Double inLegacyAccPayAmountMnN, Short inCurrencyId, Float inExchangeRateFl,
+			Date inLastUpdatedDate, Short inPcid, Integer inTransStatusId, String inNotesTxN, Date inVoidDateN,
 			String inVoidReasonTxN, Date inPaymentDueDateN, Date inShipDate, Integer inPostageId,
-			boolean inProcessedBl, String inTicketNoTxN, Integer inBillingAddressId, Integer inShippingAddressId,
-			String inInvoiceNumberTxN, String inUserIptxN, String inOrderStatusTxN, int inOrderStatusCodeInN,
-			Integer inSourceIdN, boolean inStockLevelsUpdatedBl) {
+			Boolean inProcessedBl, String inTicketNoTxN, Integer inBillingAddressId, Integer inShippingAddressId,
+			String inInvoiceNumberTxN, String inUserIptxN, String inOrderStatusTxN, Integer inOrderStatusCodeInN,
+			Integer inSourceIdN, Boolean inStockLevelsUpdatedBl) {
 		this.inInvoiceId = inInvoiceId;
 		this.inInvoiceTypeId = inInvoiceTypeId;
 		this.inCustId = inCustId;
@@ -127,47 +127,47 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InInvoiceID", nullable = false)
-	public int getInInvoiceId() {
+	public Integer getInInvoiceId() {
 		return this.inInvoiceId;
 	}
 
-	public void setInInvoiceId(int inInvoiceId) {
+	public void setInInvoiceId(Integer inInvoiceId) {
 		this.inInvoiceId = inInvoiceId;
 	}
 
 	@Column(name = "InInvoiceTypeID", nullable = false)
-	public short getInInvoiceTypeId() {
+	public Short getInInvoiceTypeId() {
 		return this.inInvoiceTypeId;
 	}
 
-	public void setInInvoiceTypeId(short inInvoiceTypeId) {
+	public void setInInvoiceTypeId(Short inInvoiceTypeId) {
 		this.inInvoiceTypeId = inInvoiceTypeId;
 	}
 
 	@Column(name = "InCustID", nullable = false)
-	public int getInCustId() {
+	public Integer getInCustId() {
 		return this.inCustId;
 	}
 
-	public void setInCustId(int inCustId) {
+	public void setInCustId(Integer inCustId) {
 		this.inCustId = inCustId;
 	}
 
 	@Column(name = "InStoreID", nullable = false)
-	public short getInStoreId() {
+	public Short getInStoreId() {
 		return this.inStoreId;
 	}
 
-	public void setInStoreId(short inStoreId) {
+	public void setInStoreId(Short inStoreId) {
 		this.inStoreId = inStoreId;
 	}
 
 	@Column(name = "InCostCenterID", nullable = false)
-	public int getInCostCenterId() {
+	public Integer getInCostCenterId() {
 		return this.inCostCenterId;
 	}
 
-	public void setInCostCenterId(int inCostCenterId) {
+	public void setInCostCenterId(Integer inCostCenterId) {
 		this.inCostCenterId = inCostCenterId;
 	}
 
@@ -208,11 +208,11 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InEmpID", nullable = false)
-	public int getInEmpId() {
+	public Integer getInEmpId() {
 		return this.inEmpId;
 	}
 
-	public void setInEmpId(int inEmpId) {
+	public void setInEmpId(Integer inEmpId) {
 		this.inEmpId = inEmpId;
 	}
 
@@ -226,38 +226,38 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InCommissionRateFl", nullable = false, precision = 24, scale = 0)
-	public float getInCommissionRateFl() {
+	public Float getInCommissionRateFl() {
 		return this.inCommissionRateFl;
 	}
 
-	public void setInCommissionRateFl(float inCommissionRateFl) {
+	public void setInCommissionRateFl(Float inCommissionRateFl) {
 		this.inCommissionRateFl = inCommissionRateFl;
 	}
 
 	@Column(name = "InCommissionableBl", nullable = false)
-	public boolean isInCommissionableBl() {
+	public Boolean isInCommissionableBl() {
 		return this.inCommissionableBl;
 	}
 
-	public void setInCommissionableBl(boolean inCommissionableBl) {
+	public void setInCommissionableBl(Boolean inCommissionableBl) {
 		this.inCommissionableBl = inCommissionableBl;
 	}
 
 	@Column(name = "InSubTotalMn", nullable = false, precision = 53, scale = 0)
-	public double getInSubTotalMn() {
+	public Double getInSubTotalMn() {
 		return this.inSubTotalMn;
 	}
 
-	public void setInSubTotalMn(double inSubTotalMn) {
+	public void setInSubTotalMn(Double inSubTotalMn) {
 		this.inSubTotalMn = inSubTotalMn;
 	}
 
 	@Column(name = "InTaxMn", nullable = false, precision = 53, scale = 0)
-	public double getInTaxMn() {
+	public Double getInTaxMn() {
 		return this.inTaxMn;
 	}
 
-	public void setInTaxMn(double inTaxMn) {
+	public void setInTaxMn(Double inTaxMn) {
 		this.inTaxMn = inTaxMn;
 	}
 
@@ -271,20 +271,20 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InCurrencyID", nullable = false)
-	public short getInCurrencyId() {
+	public Short getInCurrencyId() {
 		return this.inCurrencyId;
 	}
 
-	public void setInCurrencyId(short inCurrencyId) {
+	public void setInCurrencyId(Short inCurrencyId) {
 		this.inCurrencyId = inCurrencyId;
 	}
 
 	@Column(name = "InExchangeRateFl", nullable = false, precision = 24, scale = 0)
-	public float getInExchangeRateFl() {
+	public Float getInExchangeRateFl() {
 		return this.inExchangeRateFl;
 	}
 
-	public void setInExchangeRateFl(float inExchangeRateFl) {
+	public void setInExchangeRateFl(Float inExchangeRateFl) {
 		this.inExchangeRateFl = inExchangeRateFl;
 	}
 
@@ -298,20 +298,20 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InPCID", nullable = false)
-	public short getInPcid() {
+	public Short getInPcid() {
 		return this.inPcid;
 	}
 
-	public void setInPcid(short inPcid) {
+	public void setInPcid(Short inPcid) {
 		this.inPcid = inPcid;
 	}
 
 	@Column(name = "InTransStatusID", nullable = false)
-	public int getInTransStatusId() {
+	public Integer getInTransStatusId() {
 		return this.inTransStatusId;
 	}
 
-	public void setInTransStatusId(int inTransStatusId) {
+	public void setInTransStatusId(Integer inTransStatusId) {
 		this.inTransStatusId = inTransStatusId;
 	}
 
@@ -370,11 +370,11 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InProcessedBl", nullable = false)
-	public boolean isInProcessedBl() {
+	public Boolean isInProcessedBl() {
 		return this.inProcessedBl;
 	}
 
-	public void setInProcessedBl(boolean inProcessedBl) {
+	public void setInProcessedBl(Boolean inProcessedBl) {
 		this.inProcessedBl = inProcessedBl;
 	}
 
@@ -433,11 +433,11 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InOrderStatusCodeIn_N", nullable = false)
-	public int getInOrderStatusCodeInN() {
+	public Integer getInOrderStatusCodeInN() {
 		return this.inOrderStatusCodeInN;
 	}
 
-	public void setInOrderStatusCodeInN(int inOrderStatusCodeInN) {
+	public void setInOrderStatusCodeInN(Integer inOrderStatusCodeInN) {
 		this.inOrderStatusCodeInN = inOrderStatusCodeInN;
 	}
 
@@ -451,11 +451,11 @@ public class S01InInvoiceId implements java.io.Serializable {
 	}
 
 	@Column(name = "InStockLevelsUpdatedBl", nullable = false)
-	public boolean isInStockLevelsUpdatedBl() {
+	public Boolean isInStockLevelsUpdatedBl() {
 		return this.inStockLevelsUpdatedBl;
 	}
 
-	public void setInStockLevelsUpdatedBl(boolean inStockLevelsUpdatedBl) {
+	public void setInStockLevelsUpdatedBl(Boolean inStockLevelsUpdatedBl) {
 		this.inStockLevelsUpdatedBl = inStockLevelsUpdatedBl;
 	}
 
@@ -558,14 +558,14 @@ public class S01InInvoiceId implements java.io.Serializable {
 		result = 37 * result + (getInClosedDateN() == null ? 0 : this.getInClosedDateN().hashCode());
 		result = 37 * result + this.getInEmpId();
 		result = 37 * result + (getInCommissionEmpId() == null ? 0 : this.getInCommissionEmpId().hashCode());
-		result = 37 * result + (int) this.getInCommissionRateFl();
+		result = 37 * result + (int) this.getInCommissionRateFl().intValue();
 		result = 37 * result + (this.isInCommissionableBl() ? 1 : 0);
-		result = 37 * result + (int) this.getInSubTotalMn();
-		result = 37 * result + (int) this.getInTaxMn();
+		result = 37 * result + (int) this.getInSubTotalMn().intValue();
+		result = 37 * result + (int) this.getInTaxMn().intValue();
 		result = 37 * result
 				+ (getInLegacyAccPayAmountMnN() == null ? 0 : this.getInLegacyAccPayAmountMnN().hashCode());
 		result = 37 * result + this.getInCurrencyId();
-		result = 37 * result + (int) this.getInExchangeRateFl();
+		result = 37 * result + (int) this.getInExchangeRateFl().intValue();
 		result = 37 * result + (getInLastUpdatedDate() == null ? 0 : this.getInLastUpdatedDate().hashCode());
 		result = 37 * result + this.getInPcid();
 		result = 37 * result + this.getInTransStatusId();
