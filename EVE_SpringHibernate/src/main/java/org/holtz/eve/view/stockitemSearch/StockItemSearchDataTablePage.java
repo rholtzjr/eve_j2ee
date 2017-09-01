@@ -51,7 +51,7 @@ import org.holtz.eve.jpa.entity.TZlStoreStockItem;
  * @author igor
  * 
  */
-public class StockItemSearchDataTablePage extends BasePage
+public class StockItemSearchDataTablePage extends StockItemBasePage
 {
     /**
 	 * 

@@ -8,6 +8,7 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
+import org.holtz.eve.view.customer.CustomerDataTablePage;
 import org.holtz.eve.view.stockitemSearch.StockItemSearchDataTablePage;
 
 public class Index extends WebPage {
@@ -31,7 +32,7 @@ public class Index extends WebPage {
             @Override
             public void onClick()
             {
-             //   setResponsePage(new StockItemSearchDataTablePage());
+                setResponsePage(new CustomerDataTablePage());
             }
         });
         add(new Link("invoiceLink")
@@ -39,7 +40,7 @@ public class Index extends WebPage {
             @Override
             public void onClick()
             {
-              //  setResponsePage(new StockItemSearchDataTablePage());
+              //  setResponsePage(new CustomerDataTablePage());
             }
         });
         add(new Link("purchaseOrderLink")
@@ -47,7 +48,7 @@ public class Index extends WebPage {
             @Override
             public void onClick()
             {
-              //  setResponsePage(new StockItemSearchDataTablePage());
+              //  setResponsePage(new CustomerDataTablePage());
             }
         });
 	}

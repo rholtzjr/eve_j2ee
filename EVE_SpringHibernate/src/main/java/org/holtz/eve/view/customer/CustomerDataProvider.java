@@ -15,9 +15,11 @@ import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.holtz.eve.jpa.dao.CustomerDAO;
+import org.holtz.eve.jpa.dao.S01CuCustDAO;
 import org.holtz.eve.jpa.dao.impl.CustomerDAOImpl;
+import org.holtz.eve.jpa.dao.impl.S01CuCustDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
-import org.holtz.eve.jpa.entity.TCuCust;
+import org.holtz.eve.jpa.entity.S01CuCust;
 
 
 public class CustomerDataProvider extends SortableCustomerDataProvider {
@@ -29,11 +31,11 @@ public class CustomerDataProvider extends SortableCustomerDataProvider {
 	 */
 	
 	
-	 private List<TCuCust> list = new ArrayList<TCuCust>();
-	 private CustomerDAO custItemDAO = new CustomerDAOImpl();
+	 private List<S01CuCust> list = new ArrayList<S01CuCust>();
+	 private S01CuCustDAO custItemDAO = new S01CuCustDAOImpl();
 	 public CustomerDataProvider() {
 
-		 list = custItemDAO.getCustList();
+		 list = custItemDAO.getCuCustList();
 		 list.removeAll(Collections.singleton(null));		 
 
 	 }
@@ -45,18 +47,18 @@ public class CustomerDataProvider extends SortableCustomerDataProvider {
 	}
 
 
-	public Iterator<? extends TCuCust> iterator(long first, long count) {
-	    Iterator<TCuCust> iterator = list.iterator();
+	public Iterator<? extends S01CuCust> iterator(long first, long count) {
+	    Iterator<S01CuCust> iterator = list.iterator();
 	        return iterator;
 		
 	}
 
-//	   public IModel<TCuCust> model(Object object) { 
-//		      return new LoadableDetachableModel<TCuCust>() { 
+//	   public IModel<S01CuCust> model(Object object) { 
+//		      return new LoadableDetachableModel<S01CuCust>() { 
 //				private static final long serialVersionUID = 1L;
 //				@Override 
-//		        protected TCuCust load() { 
-//					return (TCuCust) object; 
+//		        protected S01CuCust load() { 
+//					return (S01CuCust) object; 
 //		        } 
 //		      }; 
 //		    }

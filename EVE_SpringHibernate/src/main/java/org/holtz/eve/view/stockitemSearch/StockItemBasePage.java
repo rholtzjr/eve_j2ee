@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
  * 
  * @author ronh
  */
-public abstract class BasePage extends WebPage
+public abstract class StockItemBasePage extends WebPage
 {
 	/**
 	 * 
@@ -39,13 +39,13 @@ public abstract class BasePage extends WebPage
 	private S01StockItemSearch selected;
 	private TZlStoreStockItem editSelected;
 	public ModalWindow editModal;
-	private static final Logger log = LoggerFactory.getLogger(BasePage.class);
+	private static final Logger log = LoggerFactory.getLogger(StockItemBasePage.class);
 
 
 	/**
 	 * Constructor
 	 */
-	public BasePage() {
+	public StockItemBasePage() {
 //		add(new Label("currentUser", new PropertyModel<>(this, "session.user")));
 		add(new Label("selectedLabel", new PropertyModel<>(this, "selectedItem")));
 		add(new Label("editSelectedLabel", new PropertyModel<>(this, "editSelected")));

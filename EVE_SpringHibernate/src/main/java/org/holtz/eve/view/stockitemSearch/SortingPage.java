@@ -32,7 +32,7 @@ import org.holtz.eve.jpa.entity.S01StockItemSearch;
  * @author igor
  * 
  */
-public class SortingPage extends BasePage
+public class SortingPage extends StockItemBasePage
 {
     private static final long serialVersionUID = 1L;
 

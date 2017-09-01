@@ -1,9 +1,9 @@
-package org.holtz.eve.view.customer;
+package org.holtz.eve.view.invoice;
 
 import org.apache.wicket.model.LoadableDetachableModel;
-import org.holtz.eve.jpa.entity.S01CuCust;
+import org.holtz.eve.jpa.entity.S01InInvoice;
 
-public class DetachableCustomerModel extends LoadableDetachableModel<S01CuCust> 
+public class DetachableInvoiceModel extends LoadableDetachableModel<S01InInvoice> 
 {
 
     /**
@@ -15,21 +15,21 @@ public class DetachableCustomerModel extends LoadableDetachableModel<S01CuCust>
     /**
      * @param c
      */
-//     public DetachableCustomerModel(S01CuCust item)
+//     public DetachableInvoiceModel(S01InInvoice item)
 //     {
-//   	 this(item.getCuCustID());
+//   	 this(item.getInInvoiceID());
 //    }
 
     /**
      * @param s01StockItemSearchId.getId()
      */
-    public DetachableCustomerModel(S01CuCust custItem)
+    public DetachableInvoiceModel(S01InInvoice custItem)
     {
-        if (custItem.getCuCustID() < 0 )
+        if (custItem.getInInvoiceID() < 0 )
         {
             throw new IllegalArgumentException();
         }
-        this.id = custItem.getCuCustID();
+        this.id = custItem.getInInvoiceID();
     }
 
     /**
@@ -58,9 +58,9 @@ public class DetachableCustomerModel extends LoadableDetachableModel<S01CuCust>
         {
             return false;
         }
-        else if (obj instanceof DetachableCustomerModel)
+        else if (obj instanceof DetachableInvoiceModel)
         {
-        	DetachableCustomerModel other = (DetachableCustomerModel)obj;
+        	DetachableInvoiceModel other = (DetachableInvoiceModel)obj;
             return other.id == id;
         }
         return false;
@@ -70,7 +70,7 @@ public class DetachableCustomerModel extends LoadableDetachableModel<S01CuCust>
      * @see org.apache.wicket.model.LoadableDetachableModel#load()
      */
     @Override
-    protected S01CuCust load()
+    protected S01InInvoice load()
     {
         return getObject();
     }
