@@ -40,10 +40,10 @@ public class PagingPage extends StockItemBasePage
           	
             	S01StockItemSearch stockItem = (S01StockItemSearch) item.getModelObject();
                 item.add(new ActionPanel("actions", item.getModel()));
-                item.add(new Label("stockItemid", stockItem.getId().getSistockItemId()));
-                item.add(new Label("stockItemName", stockItem.getId().getSistockItemTx()));
-                item.add(new Label("supplierName", stockItem.getId().getSuSupplierTx()));
-                item.add(new Label("barcode", stockItem.getId().getSibarcodeNoTxN()));
+                item.add(new Label("stockItemid", stockItem.getSIStockItemID()));
+                item.add(new Label("stockItemName", stockItem.getSIStockItemTx()));
+                item.add(new Label("supplierName", stockItem.getSuSupplierTx()));
+                item.add(new Label("barcode", stockItem.getSIBarcodeNoTx_N()));
 
                 item.add(AttributeModifier.replace("class", new AbstractReadOnlyModel<String>()
                 {

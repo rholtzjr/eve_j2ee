@@ -19,8 +19,8 @@ import org.holtz.eve.jpa.dao.StockItemDAO;
 import org.holtz.eve.jpa.dao.StoreStockItemDAO;
 import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
-import org.holtz.eve.jpa.entity.S01CuCust;
-import org.holtz.eve.jpa.entity.S01CuCust;
+import org.holtz.eve.jpa.entity.S01InInvoice;
+import org.holtz.eve.jpa.entity.S01InInvoice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,8 +36,8 @@ public abstract class InvoiceBasePage extends WebPage
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private S01CuCust selected;
-	private S01CuCust editSelected;
+	private S01InInvoice selected;
+	private S01InInvoice editSelected;
 //	public ModalWindow editModal;
 	private static final Logger log = LoggerFactory.getLogger(InvoiceBasePage.class);
 
@@ -63,18 +63,18 @@ public abstract class InvoiceBasePage extends WebPage
 		}
 		else
 		{
-			return selected.getCuCustID() + " " + selected.getCuFirstNameTx() 
-					+ " " + selected.getCuLastNameTx() + " " 
-					+ selected.getCuCustNumberTx_N();
+			return selected.getInInvoiceID() + " " + selected.getInInvoiceNumberTx_N() 
+					+ " " + selected.getInCreationDate() + " " 
+					+ selected.getInCustID();
 		}
 	}
 
-//	public S01CuCust getEditSelectedItem() {
-//		editSelected = new S01CuCust();
+//	public S01InInvoice getEditSelectedItem() {
+//		editSelected = new S01InInvoice();
 //
 //		//   	String currentSelected = getSelectedItem(); 
 //
-//		// Need to get the S01CuCust object.  In order to use Spring Context/Security
+//		// Need to get the S01InInvoice object.  In order to use Spring Context/Security
 //		// This will need to be setup to use the Rest Controller.
 //		//		StockItemRestController ssic = new StockItemRestController();
 //		StoreStockItemDAO sid = new StoreStockItemDAOImpl();
@@ -89,7 +89,7 @@ public abstract class InvoiceBasePage extends WebPage
 		 * @param model
 		 *            model for contact
 		 */
-		public ActionPanel(String id, IModel<S01CuCust> model) {
+		public ActionPanel(String id, IModel<S01InInvoice> model) {
 			super(id, model);
 
 			add(new Link("select") {
@@ -101,7 +101,7 @@ public abstract class InvoiceBasePage extends WebPage
 				@Override
 				public void onClick()
 				{
-					selected = (S01CuCust)getParent().getDefaultModelObject();
+					selected = (S01InInvoice)getParent().getDefaultModelObject();
 					
 				}
 
@@ -116,9 +116,9 @@ public abstract class InvoiceBasePage extends WebPage
 				@Override
 				public void onClick()
 				{
-					//TODO open a new page to allow the entry of a new Customer which can double for the edit screen
+					//TODO open a new page to allow the entry of a new Invoice which can double for the edit screen
 					// 
-					//selected = (S01CuCust)getParent().getDefaultModelObject();
+					//selected = (S01InInvoice)getParent().getDefaultModelObject();
 					
 				}
 
@@ -131,7 +131,7 @@ public abstract class InvoiceBasePage extends WebPage
 //				private static final long serialVersionUID = 1L;
 //
 //				public void onClick(AjaxRequestTarget target) {
-//					selected = (S01CuCust)getParent().getDefaultModelObject();
+//					selected = (S01InInvoice)getParent().getDefaultModelObject();
 //					// This needs to be passed to modal window 
 //					getEditSelectedItem();
 //					Session session = editModal.getWebSession();
@@ -146,7 +146,7 @@ public abstract class InvoiceBasePage extends WebPage
 //						}
 //
 //						@Override
-//						void onSelect(AjaxRequestTarget target, S01CuCust selection) {
+//						void onSelect(AjaxRequestTarget target, S01InInvoice selection) {
 //							// TODO Auto-generated method stub
 //							
 //						}
@@ -175,7 +175,7 @@ public abstract class InvoiceBasePage extends WebPage
 	/**
 	 * @return selected contact
 	 */
-	public S01CuCust getSelected() {
+	public S01InInvoice getSelected() {
 		return selected;
 	}
 
@@ -184,18 +184,18 @@ public abstract class InvoiceBasePage extends WebPage
 	 * 
 	 * @param selected
 	 */
-	public void setSelected(S01CuCust selected) {
+	public void setSelected(S01InInvoice selected) {
 		addStateChange();
 		this.selected = selected;
 	}
 
-	public S01CuCust getEditSelected() {
-		//Get the selected S01SistockItem based on the S01CuCustId
+	public S01InInvoice getEditSelected() {
+		//Get the selected S01SistockItem based on the S01InInvoiceId
 
 		return editSelected;
 	}
 
-	public void setEditSelected(S01CuCust editSelected) {
+	public void setEditSelected(S01InInvoice editSelected) {
 		addStateChange();
 		//Call to Modal window?
 		this.editSelected = editSelected;

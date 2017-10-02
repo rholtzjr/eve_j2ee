@@ -3,7 +3,6 @@ package org.holtz.eve.view.stockitemSearch;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
-import org.holtz.eve.jpa.entity.S01StockItemSearchId;
 
 public class DetachableStockItemSearchModel extends LoadableDetachableModel<S01StockItemSearch> 
 {
@@ -13,21 +12,21 @@ public class DetachableStockItemSearchModel extends LoadableDetachableModel<S01S
     /**
      * @param c
      */
-    public DetachableStockItemSearchModel(S01StockItemSearch item)
-    {
-        this(item.getId());
-    }
+//    public DetachableStockItemSearchModel(S01StockItemSearch item)
+//    {
+//        this(item.getId());
+//    }
 
     /**
      * @param s01StockItemSearchId.getId()
      */
-    public DetachableStockItemSearchModel(S01StockItemSearchId stockItemSearch)
+    public DetachableStockItemSearchModel(S01StockItemSearch stockItemSearch)
     {
-        if (stockItemSearch.getSistockItemId() == 0)
+        if (stockItemSearch.getSIStockItemID() < 0)
         {
             throw new IllegalArgumentException();
         }
-        this.id = stockItemSearch.getSistockItemId();
+        this.id = stockItemSearch.getSIStockItemID();
     }
 
     /**

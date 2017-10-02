@@ -20,6 +20,7 @@ public class StockItemDetailPanel extends Panel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private String stockItemId;
 	private String zlStoreStockItemId;
 	private String zlNoInStockInX;
 	private String zlNoInStockIn;
@@ -50,7 +51,7 @@ public class StockItemDetailPanel extends Panel {
         editForm.setMultiPart(true);
 
         if(item != null) { 		
-        	editForm.addOrReplace(new TextField<>("sistockItemId", new PropertyModel<Object>(item, "TSistockItem.sistockItemId")));
+        	editForm.addOrReplace(new TextField<>("stockItemId", new PropertyModel<Object>(item, "TSistockItem.sistockItemId")));
         	editForm.addOrReplace(new TextField<>("zlStoreStockItemId", new PropertyModel<Object>(item, "zlStoreStockItemId"))); 
 			editForm.addOrReplace(new TextField<>("zlNoOnOrderInX", new PropertyModel<Object>(item, "zlNoOnOrderInX")));
 			editForm.addOrReplace(new TextField<>("zlNoOnOrderIn", new PropertyModel<Object>(item, "zlNoOnOrderIn")));
@@ -198,6 +199,13 @@ public class StockItemDetailPanel extends Panel {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
+
+	public String getStockItemId() {
+		return stockItemId;
+	}
+
+	public void setStockItemId(String stockItemId) {
+		this.stockItemId = stockItemId;
+	}
 
 }

@@ -10,9 +10,13 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.holtz.eve.jpa.dao.S01StockItemSearchDAO;
 import org.holtz.eve.jpa.dao.StockItemDAO;
+import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
+import org.holtz.eve.jpa.dao.impl.S01StockItemSearchDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
+import org.holtz.eve.jpa.dao.impl.TZlStoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.S01SistockItem;
@@ -41,9 +45,12 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 
 public class StockItemRestController extends MultiActionController {
-	private StockItemDAO stockItemDAO;
+	private S01StockItemSearchDAO stockItemSearchDAO;
 	private StoreStockItemDAOImpl storeStockItemDAO;
+	private StockItemDAO stockItemDAO;
+	private TZlStoreStockItemDAO tzlstoreStockItemDAO;
 	private TZlStoreStockItem storeStockItem;
+	private List<TZlStoreStockItem> storeStockItemList;
 	private S01SistockItem stockItem;
 	private List<S01SistockItem> sisList;
 	private List<S01StockItemSearch> stockItemList;
@@ -59,11 +66,11 @@ public class StockItemRestController extends MultiActionController {
 		this.storeStockItemDAO = storeStockItemDAO;
 	}
 
-	public ModelAndView save(HttpServletRequest request,
-			HttpServletResponse response, TSistockItem stockItem) throws Exception {
-		stockItemDAO.saveStockItem(stockItem);
-		return new ModelAndView("redirect:list.htm");
-	}
+//	public ModelAndView save(HttpServletRequest request,
+////			HttpServletResponse response, TSistockItem stockItem) throws Exception {
+////		stockItemDAO.saveStockItem(stockItem);
+////		return new ModelAndView("redirect:list.htm");
+//	}
 
 	public ModelAndView stockItemSearch(HttpServletRequest request,
 			HttpServletResponse response, TZlStoreStockItem storeStockItem) {
@@ -73,31 +80,31 @@ public class StockItemRestController extends MultiActionController {
 	@RequestMapping(value="/list", method=RequestMethod.GET, produces={MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
 	public List<S01StockItemSearch> list() throws Exception {
 
-		storeStockItemDAO = new StoreStockItemDAOImpl();
-		stockItemList = storeStockItemDAO.listAllStoreStockItem();
+		stockItemSearchDAO = new S01StockItemSearchDAOImpl();
+		stockItemList = stockItemSearchDAO.getStockItemSearchList();
 		stockItemList.removeAll(Collections.singleton(null));
 		return stockItemList;
 	}
 
 	@RequestMapping(value="/getStoreStockItem/{stockItemId}", method=RequestMethod.GET, produces={MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE} )
 	public TZlStoreStockItem getStoreStockItemById(@PathVariable int stockItemId) {
-		storeStockItemDAO = new StoreStockItemDAOImpl();
-		storeStockItem = storeStockItemDAO.getStoreStockItemById(stockItemId);
+		tzlstoreStockItemDAO = new TZlStoreStockItemDAOImpl();
+		storeStockItem = tzlstoreStockItemDAO.getStoreStockItemById(stockItemId);
 
 		return storeStockItem;
 
 	}
 
-	@RequestMapping(value = "/getMapStockItemById/{stockItemId}", method=RequestMethod.GET)
-	public Map<String, S01SistockItem> getMapStockItemById(@PathVariable int stockItemId) {
-		stockItemDAO = new StockItemDAOImpl();
-		Map<String, S01SistockItem> stockItemMap = new HashMap<String, S01SistockItem>();
-
-		sisList = stockItemDAO.getStockItemById(stockItemId);
-		String key = "stockItem" + Integer.toString(stockItemId);
-		stockItemMap.put(key, stockItem);
-		return stockItemMap;
-	}
+//	@RequestMapping(value = "/getMapStockItemById/{stockItemId}", method=RequestMethod.GET)
+//	public Map<String, S01SistockItem> getMapStockItemById(@PathVariable int stockItemId) {
+//		stockItemDAO = new StockItemDAOImpl();
+//		Map<String, S01SistockItem> stockItemMap = new HashMap<String, S01SistockItem>();
+//
+//		sisList = stockItemDAO.getStockItemById(stockItemId);
+//		String key = "stockItem" + Integer.toString(stockItemId);
+//		stockItemMap.put(key, stockItem);
+//		return stockItemMap;
+//	}
 	
 	@RequestMapping(value = "/getStockItemById/{stockItemId}", method=RequestMethod.GET, produces={MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})
 	public List<S01SistockItem> getStockItemById(@PathVariable int stockItemId) {

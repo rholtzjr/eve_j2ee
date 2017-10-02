@@ -21,19 +21,23 @@ import org.holtz.eve.jpa.entity.S01StockItemSearch;
 public class StockItemDatabase
 {
     private final Map<Integer, S01StockItemSearch> map = Collections.synchronizedMap(new HashMap<Integer, S01StockItemSearch>());
+    private final List<S01StockItemSearch> stockItemIdList = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
     private final List<S01StockItemSearch> stockItemIdIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
     private final List<S01StockItemSearch> stockItemNameIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
     private final List<S01StockItemSearch> stockItemSupplierIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
     private final List<S01StockItemSearch> stockItemBarcodeIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
+    private final List<S01StockItemSearch> stockItemIdDescIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
+    private final List<S01StockItemSearch> stockItemNameDescIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
+    private final List<S01StockItemSearch> stockItemSupplierDescIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
+    private final List<S01StockItemSearch> stockItemBarcodeDescIdx = Collections.synchronizedList(new ArrayList<S01StockItemSearch>());
 
     /**
      * Constructor
      */
     public StockItemDatabase(List<S01StockItemSearch> itemList, int count)
     {
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < itemList.size(); i++)
         {
-            //  This will be the DAO call to populate the data from the database view
         	 add(itemList.get(i));
         }
         updateIndecies();
@@ -71,11 +75,16 @@ public class StockItemDatabase
 
     protected void add(final S01StockItemSearch stockItem)
     {
-        map.put(stockItem.getId().getSistockItemId(), stockItem);
+        map.put(stockItem.getSIStockItemID(), stockItem);
+        stockItemIdList.add(stockItem);
         stockItemIdIdx.add(stockItem);
         stockItemNameIdx.add(stockItem);
         stockItemSupplierIdx.add(stockItem);
         stockItemBarcodeIdx.add(stockItem);
+        stockItemIdDescIdx.add(stockItem);
+        stockItemNameDescIdx.add(stockItem);
+        stockItemSupplierDescIdx.add(stockItem);
+        stockItemBarcodeDescIdx.add(stockItem);
     }
 
     /**
@@ -93,22 +102,26 @@ public class StockItemDatabase
 
     public List<S01StockItemSearch> getIndex(SortParam<?> sort)
     {
-        if (sort == null || sort.getProperty().equals("stockItemId"))
+        if (sort == null)
         {
-            return stockItemIdIdx;
+            return stockItemIdList;
         }
 
+        if (sort.getProperty().equals("stockItemId"))
+        {
+            return sort.isAscending() ? stockItemIdIdx : stockItemIdDescIdx;
+        }
         if (sort.getProperty().equals("stockItemName"))
         {
-            return sort.isAscending() ? stockItemNameIdx : stockItemIdIdx;
+            return sort.isAscending() ? stockItemNameIdx : stockItemNameDescIdx;
         }
         else if (sort.getProperty().equals("supplier"))
         {
-            return sort.isAscending() ? stockItemSupplierIdx : stockItemIdIdx;
+            return sort.isAscending() ? stockItemSupplierIdx : stockItemSupplierDescIdx;
         }
         else if ( sort.getProperty().equals("barcode"))
         {
-        	return sort.isAscending() ? stockItemBarcodeIdx : stockItemIdIdx;
+        	return sort.isAscending() ? stockItemBarcodeIdx : stockItemBarcodeDescIdx;
         	
         }
         throw new RuntimeException("unknown sort option [" + sort +
@@ -130,7 +143,7 @@ public class StockItemDatabase
      */
     public void save(final S01StockItemSearch stockItem)
     {
-        if (stockItem.getId().getSistockItemId() != 0)
+        if (stockItem.getSIStockItemID() >= 0)
         {
         //    stockItem.setId(S01StockItemSearchGenerator.getInstance().generateId());
             add(stockItem);
@@ -138,7 +151,7 @@ public class StockItemDatabase
         }
         else
         {
-            throw new IllegalArgumentException("stockItem [" + stockItem.getId().getSistockItemId() +
+            throw new IllegalArgumentException("stockItem [" + stockItem.getSIStockItemID() +
                 "] is already persistent");
         }
     }
@@ -150,14 +163,18 @@ public class StockItemDatabase
      */
     public void delete(final S01StockItemSearch stockItem)
     {
-        map.remove(stockItem.getId());
-
+        map.remove(stockItem.getSIStockItemID());
+        stockItemIdList.remove(stockItem);
         stockItemIdIdx.remove(stockItem);
         stockItemNameIdx.remove(stockItem);
         stockItemSupplierIdx.remove(stockItem);
         stockItemBarcodeIdx.remove(stockItem);
+        stockItemIdDescIdx.remove(stockItem);
+        stockItemNameDescIdx.remove(stockItem);
+        stockItemSupplierDescIdx.remove(stockItem);
+        stockItemBarcodeDescIdx.remove(stockItem);
 
-        stockItem.getId().setSistockItemId(0);
+        //stockItem.setSIStockItemID(0);
     }
 
     
@@ -167,7 +184,7 @@ public class StockItemDatabase
         {
             public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
             {
-                return Integer.toString( (arg0).getId().getSistockItemId()).compareTo(Integer.toString((arg1).getId().getSistockItemId()));
+                return (arg0).getSIStockItemID() - (arg1).getSIStockItemID();
             }
         });
 
@@ -175,7 +192,7 @@ public class StockItemDatabase
         {
             public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
             {
-                return (arg0).getId().getSistockItemTx().compareTo((arg1).getId().getSistockItemTx());
+                return (arg0).getSIStockItemTx().compareTo((arg1).getSIStockItemTx());
             }
         });
 
@@ -183,7 +200,7 @@ public class StockItemDatabase
         {
             public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
             {
-                return (arg1).getId().getSuSupplierTx().compareTo((arg0).getId().getSuSupplierTx());
+                return (arg0).getSuSupplierTx().compareTo((arg1).getSuSupplierTx());
             }
         });
 
@@ -191,7 +208,47 @@ public class StockItemDatabase
         {
             public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
             {
-                return (arg1).getId().getSibarcodeNoTxN().compareTo((arg0).getId().getSibarcodeNoTxN());
+                if((arg0).getSIBarcodeNoTx_N() == null)
+                	(arg0).setSIBarcodeNoTx_N("");
+                if((arg1).getSIBarcodeNoTx_N() == null)
+        			(arg1).setSIBarcodeNoTx_N("");
+            	return (arg0).getSIBarcodeNoTx_N().compareTo((arg1).getSIBarcodeNoTx_N());
+            }
+        });
+        
+        Collections.sort(stockItemIdDescIdx, new Comparator<S01StockItemSearch>()
+        {
+            public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
+            {
+                return (arg1).getSIStockItemID() - (arg0).getSIStockItemID();
+            }
+        });
+
+        Collections.sort(stockItemNameDescIdx, new Comparator<S01StockItemSearch>()
+        {
+            public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
+            {
+                return (arg1).getSIStockItemTx().compareTo((arg0).getSIStockItemTx());
+            }
+        });
+
+        Collections.sort(stockItemSupplierDescIdx, new Comparator<S01StockItemSearch>()
+        {
+            public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
+            {
+                return (arg1).getSuSupplierTx().compareTo((arg0).getSuSupplierTx());
+            }
+        });
+
+        Collections.sort(stockItemBarcodeDescIdx, new Comparator<S01StockItemSearch>()
+        {
+            public int compare(S01StockItemSearch arg0, S01StockItemSearch arg1)
+            {
+            	if((arg0).getSIBarcodeNoTx_N() == null)
+                	(arg0).setSIBarcodeNoTx_N("");
+                if((arg1).getSIBarcodeNoTx_N() == null)
+        			(arg1).setSIBarcodeNoTx_N("");
+            	return (arg1).getSIBarcodeNoTx_N().compareTo((arg0).getSIBarcodeNoTx_N());
             }
         });
 

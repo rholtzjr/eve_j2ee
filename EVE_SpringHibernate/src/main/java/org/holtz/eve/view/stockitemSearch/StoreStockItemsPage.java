@@ -84,11 +84,11 @@ public class StoreStockItemsPage extends StockItemBasePage
             	S01StockItemSearch stockItem = item.getModelObject();
                 item.add(new Label("stockItemId", item.getId()));
                 item.add(new ActionPanel("actions", item.getModel()));
-                item.add(new Label("stockItemId", String.valueOf(stockItem.getId())));
-                item.add(new Label("stockItemTx", stockItem.getId().getSistockItemTx()));
-                item.add(new Label("Description", stockItem.getId().getStstockTypeTx()));
-                item.add(new Label("Supplier", stockItem.getId().getSuSupplierTx()));
-                item.add(new Label("Barcode", stockItem.getId().getSibarcodeNoTxN()));
+                item.add(new Label("stockItemId", String.valueOf(stockItem.getSIStockItemID())));
+                item.add(new Label("stockItemTx", stockItem.getSIStockItemTx()));
+                item.add(new Label("Description", stockItem.getSTStockTypeTx()));
+                item.add(new Label("Supplier", stockItem.getSuSupplierTx()));
+                item.add(new Label("Barcode", stockItem.getSIBarcodeNoTx_N()));
 
                 item.add(AttributeModifier.replace("class", new AbstractReadOnlyModel<String>()
                 {

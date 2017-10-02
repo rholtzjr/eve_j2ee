@@ -10,10 +10,13 @@ import org.apache.wicket.response.filter.EmptySrcAttributeCheckFilter;
 import org.apache.wicket.response.filter.ServerAndClientTimeFilter;
 import org.apache.wicket.settings.RequestCycleSettings;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
+import org.holtz.eve.jpa.entity.S01CuCust;
+import org.holtz.eve.jpa.entity.S01InInvoice;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TCuCust;
 import org.holtz.eve.view.stockitemSearch.StockItemSearchDataTablePage;
 import org.holtz.eve.view.customer.CustomerDatabase;
+import org.holtz.eve.view.invoice.InvoiceDatabase;
 import org.holtz.eve.view.stockitemSearch.StockItemDatabase;
 
 public class EveApplication extends WebApplication {
@@ -21,6 +24,7 @@ public class EveApplication extends WebApplication {
 	
 	private StockItemDatabase stockItemDB = null;
 	private CustomerDatabase custItemDB = null;
+	private InvoiceDatabase invItemDB = null;
 	@Override
 	public Class<? extends Page> getHomePage() {
 
@@ -32,7 +36,8 @@ public class EveApplication extends WebApplication {
 	protected void init() {
 		
 		super.init();
-		 getDebugSettings().setDevelopmentUtilitiesEnabled(true);
+	//	getResourceSettings().setResourceStreamLocator(new WebResourceStreamLocator()); 
+		getDebugSettings().setDevelopmentUtilitiesEnabled(true);
 		 getDebugSettings().setOutputMarkupContainerClassName(true);
 		 getRequestCycleSettings().addResponseFilter(new ServerAndClientTimeFilter());
 		 getMarkupSettings().setStripWicketTags(false);
@@ -46,8 +51,12 @@ public class EveApplication extends WebApplication {
 	{
 	   return stockItemDB = new StockItemDatabase(list);
 	}
-	public CustomerDatabase getCustItemDB(List<TCuCust> list)
+	public CustomerDatabase getCustItemDB(List<S01CuCust> list)
 	{
 	   return custItemDB = new CustomerDatabase(list);
+	}
+	public InvoiceDatabase getInvoiceDB(List<S01InInvoice> list)
+	{
+	   return invItemDB = new InvoiceDatabase(list);
 	}
 }

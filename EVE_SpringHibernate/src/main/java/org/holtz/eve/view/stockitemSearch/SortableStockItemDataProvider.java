@@ -15,10 +15,14 @@ import org.apache.wicket.injection.Injector;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
+import org.holtz.eve.jpa.dao.S01StockItemSearchDAO;
 import org.holtz.eve.jpa.dao.StockItemDAO;
 import org.holtz.eve.jpa.dao.StoreStockItemDAO;
+import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
+import org.holtz.eve.jpa.dao.impl.S01StockItemSearchDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
+import org.holtz.eve.jpa.dao.impl.TZlStoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.holtz.eve.view.DatabaseLocator;
@@ -26,27 +30,26 @@ import org.holtz.eve.view.DatabaseLocator;
 public class SortableStockItemDataProvider extends SortableDataProvider<S01StockItemSearch, String> implements IFilterStateLocator<StockItemFilter>, Serializable 
 {
     private StockItemFilter stockItemFilter = new StockItemFilter();
-    @SpringBean
-    private transient StoreStockItemDAOImpl stockItemDAO;
-    List<S01StockItemSearch> stockItemList = new ArrayList<S01StockItemSearch>();
-    TZlStoreStockItem stockItem = new TZlStoreStockItem();
-    
+    private transient S01StockItemSearchDAO stockItemDAO;
+    private List<S01StockItemSearch> stockItemList = new ArrayList<S01StockItemSearch>();
+    private TZlStoreStockItem storeStockItem = new TZlStoreStockItem();
+    private transient TZlStoreStockItemDAO storeStockItemDAO;
     
     /**
      * constructor
      */
     public SortableStockItemDataProvider()
     {
-    	stockItemDAO = new StoreStockItemDAOImpl();
+    	stockItemDAO = new S01StockItemSearchDAOImpl();
     	setSort("stockItemId", SortOrder.NONE);
-    	stockItemList = stockItemDAO.listAllStoreStockItem();
+    	stockItemList = stockItemDAO.getStockItemSearchList();
     	stockItemList.removeAll(Collections.singleton(null));
     }
 
     protected StockItemDatabase getStockItemDB()
     {
-    	DatabaseLocator.getStockItemDatabase(stockItemList);
-    	return new StockItemDatabase(stockItemList);
+    	return DatabaseLocator.getStockItemDatabase(stockItemList);
+    	//return new StockItemDatabase(stockItemList);
     }
 
     @Override
@@ -68,10 +71,10 @@ public class SortableStockItemDataProvider extends SortableDataProvider<S01Stock
         String stockSupplier = stockItemFilter.getStockItemSupplier();
         String stockBarcode = stockItemFilter.getStockItemBarcode();
         for(int i = 0; i < stockItemSearchsFound.size(); i++) {
-        	String filterId = Integer.toString(stockItemSearchsFound.get(i).getId().getSistockItemId());
-        	String filterName = stockItemSearchsFound.get(i).getId().getSistockItemTx();
-        	String filterSupplier = stockItemSearchsFound.get(i).getId().getSuSupplierTx();
-        	String filterBarcode = stockItemSearchsFound.get(i).getId().getSibarcodeNoTxN();
+        	String filterId = Integer.toString(stockItemSearchsFound.get(i).getSIStockItemID());
+        	String filterName = stockItemSearchsFound.get(i).getSIStockItemTx();
+        	String filterSupplier = stockItemSearchsFound.get(i).getSuSupplierTx();
+        	String filterBarcode = stockItemSearchsFound.get(i).getSIBarcodeNoTx_N();
  
         
 	        if(stockId != null && !filterId.contains(stockId))
@@ -135,15 +138,16 @@ public class SortableStockItemDataProvider extends SortableDataProvider<S01Stock
     }
 
 	public TZlStoreStockItem getStockItem() {
-		return stockItem;
+		return storeStockItem;
 	}
 	public TZlStoreStockItem getStockItem(int id) {
-		stockItem = stockItemDAO.getStoreStockItemById(id);
-		return stockItem;
+		storeStockItemDAO = new TZlStoreStockItemDAOImpl();
+		storeStockItem = storeStockItemDAO.getStoreStockItemById(id);
+		return storeStockItem;
 	}
 
 	public void setStockItem(TZlStoreStockItem stockItem) {
-		this.stockItem = stockItem;
+		this.storeStockItem = stockItem;
 	}
     
 

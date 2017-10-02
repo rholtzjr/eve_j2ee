@@ -58,13 +58,10 @@ public class StockItemSearchDataTablePage extends StockItemBasePage
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private StockItemDetailPanel modalContent;
-	
-
 	/**
      * constructor
      */
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+   
 	public StockItemSearchDataTablePage()
     {
    			
@@ -90,7 +87,7 @@ public class StockItemSearchDataTablePage extends StockItemBasePage
 
         });
 
-        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Stock Id"), "stockItemId", "id.sistockItemId")
+        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Stock Id"), "stockItemId", "SIStockItemID")
         {
             /**
 			 * 
@@ -103,9 +100,9 @@ public class StockItemSearchDataTablePage extends StockItemBasePage
             }
         });
         
-        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Stock Item Name"), "stockItemName", "id.sistockItemTx"));
-        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Supplier"), "supplier", "id.suSupplierTx"));
-        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Barcode"), "barcode", "id.sibarcodeNoTxN"));
+        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Stock Item Name"), "stockItemName", "SIStockItemTx"));
+        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Supplier"), "supplier", "suSupplierTx"));
+        columns.add(new PropertyColumn<S01StockItemSearch, String>(new Model<>("Barcode"), "barcode", "SIBarcodeNoTx_N"));
         SortableStockItemDataProvider provider = new SortableStockItemDataProvider();
         DataTable<S01StockItemSearch, String> stockItemTable = new DataTable<>("stockItemTable", columns, provider, 10);
         stockItemTable.addBottomToolbar(new ExportToolbar(stockItemTable).addDataExporter(new CSVDataExporter()));

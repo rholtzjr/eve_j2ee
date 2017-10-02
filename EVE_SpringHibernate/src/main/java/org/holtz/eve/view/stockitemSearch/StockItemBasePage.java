@@ -17,8 +17,10 @@ import org.apache.wicket.model.PropertyModel;
 import org.holtz.eve.controller.StockItemRestController;
 import org.holtz.eve.jpa.dao.StockItemDAO;
 import org.holtz.eve.jpa.dao.StoreStockItemDAO;
+import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
 import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
+import org.holtz.eve.jpa.dao.impl.TZlStoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.slf4j.Logger;
@@ -63,7 +65,7 @@ public abstract class StockItemBasePage extends WebPage
 		}
 		else
 		{
-			return selected.getId().getSistockItemId() + " " + selected.getId().getSistockItemTx();
+			return selected.getSIStockItemID() + " " + selected.getSIStockItemTx();
 		}
 	}
 
@@ -75,9 +77,9 @@ public abstract class StockItemBasePage extends WebPage
 		// Need to get the TZlStoreStockItem object.  In order to use Spring Context/Security
 		// This will need to be setup to use the Rest Controller.
 		//		StockItemRestController ssic = new StockItemRestController();
-		StoreStockItemDAO sid = new StoreStockItemDAOImpl();
-		int id = getSelected().getId().getZlStockItemId();
-		editSelected = sid.getStoreStockItemById(id);
+		TZlStoreStockItemDAO sid = new TZlStoreStockItemDAOImpl();
+		int id = getSelected().getZlStockItemID();
+		editSelected = sid.getStockItemById(id);
 		return editSelected;
 	}
 	public class ActionPanel extends Panel {
@@ -178,7 +180,7 @@ public abstract class StockItemBasePage extends WebPage
 
 	public void setEditSelected(TZlStoreStockItem editSelected) {
 		addStateChange();
-		//Call to Modal window?
+		
 		this.editSelected = editSelected;
 	}
 

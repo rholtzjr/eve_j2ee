@@ -37,7 +37,7 @@ public class SortableInvoiceDataProvider extends SortableDataProvider<S01InInvoi
     public SortableInvoiceDataProvider()
     {
     	invItemDAO = new S01InInvoiceDAOImpl();
-    	setSort("custId", SortOrder.NONE);
+    	setSort("invId", SortOrder.NONE);
     	invItemList = invItemDAO.getInInvoiceList();
     	invItemList.removeAll(Collections.singleton(null));
     }

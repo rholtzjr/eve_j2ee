@@ -183,7 +183,42 @@ table.dataview {
 	font-size: 1em;
 	font-family: arial;
 	}
-	
+table.custTable {
+	table-layout: auto;
+	margin-bottom: 10px;
+	width: 100%;
+    border: 1px solid black;
+--	border-bottom: 1px solid #0079d6;
+	font-size: 1em;
+	font-family: arial;
+	}	
+table.personTable {
+	table-layout: auto;
+	margin-bottom: 10px;
+	width: 100%;
+    border: 1px solid black;
+--	border-bottom: 1px solid #0079d6;
+	font-size: 1em;
+	font-family: arial;
+	}
+table.addressTable {
+	table-layout: auto;
+	margin-bottom: 10px;
+	width: 100%;
+    border: 1px solid black;
+--	border-bottom: 1px solid #0079d6;
+	font-size: 1em;
+	font-family: arial;
+	}
+table.nameTable {
+	table-layout: auto;
+	margin-bottom: 10px;
+	width: 100%;
+    border: 1px solid black;
+--	border-bottom: 1px solid #0079d6;
+	font-size: 1em;
+	font-family: arial;
+	}
 table.dataview caption { text-align: left; }
 table.dataview tr { padding-top: 2px; padding-bottom: 2px; }
 table.dataview tr.even { background-color: lightgray; }

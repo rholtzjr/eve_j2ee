@@ -51,10 +51,10 @@ public class SortingPage extends StockItemBasePage
             {
             	S01StockItemSearch stockItem = item.getModelObject();
                 item.add(new ActionPanel("actions", item.getModel()));
-                item.add(new Label("stockItemId", String.valueOf(stockItem.getId())));
-                item.add(new Label("stockItemName", stockItem.getId().getSistockItemTx()));
-                item.add(new Label("supplier", stockItem.getId().getSuSupplierTx()));
-                item.add(new Label("barcode", stockItem.getId().getSibarcodeNoTxN()));
+                item.add(new Label("stockItemId", String.valueOf(stockItem.getSIStockItemID())));
+                item.add(new Label("stockItemName", stockItem.getSIStockItemTx()));
+                item.add(new Label("supplier", stockItem.getSuSupplierTx()));
+                item.add(new Label("barcode", stockItem.getSIBarcodeNoTx_N()));
                 
 
                 item.add(AttributeModifier.replace("class", new AbstractReadOnlyModel<String>()

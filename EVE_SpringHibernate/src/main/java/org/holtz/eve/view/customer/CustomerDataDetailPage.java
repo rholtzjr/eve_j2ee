@@ -2,18 +2,28 @@ package org.holtz.eve.view.customer;
 
 import java.sql.Timestamp;
 
+import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.markup.html.form.AjaxButton;
 import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.holtz.eve.jpa.entity.S01CuCust;
+import org.holtz.eve.jpa.entity.TZlStoreStockItem;
+import org.holtz.eve.view.stockitemSearch.StockItemDetailPanel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class CustomerDataDetailPage extends WebPage {
+public class CustomerDataDetailPage extends CustomerBasePage {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+	private static final Logger log = LoggerFactory.getLogger(CustomerDataDetailPage.class);
+	private Integer cuCustID;
 	private String cuCustNumberTx_N;
 	private String cuDataSourceTx_N;
 	private String cuDBPasswordTx_N;
@@ -102,21 +112,137 @@ public class CustomerDataDetailPage extends WebPage {
 	private Integer cuWStateID_N;
 	
 	public CustomerDataDetailPage(S01CuCust custItem) {
-		// TODO Auto-generated constructor stub
+		setOutputMarkupId(true);
+        setOutputMarkupPlaceholderTag(true);
+        Form<?> editForm = new Form<>("editForm");
+        
+        editForm.setMultiPart(true);
+
+        if(custItem != null) { 		
+        	editForm.addOrReplace(new TextField<>("cuCustID", new PropertyModel<Object>(custItem, "cuCustID")));
+        	editForm.addOrReplace(new TextField<>("cuCustNumberTx_N", new PropertyModel<Object>(custItem, "cuCustNumberTx_N"))); 
+			editForm.addOrReplace(new TextField<>("cuDataSourceTx_N", new PropertyModel<Object>(custItem, "cuDataSourceTx_N")));
+			editForm.addOrReplace(new TextField<>("cuDBPasswordTx_N", new PropertyModel<Object>(custItem, "cuDBPasswordTx_N")));
+			editForm.addOrReplace(new TextField<>("cuDBUserIDTx_N", new PropertyModel<Object>(custItem, "cuDBUserIDTx_N")));
+			editForm.addOrReplace(new TextField<>("cuDoctorsReportDate_N", new PropertyModel<Object>(custItem, "cuDoctorsReportDate_N")));
+			editForm.addOrReplace(new TextField<>("cuDoctorsReportReceivedBl", new PropertyModel<Object>(custItem, "cuDoctorsReportReceivedBl")));
+			editForm.addOrReplace(new TextField<>("cuDoctorsReportRequiredBl", new PropertyModel<Object>(custItem, "cuDoctorsReportRequiredBl")));
+			editForm.addOrReplace(new TextField<>("cuEMailTx_N", new PropertyModel<Object>(custItem, "cuEMailTx_N")));
+			editForm.addOrReplace(new TextField<>("cuFaxTx_N", new PropertyModel<Object>(custItem, "cuFaxTx_N")));
+			editForm.addOrReplace(new TextField<>("cuFirstLanguageID_N", new PropertyModel<Object>(custItem, "cuFirstLanguageID_N")));
+			editForm.addOrReplace(new TextField<>("cuFirstNameTx", new PropertyModel<Object>(custItem, "cuFirstNameTx")));
+			editForm.addOrReplace(new TextField<>("cuFrequentFlyerTx_N", new PropertyModel<Object>(custItem, "cuFrequentFlyerTx_N")));
+			editForm.addOrReplace(new TextField<>("cuHeightFl_N", new PropertyModel<Object>(custItem, "cuHeightFl_N")));
+			editForm.addOrReplace(new TextField<>("cuImagePathTx_N", new PropertyModel<Object>(custItem, "cuImagePathTx_N")));
+			editForm.addOrReplace(new TextField<>("cuInitialCatalogTx_N", new PropertyModel<Object>(custItem, "cuInitialCatalogTx_N")));
+			editForm.addOrReplace(new TextField<>("cuInsuranceCoTx_N", new PropertyModel<Object>(custItem, "cuInsuranceCoTx_N")));
+			editForm.addOrReplace(new TextField<>("cuInsuranceDate_N", new PropertyModel<Object>(custItem, "cuInsuranceDate_N")));
+			editForm.addOrReplace(new TextField<>("cuIsAnonymousBl_N", new PropertyModel<Object>(custItem, "cuIsAnonymousBl_N")));
+			editForm.addOrReplace(new TextField<>("cuIsCustomerCompletlyRegisteredBl", new PropertyModel<Object>(custItem, "cuIsCustomerCompletlyRegisteredBl")));
+			editForm.addOrReplace(new TextField<>("cuKnownAsTx_N", new PropertyModel<Object>(custItem, "cuKnownAsTx_N")));
+			editForm.addOrReplace(new TextField<>("cuLAddress1Tx_N", new PropertyModel<Object>(custItem, "cuLAddress1Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuLAddress2Tx_N", new PropertyModel<Object>(custItem, "cuLAddress2Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuLAddress3Tx_N", new PropertyModel<Object>(custItem, "cuLAddress3Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuLAddress4Tx_N", new PropertyModel<Object>(custItem, "cuLAddress4Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuLastActivityDate_N", new PropertyModel<Object>(custItem, "cuLastActivityDate_N")));
+			editForm.addOrReplace(new TextField<>("cuLastDiveDate_N", new PropertyModel<Object>(custItem, "cuLastDiveDate_N")));
+			editForm.addOrReplace(new TextField<>("cuLastNameTx", new PropertyModel<Object>(custItem, "cuLastNameTx")));
+			editForm.addOrReplace(new TextField<>("cuLastPurchaseDate", new PropertyModel<Object>(custItem, "cuLastPurchaseDate")));
+			editForm.addOrReplace(new TextField<>("cuLastUpdatedDate", new PropertyModel<Object>(custItem, "cuLastUpdatedDate")));
+			editForm.addOrReplace(new TextField<>("cuLPostcodeTx_N", new PropertyModel<Object>(custItem, "cuLPostcodeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuMaritalStatusID_N", new PropertyModel<Object>(custItem, "cuMaritalStatusID_N")));
+			editForm.addOrReplace(new TextField<>("cuMiddleInitialTx_N", new PropertyModel<Object>(custItem, "cuMiddleInitialTx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKAddress1Tx_N", new PropertyModel<Object>(custItem, "cuNOKAddress1Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKAddress2Tx_N", new PropertyModel<Object>(custItem, "cuNOKAddress2Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKAddress3Tx_N", new PropertyModel<Object>(custItem, "cuNOKAddress3Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKAddress4Tx_N", new PropertyModel<Object>(custItem, "cuNOKAddress4Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKNameTx_N", new PropertyModel<Object>(custItem, "cuNOKNameTx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKPostcodeTx_N", new PropertyModel<Object>(custItem, "cuNOKPostcodeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKRelationshipTx_N", new PropertyModel<Object>(custItem, "cuNOKRelationshipTx_N")));
+			editForm.addOrReplace(new TextField<>("cuNOKTelTx_N", new PropertyModel<Object>(custItem, "cuNOKTelTx_N")));
+			editForm.addOrReplace(new TextField<>("cuNoOfDivesIn_N", new PropertyModel<Object>(custItem, "cuNoOfDivesIn_N")));
+			editForm.addOrReplace(new TextField<>("cuNotesTx_N", new PropertyModel<Object>(custItem, "cuNotesTx_N")));
+			editForm.addOrReplace(new TextField<>("cuOccupationTx_N", new PropertyModel<Object>(custItem, "cuOccupationTx_N")));
+			editForm.addOrReplace(new TextField<>("cuPADIID_N", new PropertyModel<Object>(custItem, "cuPADIID_N")));
+			editForm.addOrReplace(new TextField<>("cuPADIKeyTx_N", new PropertyModel<Object>(custItem, "cuPADIKeyTx_N")));
+			editForm.addOrReplace(new TextField<>("cuPADIMailingsBl", new PropertyModel<Object>(custItem, "cuPADIMailingsBl")));
+			editForm.addOrReplace(new TextField<>("cuPagerTx_N", new PropertyModel<Object>(custItem, "cuPagerTx_N")));
+			editForm.addOrReplace(new TextField<>("cuPassportNoTx_N", new PropertyModel<Object>(custItem, "cuPassportNoTx_N")));
+			editForm.addOrReplace(new TextField<>("cuPasswordTx_N", new PropertyModel<Object>(custItem, "cuPasswordTx_N")));
+			editForm.addOrReplace(new TextField<>("cuPostcodeTx_N", new PropertyModel<Object>(custItem, "cuPostcodeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuRequiredBl", new PropertyModel<Object>(custItem, "cuRequiredBl")));
+			editForm.addOrReplace(new TextField<>("cuScubaTribeCodeTx_N", new PropertyModel<Object>(custItem, "cuScubaTribeCodeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuSecretAnswerTx_N", new PropertyModel<Object>(custItem, "cuSecretAnswerTx_N")));
+			editForm.addOrReplace(new TextField<>("cuSecretQuestionTx_N", new PropertyModel<Object>(custItem, "cuSecretQuestionTx_N")));
+			editForm.addOrReplace(new TextField<>("cuSexID_N", new PropertyModel<Object>(custItem, "cuSexID_N")));
+			editForm.addOrReplace(new TextField<>("cuShoeSizeFl_N", new PropertyModel<Object>(custItem, "cuShoeSizeFl_N")));
+			editForm.addOrReplace(new TextField<>("cuSkypeNameTx_N", new PropertyModel<Object>(custItem, "cuSkypeNameTx_N")));
+			editForm.addOrReplace(new TextField<>("cuSourceID_N", new PropertyModel<Object>(custItem, "cuSourceID_N")));
+			editForm.addOrReplace(new TextField<>("cuSSNTx_N", new PropertyModel<Object>(custItem, "cuSSNTx_N")));
+			editForm.addOrReplace(new TextField<>("cuStateID_N", new PropertyModel<Object>(custItem, "cuStateID_N")));
+			editForm.addOrReplace(new TextField<>("cuStatusID", new PropertyModel<Object>(custItem, "cuStatusID")));
+			editForm.addOrReplace(new TextField<>("cuStoreID", new PropertyModel<Object>(custItem, "cuStoreID")));
+			editForm.addOrReplace(new TextField<>("cuStoreNoTx_N", new PropertyModel<Object>(custItem, "cuStoreNoTx_N")));
+			editForm.addOrReplace(new TextField<>("cuSuggestionTx_N", new PropertyModel<Object>(custItem, "cuSuggestionTx_N")));
+			editForm.addOrReplace(new TextField<>("cuSwipeTx_N", new PropertyModel<Object>(custItem, "cuSwipeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuTelHomeTx_N", new PropertyModel<Object>(custItem, "cuTelHomeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuTelLocalTx_N", new PropertyModel<Object>(custItem, "cuTelLocalTx_N")));
+			editForm.addOrReplace(new TextField<>("cuTelMobileTx_N", new PropertyModel<Object>(custItem, "cuTelMobileTx_N")));
+			editForm.addOrReplace(new TextField<>("cuTelWorkTx_N", new PropertyModel<Object>(custItem, "cuTelWorkTx_N")));
+			editForm.addOrReplace(new TextField<>("cuUnavailableBl", new PropertyModel<Object>(custItem, "cuUnavailableBl")));
+			editForm.addOrReplace(new TextField<>("cuUserDefined1Tx_N", new PropertyModel<Object>(custItem, "cuUserDefined1Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuUserDefined2Tx_N", new PropertyModel<Object>(custItem, "cuUserDefined2Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuUserDefined3Tx_N", new PropertyModel<Object>(custItem, "cuUserDefined3Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuUserNameTx_N", new PropertyModel<Object>(custItem, "cuUserNameTx_N")));
+			editForm.addOrReplace(new TextField<>("cuVerifyGuid", new PropertyModel<Object>(custItem, "cuVerifyGuid")));
+			editForm.addOrReplace(new TextField<>("cuWAddress1Tx_N", new PropertyModel<Object>(custItem, "cuWAddress1Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuWAddress2Tx_N", new PropertyModel<Object>(custItem, "cuWAddress2Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuWAddress3Tx_N", new PropertyModel<Object>(custItem, "cuWAddress3Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuWAddress4Tx_N", new PropertyModel<Object>(custItem, "cuWAddress4Tx_N")));
+			editForm.addOrReplace(new TextField<>("cuWCountryID_N", new PropertyModel<Object>(custItem, "cuWCountryID_N")));
+			editForm.addOrReplace(new TextField<>("cuWeightFl_N", new PropertyModel<Object>(custItem, "cuWeightFl_N")));
+			editForm.addOrReplace(new TextField<>("cuWPostcodeTx_N", new PropertyModel<Object>(custItem, "cuWPostcodeTx_N")));
+			editForm.addOrReplace(new TextField<>("cuWStateID_N", new PropertyModel<Object>(custItem, "cuWStateID_N")));
+			
+	 	    
+//			editForm.addOrReplace(new AjaxButton("close") {
+//				public void onSubmit(AjaxRequestTarget target, String contentId) {
+//					onCancel(target);
+//				
+//				}
+//			});
+//			editForm.addOrReplace(new AjaxButton("save") {
+//				public void onSubmit(AjaxRequestTarget target, TZlStoreStockItem custItem) {
+//					onSelect(target, custItem);
+//				}
+//			});
+			if(log.isDebugEnabled()) {
+				log.debug("CustItem found: " + custItem.toString());
+			}
+        }
+		
 	}
 
 	public CustomerDataDetailPage(IModel<?> model) {
-		super(model);
+//		super(model);
 		// TODO Auto-generated constructor stub
 	}
 
 	public CustomerDataDetailPage(PageParameters parameters) {
-		super(parameters);
+//		super(parameters);
 		// TODO Auto-generated constructor stub
 	}
 
 	public String getCuCustNumberTx_N() {
 		return cuCustNumberTx_N;
+	}
+
+	public Integer getCuCustID() {
+		return cuCustID;
+	}
+
+	public void setCuCustID(Integer cuCustID) {
+		this.cuCustID = cuCustID;
 	}
 
 	public void setCuCustNumberTx_N(String cuCustNumberTx_N) {
