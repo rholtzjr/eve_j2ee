@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.AccountDAO;
 import org.holtz.eve.jpa.entity.TAcAccount;
-import org.holtz.eve.jpa.entity.TCuCust;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class AccountDAOImpl implements AccountDAO {

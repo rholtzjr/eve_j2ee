@@ -7,9 +7,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.AddressDAO;
-import org.holtz.eve.jpa.entity.TAcAccount;
 import org.holtz.eve.jpa.entity.TAdAddress;
-import org.holtz.eve.jpa.entity.TCuCust;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class AddressDAOImpl implements AddressDAO {

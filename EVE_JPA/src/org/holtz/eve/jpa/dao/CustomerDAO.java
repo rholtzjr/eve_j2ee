@@ -2,7 +2,6 @@ package org.holtz.eve.jpa.dao;
 
 import java.util.List;
 
-import org.holtz.eve.jpa.entity.S01CuCust;
 import org.holtz.eve.jpa.entity.TCuCust;
 import org.holtz.eve.jpa.entity.TEmEmp;
 

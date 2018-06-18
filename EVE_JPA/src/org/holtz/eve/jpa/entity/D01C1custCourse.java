@@ -76,8 +76,7 @@ public class D01C1custCourse implements java.io.Serializable {
 			@AttributeOverride(name = "c1referringInstNoInN", column = @Column(name = "C1ReferringInstNoIn_N")),
 			@AttributeOverride(name = "c1touchIdN", column = @Column(name = "C1TouchID_N")),
 			@AttributeOverride(name = "c1digitalCodeTxN", column = @Column(name = "C1DigitalCodeTx_N")),
-			@AttributeOverride(name = "c1inWaterDateN", column = @Column(name = "C1InWaterDate_N", length = 23)),
-			@AttributeOverride(name = "c1certTypeId", column = @Column(name = "C1CertTypeID", nullable = false)) })
+			@AttributeOverride(name = "c1inWaterDateN", column = @Column(name = "C1InWaterDate_N", length = 23)) })
 	public D01C1custCourseId getId() {
 		return this.id;
 	}
