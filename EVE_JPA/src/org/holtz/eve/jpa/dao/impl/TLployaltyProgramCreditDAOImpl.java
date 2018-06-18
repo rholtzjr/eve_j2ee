@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TLployaltyProgramCreditDAO;
 import org.holtz.eve.jpa.entity.TLployaltyProgramCredit;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TLployaltyProgramCredit;
 
 public class TLployaltyProgramCreditDAOImpl implements TLployaltyProgramCreditDAO {
 

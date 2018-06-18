@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEmEmpDAO;
 import org.holtz.eve.jpa.entity.TEmEmp;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEmEmp;
 
 public class TEmEmpDOAImpl implements TEmEmpDAO {
 

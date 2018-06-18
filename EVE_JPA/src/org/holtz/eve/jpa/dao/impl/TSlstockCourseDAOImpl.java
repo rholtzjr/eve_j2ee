@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSlstockCourseDAO;
 import org.holtz.eve.jpa.entity.TSlstockCourse;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSlstockCourse;
 
 public class TSlstockCourseDAOImpl implements TSlstockCourseDAO {
 

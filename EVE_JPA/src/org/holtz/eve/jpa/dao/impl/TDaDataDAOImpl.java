@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDaDataDOA;
 import org.holtz.eve.jpa.entity.TDaData;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TDaData;
 
 public class TDaDataDAOImpl implements TDaDataDOA {
 

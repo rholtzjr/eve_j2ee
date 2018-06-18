@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRcrebicategoryDAO;
 import org.holtz.eve.jpa.entity.TRcrebicategory;
-import org.holtz.eve.jpa.entity.TRcrebicategory;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TRcrebicategoryDAOImpl implements TRcrebicategoryDAO {

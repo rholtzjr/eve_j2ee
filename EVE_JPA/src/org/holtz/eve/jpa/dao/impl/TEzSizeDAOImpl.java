@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEzSizeDAO;
 import org.holtz.eve.jpa.entity.TEzSize;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEzSize;
 
 public class TEzSizeDAOImpl implements TEzSizeDAO {
 

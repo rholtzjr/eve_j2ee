@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCuCustDAO;
 import org.holtz.eve.jpa.entity.TCuCust;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TCuCust;
 
 public class TCuCustDAOImpl implements TCuCustDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTaTaxBandRelationsDAO;
 import org.holtz.eve.jpa.entity.TTaTaxBandRelations;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTaTaxBandRelations;
 
 public class TTaTaxBandRelationsDAOImpl implements TTaTaxBandRelationsDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSjShippingPriceDAO;
 import org.holtz.eve.jpa.entity.TSjShippingPrice;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSjShippingPrice;
 
 public class TSjShippingPriceDAOImpl implements TSjShippingPriceDAO {
 

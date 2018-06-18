@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP2pcreportTypeDAO;
 import org.holtz.eve.jpa.entity.TP2pcreportType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP2pcreportType;
 
 public class TP2pcreportTypeDAOImpl implements TP2pcreportTypeDAO {
 

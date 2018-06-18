@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRqqtyBandDAO;
 import org.holtz.eve.jpa.entity.TRqqtyBand;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRqqtyBand;
 
 public class TRqqtyBandDAOImpl implements TRqqtyBandDAO {
 

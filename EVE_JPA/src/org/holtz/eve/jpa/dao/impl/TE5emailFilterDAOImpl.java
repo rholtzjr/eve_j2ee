@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TE5emailFilterDAO;
 import org.holtz.eve.jpa.entity.TE5emailFilter;
-import org.holtz.eve.jpa.entity.TE5emailFilter;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TE5emailFilterDAOImpl implements TE5emailFilterDAO {

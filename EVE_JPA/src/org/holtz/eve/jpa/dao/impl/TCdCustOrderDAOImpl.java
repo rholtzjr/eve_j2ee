@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCdCustOrderDAO;
 import org.holtz.eve.jpa.entity.TCdCustOrder;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TCdCustOrder;
 
 public class TCdCustOrderDAOImpl implements TCdCustOrderDAO {
 

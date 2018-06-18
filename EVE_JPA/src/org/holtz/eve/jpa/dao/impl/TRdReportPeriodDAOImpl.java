@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRdReportPeriodDAO;
 import org.holtz.eve.jpa.entity.TRdReportPeriod;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRdReportPeriod;
 
 public class TRdReportPeriodDAOImpl implements TRdReportPeriodDAO {
 

@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TL1linkedCustomerDAO;
 import org.holtz.eve.jpa.entity.TL1linkedCustomer;
-import org.holtz.eve.jpa.entity.TL1linkedCustomer;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TL1linkedCustomerDAOImpl implements TL1linkedCustomerDAO {

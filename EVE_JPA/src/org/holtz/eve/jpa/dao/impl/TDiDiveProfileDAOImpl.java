@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDiDiveProfileDAO;
 import org.holtz.eve.jpa.entity.TDiDiveProfile;
-import org.holtz.eve.jpa.entity.TDiDiveProfile;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TDiDiveProfileDAOImpl implements TDiDiveProfileDAO {

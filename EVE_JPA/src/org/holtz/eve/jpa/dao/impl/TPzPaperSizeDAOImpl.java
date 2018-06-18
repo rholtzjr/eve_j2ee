@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPzPaperSizeDAO;
 import org.holtz.eve.jpa.entity.TPzPaperSize;
-import org.holtz.eve.jpa.entity.TPzPaperSize;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TPzPaperSizeDAOImpl implements TPzPaperSizeDAO {

@@ -30,11 +30,11 @@ public class S01StockItemSearch implements Serializable {
 	@Column(insertable=false, updatable=false)
 	private String SIStockNoTx;
 
-	@Column(insertable=false, updatable=false)
-	private Integer SIStockTypeID;
-
-	@Column(insertable=false, updatable=false)
-	private Integer STStockTypeID;
+//	@Column(insertable=false, updatable=false)
+//	private Integer SIStockTypeID;
+//
+//	@Column(insertable=false, updatable=false)
+//	private Integer STStockTypeID;
 
 	@Column(insertable=false, updatable=false)
 	private String STStockTypeTx;
@@ -96,7 +96,7 @@ public class S01StockItemSearch implements Serializable {
 	public void setSIStockNoTx(String SIStockNoTx) {
 		this.SIStockNoTx = SIStockNoTx;
 	}
-
+/*
 	public Integer getSIStockTypeID() {
 		return this.SIStockTypeID;
 	}
@@ -112,7 +112,7 @@ public class S01StockItemSearch implements Serializable {
 	public void setSTStockTypeID(Integer STStockTypeID) {
 		this.STStockTypeID = STStockTypeID;
 	}
-
+*/
 	public String getSTStockTypeTx() {
 		return this.STStockTypeTx;
 	}

@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMgMessageDAO;
 import org.holtz.eve.jpa.entity.TMgMessage;
-import org.holtz.eve.jpa.entity.TMgMessage;
 
 public class TMgMessageDAOImpl implements TMgMessageDAO {
 

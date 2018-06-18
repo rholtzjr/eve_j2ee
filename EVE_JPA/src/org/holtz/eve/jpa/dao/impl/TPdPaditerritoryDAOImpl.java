@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPdPaditerritoryDAO;
 import org.holtz.eve.jpa.entity.TPdPaditerritory;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPdPaditerritory;
 
 public class TPdPaditerritoryDAOImpl implements TPdPaditerritoryDAO {
 

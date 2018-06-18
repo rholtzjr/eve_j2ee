@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TErempRoleDAO;
 import org.holtz.eve.jpa.entity.TErempRole;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TErempRole;
 
 public class TErempRoleDAOImpl implements TErempRoleDAO {
 

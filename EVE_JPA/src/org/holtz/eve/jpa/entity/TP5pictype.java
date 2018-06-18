@@ -1,7 +1,6 @@
 package org.holtz.eve.jpa.entity;
 // Generated Aug 4, 2017 9:16:24 AM by Hibernate Tools 4.0.1.Final
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -113,10 +112,10 @@ public class TP5pictype implements java.io.Serializable {
 		this.p5creationDate = p5creationDate;
 	}
 
-	@Column(name = "P5DebitPICBl", nullable = false)
-	public boolean isP5debitPicbl() {
-		return this.p5debitPicbl;
-	}
+//	@Column(name = "P5DebitPICBl", nullable = false)
+//	public boolean isP5debitPicbl() {
+//		return this.p5debitPicbl;
+//	}
 
 	public void setP5debitPicbl(boolean p5debitPicbl) {
 		this.p5debitPicbl = p5debitPicbl;

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TM2menuStatisticsDAO;
 import org.holtz.eve.jpa.entity.TM2menuStatistics;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TM2menuStatistics;
 
 public class TM2menuStatisticsDAOImpl implements TM2menuStatisticsDAO {
 

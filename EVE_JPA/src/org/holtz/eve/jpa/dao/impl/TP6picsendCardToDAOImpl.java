@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP6picsendCardToDAO;
 import org.holtz.eve.jpa.entity.TP6picsendCardTo;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP6picsendCardTo;
 
 public class TP6picsendCardToDAOImpl implements TP6picsendCardToDAO {
 

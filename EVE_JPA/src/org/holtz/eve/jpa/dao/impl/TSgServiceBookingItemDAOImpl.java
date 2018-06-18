@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSgServiceBookingItemDAO;
 import org.holtz.eve.jpa.entity.TSgServiceBookingItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSgServiceBookingItem;
 
 public class TSgServiceBookingItemDAOImpl implements TSgServiceBookingItemDAO {
 

@@ -7,7 +7,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TC6custPopUpDAO;
-import org.holtz.eve.jpa.entity.TAcAccount;
 import org.holtz.eve.jpa.entity.TC6custPopup;
 import org.holtz.jpa.util.HibernateUtil;
 

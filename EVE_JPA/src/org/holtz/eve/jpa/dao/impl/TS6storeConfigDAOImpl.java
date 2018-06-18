@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS6storeConfigDAO;
 import org.holtz.eve.jpa.entity.TS6storeConfig;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS6storeConfig;
 
 public class TS6storeConfigDAOImpl implements TS6storeConfigDAO {
 

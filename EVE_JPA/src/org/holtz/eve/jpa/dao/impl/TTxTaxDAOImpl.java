@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTxTaxDAO;
 import org.holtz.eve.jpa.entity.TTxTax;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTxTax;
 
 public class TTxTaxDAOImpl implements TTxTaxDAO {
 

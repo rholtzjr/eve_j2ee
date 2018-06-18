@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TItinvoiceTypeDAO;
 import org.holtz.eve.jpa.entity.TItinvoiceType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TItinvoiceType;
 
 public class TItinvoiceTypeDAOImpl implements TItinvoiceTypeDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TVcvalidCountryDAO;
 import org.holtz.eve.jpa.entity.TVcvalidCountry;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TVcvalidCountry;
 
 public class TVcvalidCountryDAOImpl implements TVcvalidCountryDAO {
 	

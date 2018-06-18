@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPfProfitCenterDAO;
 import org.holtz.eve.jpa.entity.TPfProfitCenter;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPfProfitCenter;
 
 public class TPfProfitCenterDAOImpl implements TPfProfitCenterDAO {
 

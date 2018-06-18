@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCvCustTypeDiscountBandDAO;
 import org.holtz.eve.jpa.entity.TCvCustTypeDiscountBand;
-import org.holtz.eve.jpa.entity.TCvCustTypeDiscountBand;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TCvCustTypeDiscountBandDAOImpl implements TCvCustTypeDiscountBandDAO {

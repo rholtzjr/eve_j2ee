@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TNsnotifStatusDAO;
 import org.holtz.eve.jpa.entity.TNsnotifStatus;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TNsnotifStatus;
 
 public class TNsnotifStatusDAOImpl implements TNsnotifStatusDAO {
 

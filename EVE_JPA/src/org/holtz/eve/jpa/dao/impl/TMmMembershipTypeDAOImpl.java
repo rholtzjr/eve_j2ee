@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMmMembershipTypeDAO;
 import org.holtz.eve.jpa.entity.TMmMembershipType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TMmMembershipType;
 
 public class TMmMembershipTypeDAOImpl implements TMmMembershipTypeDAO {
 

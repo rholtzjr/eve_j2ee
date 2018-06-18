@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TLvSeasonDAO;
 import org.holtz.eve.jpa.entity.TLvSeason;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TLvSeason;
 
 public class TLvSeasonDAOImpl implements TLvSeasonDAO {
 

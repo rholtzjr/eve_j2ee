@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRySectionTypeDAO;
 import org.holtz.eve.jpa.entity.TRySectionType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRySectionType;
 
 public class TRySectionTypeDAOImpl implements TRySectionTypeDAO {
 

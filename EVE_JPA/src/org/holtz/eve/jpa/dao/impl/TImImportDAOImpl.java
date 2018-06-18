@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TImImportDAO;
 import org.holtz.eve.jpa.entity.TImImport;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TImImport;
 
 public class TImImportDAOImpl implements TImImportDAO {
 

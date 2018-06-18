@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSxSexDAO;
 import org.holtz.eve.jpa.entity.TSxSex;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSxSex;
 
 public class TSxSexDAOImpl implements TSxSexDAO {
 

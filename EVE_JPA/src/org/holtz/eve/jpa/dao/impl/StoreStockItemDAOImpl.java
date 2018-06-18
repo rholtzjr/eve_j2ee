@@ -3,16 +3,11 @@ package org.holtz.eve.jpa.dao.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
-import org.hibernate.type.Type;
 import org.holtz.eve.jpa.dao.StoreStockItemDAO;
-import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
-import org.holtz.eve.jpa.entity.TSistockItem;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.holtz.jpa.util.HibernateUtil;
 

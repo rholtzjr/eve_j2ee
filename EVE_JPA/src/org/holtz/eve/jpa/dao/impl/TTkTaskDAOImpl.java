@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTkTaskDAO;
 import org.holtz.eve.jpa.entity.TTkTask;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTkTask;
 
 public class TTkTaskDAOImpl implements TTkTaskDAO {
 	

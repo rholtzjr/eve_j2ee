@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMtmoduleTypeDAO;
 import org.holtz.eve.jpa.entity.TMtmoduleType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TMtmoduleType;
 
 public class TMtmoduleTypeDAOImpl implements TMtmoduleTypeDAO {
 

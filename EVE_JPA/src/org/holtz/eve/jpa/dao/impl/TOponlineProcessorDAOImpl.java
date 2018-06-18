@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TOnOrderNoteDAO;
 import org.holtz.eve.jpa.entity.TOnOrderNote;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TOnOrderNote;
 
 public class TOponlineProcessorDAOImpl implements TOnOrderNoteDAO {
 

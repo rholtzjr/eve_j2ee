@@ -12,8 +12,6 @@ import org.holtz.eve.jpa.dao.StockItemDAO;
 import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01SistockItem;
-import org.holtz.eve.jpa.entity.S01SistockItem;
-import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TSistockItem;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
@@ -31,7 +29,6 @@ public class StockItemController {
 
 	private StockItemDAO stockItemDAO;
 	private StoreStockItemDAOImpl storeStockItemDAO;
-	private TZlStoreStockItem storeStockItem;
 	private S01SistockItem stockItem;
 	private Map<String, S01SistockItem> stockItemMap;
 	private Map<String, List<S01StockItemSearch>> stockItemSearchListMap;

@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.entity.TSrsalesReport;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSrsalesReport;
 
 public class TSrsalesReportDAOImpl implements org.holtz.eve.jpa.dao.TSrsalesReportDAO {
 

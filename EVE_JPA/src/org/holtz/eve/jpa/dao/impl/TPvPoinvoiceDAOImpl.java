@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPvPoinvoiceDAO;
 import org.holtz.eve.jpa.entity.TPvPoinvoice;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPvPoinvoice;
 
 public class TPvPoinvoiceDAOImpl implements TPvPoinvoiceDAO {
 

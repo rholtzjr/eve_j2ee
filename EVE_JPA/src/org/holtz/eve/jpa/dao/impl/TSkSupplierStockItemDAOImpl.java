@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSkSupplierStockItemDAO;
 import org.holtz.eve.jpa.entity.TSkSupplierStockItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSkSupplierStockItem;
 
 public class TSkSupplierStockItemDAOImpl implements TSkSupplierStockItemDAO {
 

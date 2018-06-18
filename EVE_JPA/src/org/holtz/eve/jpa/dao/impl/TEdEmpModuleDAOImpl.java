@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEdEmpModuleDAO;
 import org.holtz.eve.jpa.entity.TEdEmpModule;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEdEmpModule;
 
 public class TEdEmpModuleDAOImpl implements TEdEmpModuleDAO {
 

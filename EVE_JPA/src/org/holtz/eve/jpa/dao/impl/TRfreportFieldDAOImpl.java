@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRfreportFieldDAO;
 import org.holtz.eve.jpa.entity.TRfreportField;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRfreportField;
 
 public class TRfreportFieldDAOImpl implements TRfreportFieldDAO {
 

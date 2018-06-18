@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TE4emailHistoryDAO;
 import org.holtz.eve.jpa.entity.TE4emailHistory;
-import org.holtz.eve.jpa.entity.TE4emailHistory;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TE4emailHistoryDAOImpl implements TE4emailHistoryDAO {

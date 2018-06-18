@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIrinvoiceRelationDAO;
 import org.holtz.eve.jpa.entity.TIrinvoiceRelation;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIrinvoiceRelation;
 
 public class TIrinvoiceRelationDAOImpl implements TIrinvoiceRelationDAO {
 

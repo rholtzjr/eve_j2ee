@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TStstockTypeDAO;
 import org.holtz.eve.jpa.entity.TStstockType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TStstockType;
 
 public class TStstockTypeDAOImpl implements TStstockTypeDAO {
 

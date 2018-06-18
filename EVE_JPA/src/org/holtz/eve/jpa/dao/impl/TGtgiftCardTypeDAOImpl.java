@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TGtgiftCardTypeDAO;
 import org.holtz.eve.jpa.entity.TGtgiftCardType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TGtgiftCardType;
 
 public class TGtgiftCardTypeDAOImpl implements TGtgiftCardTypeDAO {
 

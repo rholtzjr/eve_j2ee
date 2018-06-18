@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIfinterestFollowUpDAO;
 import org.holtz.eve.jpa.entity.TIfinterestFollowUp;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIfinterestFollowUp;
 
 public class TIfinterestFollowUpDAOImpl implements TIfinterestFollowUpDAO {
 

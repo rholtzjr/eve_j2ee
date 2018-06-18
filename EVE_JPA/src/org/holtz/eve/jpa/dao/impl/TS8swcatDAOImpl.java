@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS8swcatDAO;
 import org.holtz.eve.jpa.entity.TS8swcat;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS8swcat;
 
 public class TS8swcatDAOImpl implements TS8swcatDAO {
 	

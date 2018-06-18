@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRtreportTypeDAO;
 import org.holtz.eve.jpa.entity.TRtreportType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRtreportType;
 
 public class TRtreportTypeDAOImpl implements TRtreportTypeDAO {
 

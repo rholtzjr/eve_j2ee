@@ -22,7 +22,7 @@
 			<attribute name="owner.project.facets" value="jst.utility"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HIBERNATE_4">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/HIBERNATE4_LIB">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 			<attribute name="owner.project.facets" value="jpt.jpa"/>

@@ -1,7 +1,6 @@
 package org.holtz.eve.jpa.entity;
 // Generated Aug 4, 2017 9:16:24 AM by Hibernate Tools 4.0.1.Final
 
-import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -54,7 +53,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 	private String referralStoreNo;
 	private boolean preRegistration;
 	private String certNotes;
-	private String certType;
+//	private String certType;
 	private String scubaTribeCode;
 	private int courseTypeId;
 	private Integer courseId;
@@ -70,7 +69,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 	private short storeId;
 	private Integer homeStateId;
 	private Integer homeCountryId;
-	private int certTypeId;
+//	private int certTypeId;
 
 	public EmailAgentCourseEnrollmentsId() {
 	}
@@ -91,7 +90,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		this.enrollmentStatusId = enrollmentStatusId;
 		this.picstatusId = picstatusId;
 		this.storeId = storeId;
-		this.certTypeId = certTypeId;
+//		this.certTypeId = certTypeId;
 	}
 
 	public EmailAgentCourseEnrollmentsId(int custCourseId, String courseType, String courseNo,
@@ -151,7 +150,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		this.referralStoreNo = referralStoreNo;
 		this.preRegistration = preRegistration;
 		this.certNotes = certNotes;
-		this.certType = certType;
+//		this.certType = certType;
 		this.scubaTribeCode = scubaTribeCode;
 		this.courseTypeId = courseTypeId;
 		this.courseId = courseId;
@@ -167,7 +166,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		this.storeId = storeId;
 		this.homeStateId = homeStateId;
 		this.homeCountryId = homeCountryId;
-		this.certTypeId = certTypeId;
+//		this.certTypeId = certTypeId;
 	}
 
 	@Column(name = "CustCourseID", nullable = false)
@@ -548,14 +547,14 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		this.certNotes = certNotes;
 	}
 
-	@Column(name = "CertType")
-	public String getCertType() {
-		return this.certType;
-	}
-
-	public void setCertType(String certType) {
-		this.certType = certType;
-	}
+//	@Column(name = "CertType")
+//	public String getCertType() {
+//		return this.certType;
+//	}
+//
+//	public void setCertType(String certType) {
+//		this.certType = certType;
+//	}
 
 	@Column(name = "ScubaTribeCode")
 	public String getScubaTribeCode() {
@@ -692,14 +691,14 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		this.homeCountryId = homeCountryId;
 	}
 
-	@Column(name = "CertTypeID", nullable = false)
-	public int getCertTypeId() {
-		return this.certTypeId;
-	}
-
-	public void setCertTypeId(int certTypeId) {
-		this.certTypeId = certTypeId;
-	}
+//	@Column(name = "CertTypeID", nullable = false)
+//	public int getCertTypeId() {
+//		return this.certTypeId;
+//	}
+//
+//	public void setCertTypeId(int certTypeId) {
+//		this.certTypeId = certTypeId;
+//	}
 
 	public boolean equals(Object other) {
 		if ((this == other))
@@ -812,8 +811,8 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 				&& (this.isPreRegistration() == castOther.isPreRegistration())
 				&& ((this.getCertNotes() == castOther.getCertNotes()) || (this.getCertNotes() != null
 						&& castOther.getCertNotes() != null && this.getCertNotes().equals(castOther.getCertNotes())))
-				&& ((this.getCertType() == castOther.getCertType()) || (this.getCertType() != null
-						&& castOther.getCertType() != null && this.getCertType().equals(castOther.getCertType())))
+//				&& ((this.getCertType() == castOther.getCertType()) || (this.getCertType() != null
+//						&& castOther.getCertType() != null && this.getCertType().equals(castOther.getCertType())))
 				&& ((this.getScubaTribeCode() == castOther.getScubaTribeCode())
 						|| (this.getScubaTribeCode() != null && castOther.getScubaTribeCode() != null
 								&& this.getScubaTribeCode().equals(castOther.getScubaTribeCode())))
@@ -848,8 +847,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 								&& this.getHomeStateId().equals(castOther.getHomeStateId())))
 				&& ((this.getHomeCountryId() == castOther.getHomeCountryId())
 						|| (this.getHomeCountryId() != null && castOther.getHomeCountryId() != null
-								&& this.getHomeCountryId().equals(castOther.getHomeCountryId())))
-				&& (this.getCertTypeId() == castOther.getCertTypeId());
+								&& this.getHomeCountryId().equals(castOther.getHomeCountryId())));
 	}
 
 	public int hashCode() {
@@ -897,7 +895,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		result = 37 * result + (getReferralStoreNo() == null ? 0 : this.getReferralStoreNo().hashCode());
 		result = 37 * result + (this.isPreRegistration() ? 1 : 0);
 		result = 37 * result + (getCertNotes() == null ? 0 : this.getCertNotes().hashCode());
-		result = 37 * result + (getCertType() == null ? 0 : this.getCertType().hashCode());
+//		result = 37 * result + (getCertType() == null ? 0 : this.getCertType().hashCode());
 		result = 37 * result + (getScubaTribeCode() == null ? 0 : this.getScubaTribeCode().hashCode());
 		result = 37 * result + this.getCourseTypeId();
 		result = 37 * result + (getCourseId() == null ? 0 : this.getCourseId().hashCode());
@@ -913,7 +911,7 @@ public class EmailAgentCourseEnrollmentsId implements java.io.Serializable {
 		result = 37 * result + this.getStoreId();
 		result = 37 * result + (getHomeStateId() == null ? 0 : this.getHomeStateId().hashCode());
 		result = 37 * result + (getHomeCountryId() == null ? 0 : this.getHomeCountryId().hashCode());
-		result = 37 * result + this.getCertTypeId();
+//		result = 37 * result + this.getCertTypeId();
 		return result;
 	}
 

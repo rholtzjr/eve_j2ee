@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEuEquipmentRentalPriceDAO;
 import org.holtz.eve.jpa.entity.TEuEquipmentRentalPrice;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEuEquipmentRentalPrice;
 
 public class TEuEquipmentRentalPriceDAOImpl implements TEuEquipmentRentalPriceDAO {
 

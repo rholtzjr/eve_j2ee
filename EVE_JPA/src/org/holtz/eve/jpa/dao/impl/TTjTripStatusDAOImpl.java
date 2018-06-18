@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTjTripStatusDAO;
 import org.holtz.eve.jpa.entity.TTjTripStatus;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTjTripStatus;
 
 public class TTjTripStatusDAOImpl implements TTjTripStatusDAO {
 

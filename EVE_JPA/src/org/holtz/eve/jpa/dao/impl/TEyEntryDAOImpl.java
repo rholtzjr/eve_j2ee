@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEyEntryDAO;
 import org.holtz.eve.jpa.entity.TEyEntry;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEyEntry;
 
 public class TEyEntryDAOImpl implements TEyEntryDAO {
 

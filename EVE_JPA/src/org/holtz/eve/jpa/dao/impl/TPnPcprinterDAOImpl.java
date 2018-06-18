@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPnPcprinterDAO;
 import org.holtz.eve.jpa.entity.TPnPcprinter;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPnPcprinter;
 
 public class TPnPcprinterDAOImpl implements TPnPcprinterDAO {
 

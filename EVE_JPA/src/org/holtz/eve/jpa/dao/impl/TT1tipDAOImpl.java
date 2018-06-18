@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TT1tipDAO;
 import org.holtz.eve.jpa.entity.TT1tip;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TT1tip;
 
 public class TT1tipDAOImpl implements TT1tipDAO {
 

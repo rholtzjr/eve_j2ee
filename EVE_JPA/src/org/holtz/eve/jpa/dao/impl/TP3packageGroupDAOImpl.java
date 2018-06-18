@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP3packageGroupDAO;
 import org.holtz.eve.jpa.entity.TP3packageGroup;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP3packageGroup;
 
 public class TP3packageGroupDAOImpl implements TP3packageGroupDAO {
 

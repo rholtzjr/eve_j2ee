@@ -7,7 +7,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
-import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.holtz.jpa.util.HibernateUtil;
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPspostatusDAO;
 import org.holtz.eve.jpa.entity.TPspostatus;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPspostatus;
 
 public class TPspostatusDAOImpl implements TPspostatusDAO {
 

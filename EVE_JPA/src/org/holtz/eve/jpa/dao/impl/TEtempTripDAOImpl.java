@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEtempTripDAO;
 import org.holtz.eve.jpa.entity.TEtempTrip;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEtempTrip;
 
 public class TEtempTripDAOImpl implements TEtempTripDAO {
 

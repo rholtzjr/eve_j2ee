@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMeMultiSaleDAO;
 import org.holtz.eve.jpa.entity.TMeMultiSale;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TMeMultiSale;
 
 public class TMeMultiSaleDAOImpl implements TMeMultiSaleDAO {
 

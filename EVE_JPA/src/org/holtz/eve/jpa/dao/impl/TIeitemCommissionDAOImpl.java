@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIeitemCommissionDAO;
 import org.holtz.eve.jpa.entity.TIeitemCommission;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIeitemCommission;
 
 public class TIeitemCommissionDAOImpl implements TIeitemCommissionDAO {
 

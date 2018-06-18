@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDyDocumentLinkTypeDAO;
 import org.holtz.eve.jpa.entity.TDyDocumentLinkType;
-import org.holtz.eve.jpa.entity.TDyDocumentLinkType;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TDyDocumentLinkTypeDAOImpl implements TDyDocumentLinkTypeDAO {

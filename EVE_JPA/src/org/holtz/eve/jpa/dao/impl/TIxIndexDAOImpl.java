@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIxIndexDAO;
 import org.holtz.eve.jpa.entity.TIxIndex;
-import org.holtz.eve.jpa.entity.TIxIndex;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TIxIndexDAOImpl implements TIxIndexDAO {

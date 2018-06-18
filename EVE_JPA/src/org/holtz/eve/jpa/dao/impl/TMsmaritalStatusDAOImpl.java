@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMsmaritalStatusDAO;
 import org.holtz.eve.jpa.entity.TMsmaritalStatus;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TMsmaritalStatus;
 
 public class TMsmaritalStatusDAOImpl implements TMsmaritalStatusDAO {
 

@@ -7,7 +7,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TC5custEquipmentDAO;
-import org.holtz.eve.jpa.entity.TAcAccount;
 import org.holtz.eve.jpa.entity.TC5custEquipment;
 import org.holtz.jpa.util.HibernateUtil;
 

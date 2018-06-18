@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.entity.TS7specialInterest;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS7specialInterest;
 
 public class TS7specialInterestDAOImpl implements org.holtz.eve.jpa.dao.TS7specialInterestDAO {
 

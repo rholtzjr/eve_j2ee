@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TZ5storeSupplierDAO;
 import org.holtz.eve.jpa.entity.TZ5storeSupplier;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TZ5storeSupplier;
 
 public class TZ5storeSupplierDAOImpl implements TZ5storeSupplierDAO {
 

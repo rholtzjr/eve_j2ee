@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRbrentalBookingDAO;
 import org.holtz.eve.jpa.entity.TRbrentalBooking;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRbrentalBooking;
 
 public class TRbrentalBookingDAOImpl implements TRbrentalBookingDAO {
 

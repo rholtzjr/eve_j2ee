@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPipoitemDAO;
 import org.holtz.eve.jpa.entity.TPipoitem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPipoitem;
 
 public class TPipoitemDAOImpl implements TPipoitemDAO {
 

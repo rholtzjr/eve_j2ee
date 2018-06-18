@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TT2tripExpenseDAO;
 import org.holtz.eve.jpa.entity.TT2tripExpense;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TT2tripExpense;
 
 public class TT2tripExpenseDAOImpl implements TT2tripExpenseDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRlreportLayoutDAO;
 import org.holtz.eve.jpa.entity.TRlreportLayout;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRlreportLayout;
 
 public class TRlreportLayoutDAOImpl implements TRlreportLayoutDAO {
 

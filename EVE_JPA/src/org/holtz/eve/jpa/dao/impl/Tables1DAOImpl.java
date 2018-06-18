@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.Tables1DAO;
 import org.holtz.eve.jpa.entity.Tables1;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.Tables1;
 
 public class Tables1DAOImpl implements Tables1DAO {
 

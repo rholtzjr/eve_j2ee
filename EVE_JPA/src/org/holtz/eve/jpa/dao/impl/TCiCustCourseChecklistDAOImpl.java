@@ -7,7 +7,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCiCustCourseChecklistDAO;
-import org.holtz.eve.jpa.entity.TAcAccount;
 import org.holtz.eve.jpa.entity.TCiCustCourseChecklist;
 import org.holtz.jpa.util.HibernateUtil;
 

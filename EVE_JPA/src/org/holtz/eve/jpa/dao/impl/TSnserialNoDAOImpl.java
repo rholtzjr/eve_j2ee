@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSnserialNoDAO;
 import org.holtz.eve.jpa.entity.TSnserialNo;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSnserialNo;
 
 public class TSnserialNoDAOImpl implements TSnserialNoDAO {
 

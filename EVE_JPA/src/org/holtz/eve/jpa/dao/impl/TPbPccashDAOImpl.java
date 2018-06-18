@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPbPccashDAO;
 import org.holtz.eve.jpa.entity.TPbPccash;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPbPccash;
 
 public class TPbPccashDAOImpl implements TPbPccashDAO {
 

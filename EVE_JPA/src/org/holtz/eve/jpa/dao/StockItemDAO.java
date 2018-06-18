@@ -3,7 +3,6 @@ package org.holtz.eve.jpa.dao;
 import java.util.List;
 
 import org.holtz.eve.jpa.entity.S01SistockItem;
-import org.holtz.eve.jpa.entity.S01SistockItemId;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TSistockItem;
 

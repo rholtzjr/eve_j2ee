@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TExExpenseDAO;
 import org.holtz.eve.jpa.entity.TExExpense;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TExExpense;
 
 public class TExExpenseDAOImpl implements TExExpenseDAO {
 

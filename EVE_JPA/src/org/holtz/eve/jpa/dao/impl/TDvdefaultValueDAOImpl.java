@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDvdefaultValueDAO;
 import org.holtz.eve.jpa.entity.TDvdefaultValue;
-import org.holtz.eve.jpa.entity.TDvdefaultValue;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TDvdefaultValueDAOImpl implements TDvdefaultValueDAO {

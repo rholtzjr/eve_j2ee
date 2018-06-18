@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TVsvalidStateDAO;
 import org.holtz.eve.jpa.entity.TVsvalidState;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TVsvalidState;
 
 public class TVsvalidStateDAOImpl implements TVsvalidStateDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSuSupplierDAO;
 import org.holtz.eve.jpa.entity.TSuSupplier;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSuSupplier;
 
 public class TSuSupplierDAOImpl implements TSuSupplierDAO {
 

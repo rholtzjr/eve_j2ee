@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMnMenuDAO;
 import org.holtz.eve.jpa.entity.TMnMenu;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TMnMenu;
 
 public class TMnMenuDAOImpl implements TMnMenuDAO {
 

@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDpdataPcdefaultsDAO;
 import org.holtz.eve.jpa.entity.TDpdataPcdefaults;
-import org.holtz.eve.jpa.entity.TDpdataPcdefaults;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TDpdataPcdefaultsDAOImpl implements TDpdataPcdefaultsDAO {

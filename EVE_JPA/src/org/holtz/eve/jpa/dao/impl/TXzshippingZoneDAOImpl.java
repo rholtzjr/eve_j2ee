@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TXzshippingZoneDAO;
 import org.holtz.eve.jpa.entity.TXzshippingZone;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TXzshippingZone;
 
 public class TXzshippingZoneDAOImpl implements TXzshippingZoneDAO {
 

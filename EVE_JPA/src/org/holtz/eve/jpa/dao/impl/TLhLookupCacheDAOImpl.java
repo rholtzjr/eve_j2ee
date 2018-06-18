@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TLhLookupCacheDAO;
 import org.holtz.eve.jpa.entity.TLhLookupCache;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TLhLookupCache;
 
 public class TLhLookupCacheDAOImpl implements TLhLookupCacheDAO {
 

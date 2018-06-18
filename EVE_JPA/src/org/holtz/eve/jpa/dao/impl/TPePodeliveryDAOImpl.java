@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPePodeliveryDAO;
 import org.holtz.eve.jpa.entity.TPePodelivery;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPePodelivery;
 
 public class TPePodeliveryDAOImpl implements TPePodeliveryDAO {
 

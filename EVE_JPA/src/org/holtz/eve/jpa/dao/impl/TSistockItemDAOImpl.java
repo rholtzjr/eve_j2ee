@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TShShortcutDAO;
 import org.holtz.eve.jpa.entity.TShShortcut;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TShShortcut;
 
 public class TSistockItemDAOImpl implements TShShortcutDAO {
 

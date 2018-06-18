@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSwswtax2DAO;
 import org.holtz.eve.jpa.entity.TSwswtax2;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSwswtax2;
 
 public class TSwswtax2DAOImpl implements TSwswtax2DAO {
 

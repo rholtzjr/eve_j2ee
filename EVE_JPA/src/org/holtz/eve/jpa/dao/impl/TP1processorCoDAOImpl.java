@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP1processorCoDAO;
 import org.holtz.eve.jpa.entity.TP1processorCo;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP1processorCo;
 
 public class TP1processorCoDAOImpl implements TP1processorCoDAO {
 

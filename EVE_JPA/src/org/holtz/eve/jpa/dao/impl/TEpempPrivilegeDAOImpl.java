@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEpempPrivilegeDAO;
 import org.holtz.eve.jpa.entity.TEpempPrivilege;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEpempPrivilege;
 
 public class TEpempPrivilegeDAOImpl implements TEpempPrivilegeDAO {
 

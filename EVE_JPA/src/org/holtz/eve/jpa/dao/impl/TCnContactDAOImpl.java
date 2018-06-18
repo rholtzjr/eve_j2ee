@@ -7,7 +7,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCnContactDAO;
-import org.holtz.eve.jpa.entity.TAcAccount;
 import org.holtz.eve.jpa.entity.TCnContact;
 import org.holtz.jpa.util.HibernateUtil;
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS3salesSearchPaymentMethodDAO;
 import org.holtz.eve.jpa.entity.TS3salesSearchPaymentMethod;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS3salesSearchPaymentMethod;
 
 public class TS3salesSearchPaymentMethodDAOImpl implements TS3salesSearchPaymentMethodDAO {
 

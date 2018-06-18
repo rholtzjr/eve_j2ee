@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TZoStoreDataTypeDAO;
 import org.holtz.eve.jpa.entity.TZoStoreDataType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TZoStoreDataType;
 
 public class TZoStoreDataTypeDAOImpl implements TZoStoreDataTypeDAO {
 

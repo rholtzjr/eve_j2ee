@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIuInterestStatusDAO;
 import org.holtz.eve.jpa.entity.TIuInterestStatus;
-import org.holtz.eve.jpa.entity.TIuInterestStatus;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TIuInterestStatusDAOImpl implements TIuInterestStatusDAO {

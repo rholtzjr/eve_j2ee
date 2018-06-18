@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSrshippingRateDAO;
 import org.holtz.eve.jpa.entity.TSrshippingRate;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSrshippingRate;
 
 public class TSrshippingRateDAOImpl implements TSrshippingRateDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRpretailPriceDAO;
 import org.holtz.eve.jpa.entity.TRpretailPrice;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRpretailPrice;
 
 public class TRpretailPriceDAOImpl implements TRpretailPriceDAO {
 

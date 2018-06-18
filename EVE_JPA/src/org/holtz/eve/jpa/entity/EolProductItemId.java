@@ -1,7 +1,6 @@
 package org.holtz.eve.jpa.entity;
 // Generated Aug 4, 2017 9:16:24 AM by Hibernate Tools 4.0.1.Final
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -21,8 +20,8 @@ public class EolProductItemId implements java.io.Serializable {
 	private String siimageUrltxN;
 	private String siimageUrl2txN;
 	private String siimageUrl3txN;
-	private String siimageUrl4txN;
-	private String siimageUrl5txN;
+//	private String siimageUrl4txN;
+//	private String siimageUrl5txN;
 	private String sivideoTxN;
 	private boolean simaintainStockLevelBl;
 	private BigDecimal psunitCostMn;
@@ -128,8 +127,8 @@ public class EolProductItemId implements java.io.Serializable {
 		this.siimageUrltxN = siimageUrltxN;
 		this.siimageUrl2txN = siimageUrl2txN;
 		this.siimageUrl3txN = siimageUrl3txN;
-		this.siimageUrl4txN = siimageUrl4txN;
-		this.siimageUrl5txN = siimageUrl5txN;
+//		this.siimageUrl4txN = siimageUrl4txN;
+//		this.siimageUrl5txN = siimageUrl5txN;
 		this.sivideoTxN = sivideoTxN;
 		this.simaintainStockLevelBl = simaintainStockLevelBl;
 		this.psunitCostMn = psunitCostMn;
@@ -250,23 +249,23 @@ public class EolProductItemId implements java.io.Serializable {
 		this.siimageUrl3txN = siimageUrl3txN;
 	}
 
-	@Column(name = "SIImageURL4Tx_N")
-	public String getSiimageUrl4txN() {
-		return this.siimageUrl4txN;
-	}
-
-	public void setSiimageUrl4txN(String siimageUrl4txN) {
-		this.siimageUrl4txN = siimageUrl4txN;
-	}
-
-	@Column(name = "SIImageURL5Tx_N")
-	public String getSiimageUrl5txN() {
-		return this.siimageUrl5txN;
-	}
-
-	public void setSiimageUrl5txN(String siimageUrl5txN) {
-		this.siimageUrl5txN = siimageUrl5txN;
-	}
+//	@Column(name = "SIImageURL4Tx_N")
+//	public String getSiimageUrl4txN() {
+//		return this.siimageUrl4txN;
+//	}
+//
+//	public void setSiimageUrl4txN(String siimageUrl4txN) {
+//		this.siimageUrl4txN = siimageUrl4txN;
+//	}
+//
+//	@Column(name = "SIImageURL5Tx_N")
+//	public String getSiimageUrl5txN() {
+//		return this.siimageUrl5txN;
+//	}
+//
+//	public void setSiimageUrl5txN(String siimageUrl5txN) {
+//		this.siimageUrl5txN = siimageUrl5txN;
+//	}
 
 	@Column(name = "SIVideoTx_N")
 	public String getSivideoTxN() {
@@ -633,12 +632,12 @@ public class EolProductItemId implements java.io.Serializable {
 				&& ((this.getSiimageUrl3txN() == castOther.getSiimageUrl3txN())
 						|| (this.getSiimageUrl3txN() != null && castOther.getSiimageUrl3txN() != null
 								&& this.getSiimageUrl3txN().equals(castOther.getSiimageUrl3txN())))
-				&& ((this.getSiimageUrl4txN() == castOther.getSiimageUrl4txN())
-						|| (this.getSiimageUrl4txN() != null && castOther.getSiimageUrl4txN() != null
-								&& this.getSiimageUrl4txN().equals(castOther.getSiimageUrl4txN())))
-				&& ((this.getSiimageUrl5txN() == castOther.getSiimageUrl5txN())
-						|| (this.getSiimageUrl5txN() != null && castOther.getSiimageUrl5txN() != null
-								&& this.getSiimageUrl5txN().equals(castOther.getSiimageUrl5txN())))
+//				&& ((this.getSiimageUrl4txN() == castOther.getSiimageUrl4txN())
+//						|| (this.getSiimageUrl4txN() != null && castOther.getSiimageUrl4txN() != null
+//								&& this.getSiimageUrl4txN().equals(castOther.getSiimageUrl4txN())))
+//				&& ((this.getSiimageUrl5txN() == castOther.getSiimageUrl5txN())
+//						|| (this.getSiimageUrl5txN() != null && castOther.getSiimageUrl5txN() != null
+//								&& this.getSiimageUrl5txN().equals(castOther.getSiimageUrl5txN())))
 				&& ((this.getSivideoTxN() == castOther.getSivideoTxN()) || (this.getSivideoTxN() != null
 						&& castOther.getSivideoTxN() != null && this.getSivideoTxN().equals(castOther.getSivideoTxN())))
 				&& (this.isSimaintainStockLevelBl() == castOther.isSimaintainStockLevelBl())
@@ -725,8 +724,8 @@ public class EolProductItemId implements java.io.Serializable {
 		result = 37 * result + (getSiimageUrltxN() == null ? 0 : this.getSiimageUrltxN().hashCode());
 		result = 37 * result + (getSiimageUrl2txN() == null ? 0 : this.getSiimageUrl2txN().hashCode());
 		result = 37 * result + (getSiimageUrl3txN() == null ? 0 : this.getSiimageUrl3txN().hashCode());
-		result = 37 * result + (getSiimageUrl4txN() == null ? 0 : this.getSiimageUrl4txN().hashCode());
-		result = 37 * result + (getSiimageUrl5txN() == null ? 0 : this.getSiimageUrl5txN().hashCode());
+//		result = 37 * result + (getSiimageUrl4txN() == null ? 0 : this.getSiimageUrl4txN().hashCode());
+//		result = 37 * result + (getSiimageUrl5txN() == null ? 0 : this.getSiimageUrl5txN().hashCode());
 		result = 37 * result + (getSivideoTxN() == null ? 0 : this.getSivideoTxN().hashCode());
 		result = 37 * result + (this.isSimaintainStockLevelBl() ? 1 : 0);
 		result = 37 * result + (getPsunitCostMn() == null ? 0 : this.getPsunitCostMn().hashCode());

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEnEnrollmentStatusDAO;
 import org.holtz.eve.jpa.entity.TEnEnrollmentStatus;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEnEnrollmentStatus;
 
 public class TEnEnrollmentStatusDAOImpl implements TEnEnrollmentStatusDAO {
 

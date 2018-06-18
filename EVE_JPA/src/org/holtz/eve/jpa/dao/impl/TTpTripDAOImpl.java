@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTpTripDAO;
 import org.holtz.eve.jpa.entity.TTpTrip;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTpTrip;
 
 public class TTpTripDAOImpl implements TTpTripDAO {
 

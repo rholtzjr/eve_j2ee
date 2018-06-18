@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCyCountryDAO;
 import org.holtz.eve.jpa.entity.TCyCountry;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TCyCountry;
 
 public class TCyCountryDAOImpl implements TCyCountryDAO {
 

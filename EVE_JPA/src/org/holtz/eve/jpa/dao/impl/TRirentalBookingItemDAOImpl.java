@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRirentalBookingItemDAO;
 import org.holtz.eve.jpa.entity.TRirentalBookingItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRirentalBookingItem;
 
 public class TRirentalBookingItemDAOImpl implements TRirentalBookingItemDAO {
 

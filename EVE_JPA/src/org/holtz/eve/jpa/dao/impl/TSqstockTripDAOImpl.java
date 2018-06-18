@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSqstockTripDAO;
 import org.holtz.eve.jpa.entity.TSqstockTrip;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSqstockTrip;
 
 public class TSqstockTripDAOImpl implements TSqstockTripDAO {
 

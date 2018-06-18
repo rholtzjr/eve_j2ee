@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS2salesSearchColDAO;
 import org.holtz.eve.jpa.entity.TS2salesSearchCol;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS2salesSearchCol;
 
 public class TS2salesSearchColDAOImpl implements TS2salesSearchColDAO {
 

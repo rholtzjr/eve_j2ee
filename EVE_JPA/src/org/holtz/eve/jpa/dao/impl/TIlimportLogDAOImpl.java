@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIlimportLogDAO;
 import org.holtz.eve.jpa.entity.TIlimportLog;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIlimportLog;
 
 public class TIlimportLogDAOImpl implements TIlimportLogDAO {
 

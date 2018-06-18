@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRkRoomBookingDAO;
 import org.holtz.eve.jpa.entity.TRkRoomBooking;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRkRoomBooking;
 
 public class TRkRoomBookingDAOImpl implements TRkRoomBookingDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMdEveModuleDAO;
 import org.holtz.eve.jpa.entity.TMdEveModule;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TMdEveModule;
 
 public class TMdEveModuleDAOImpl implements TMdEveModuleDAO {
 	

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TQiquoteItemDAO;
 import org.holtz.eve.jpa.entity.TQiquoteItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TQiquoteItem;
 
 public class TQiquoteItemDAOImpl implements TQiquoteItemDAO {
 

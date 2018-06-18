@@ -1,7 +1,6 @@
 package org.holtz.eve.jpa.entity;
 // Generated Aug 4, 2017 9:16:24 AM by Hibernate Tools 4.0.1.Final
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -662,10 +661,10 @@ public class TC1custCourse implements java.io.Serializable {
 		this.c1inWaterDateN = c1inWaterDateN;
 	}
 
-	@Column(name = "C1CertTypeID", nullable = false)
-	public int getC1certTypeId() {
-		return this.c1certTypeId;
-	}
+//	@Column(name = "C1CertTypeID", nullable = false)
+//	public int getC1certTypeId() {
+//		return this.c1certTypeId;
+//	}
 
 	public void setC1certTypeId(int c1certTypeId) {
 		this.c1certTypeId = c1certTypeId;

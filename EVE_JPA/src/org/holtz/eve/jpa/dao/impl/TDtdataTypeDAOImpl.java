@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDtdataTypeDAO;
 import org.holtz.eve.jpa.entity.TDtdataType;
-import org.holtz.eve.jpa.entity.TDtdataType;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TDtdataTypeDAOImpl implements TDtdataTypeDAO {

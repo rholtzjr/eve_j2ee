@@ -5,7 +5,7 @@
  <session-factory name="eveSessionFactory">
   <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
   <property name="hibernate.connection.password">adminadmin</property>
-  <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=eve</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://192.168.3.175:1433;databaseName=eve</property>
   <property name="hibernate.connection.username">sa</property>
   <property name="hibernate.default_catalog">eve</property>
   <property name="hibernate.default_schema">dbo</property>
@@ -439,7 +439,6 @@
   <mapping class="org.holtz.eve.jpa.entity.TP5pictype"/>
   <mapping class="org.holtz.eve.jpa.entity.TP6picsendCardTo"/>
   <mapping class="org.holtz.eve.jpa.entity.TP7podeliveryItemDetail"/>
-  <mapping class="org.holtz.eve.jpa.entity.TP8certType"/>
   <mapping class="org.holtz.eve.jpa.entity.TPaPodeliveryItem"/>
   <mapping class="org.holtz.eve.jpa.entity.TPbPccash"/>
   <mapping class="org.holtz.eve.jpa.entity.TPcpc"/>
@@ -586,6 +585,5 @@
   <mapping class="org.holtz.eve.jpa.entity.Tables1Id"/>
   <mapping class="org.holtz.eve.jpa.entity.VrandNumber"/>
   <mapping class="org.holtz.eve.jpa.entity.VwNewCheck"/>
-  <mapping class="org.holtz.eve.jpa.entity.TOrder"/>
  </session-factory>
 </hibernate-configuration>

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP5pictypeDAO;
 import org.holtz.eve.jpa.entity.TP5pictype;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP5pictype;
 
 public class TP5pictypeDAOImpl implements TP5pictypeDAO {
 

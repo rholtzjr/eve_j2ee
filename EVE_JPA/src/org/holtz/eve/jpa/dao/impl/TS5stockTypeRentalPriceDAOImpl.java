@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS5stockTypeRentalPriceDAO;
 import org.holtz.eve.jpa.entity.TS5stockTypeRentalPrice;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS5stockTypeRentalPrice;
 
 public class TS5stockTypeRentalPriceDAOImpl implements TS5stockTypeRentalPriceDAO {
 

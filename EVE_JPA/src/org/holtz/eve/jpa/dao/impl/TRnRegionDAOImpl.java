@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRnRegionDAO;
 import org.holtz.eve.jpa.entity.TRnRegion;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRnRegion;
 
 public class TRnRegionDAOImpl implements TRnRegionDAO {
 

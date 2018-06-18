@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TNdNodeDAO;
 import org.holtz.eve.jpa.entity.TNdNode;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TNdNode;
 
 public class TNmNodeMenuDAOImpl implements TNdNodeDAO {
 

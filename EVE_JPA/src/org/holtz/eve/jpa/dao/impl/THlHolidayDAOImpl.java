@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.THlHolidayDAO;
 import org.holtz.eve.jpa.entity.THlHoliday;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.THlHoliday;
 
 public class THlHolidayDAOImpl implements THlHolidayDAO {
 

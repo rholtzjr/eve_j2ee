@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRsreportSectionDAO;
 import org.holtz.eve.jpa.entity.TRsreportSection;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRsreportSection;
 
 public class TRsreportSectionDAOImpl implements TRsreportSectionDAO {
 

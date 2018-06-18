@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP7podeliveryItemDetailDAO;
 import org.holtz.eve.jpa.entity.TP7podeliveryItemDetail;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP7podeliveryItemDetail;
 
 public class TP7podeliveryItemDetailDAOImpl implements TP7podeliveryItemDetailDAO {
 

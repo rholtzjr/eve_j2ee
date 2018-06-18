@@ -69,7 +69,7 @@ public class EmailAgentCourseEnrollments implements java.io.Serializable {
 			@AttributeOverride(name = "referralStoreNo", column = @Column(name = "ReferralStoreNo")),
 			@AttributeOverride(name = "preRegistration", column = @Column(name = "PreRegistration", nullable = false)),
 			@AttributeOverride(name = "certNotes", column = @Column(name = "CertNotes")),
-			@AttributeOverride(name = "certType", column = @Column(name = "CertType")),
+//			@AttributeOverride(name = "certType", column = @Column(name = "CertType")),
 			@AttributeOverride(name = "scubaTribeCode", column = @Column(name = "ScubaTribeCode")),
 			@AttributeOverride(name = "courseTypeId", column = @Column(name = "CourseTypeID", nullable = false)),
 			@AttributeOverride(name = "courseId", column = @Column(name = "CourseID")),
@@ -84,8 +84,7 @@ public class EmailAgentCourseEnrollments implements java.io.Serializable {
 			@AttributeOverride(name = "courseLanguageId", column = @Column(name = "CourseLanguageID")),
 			@AttributeOverride(name = "storeId", column = @Column(name = "StoreID", nullable = false)),
 			@AttributeOverride(name = "homeStateId", column = @Column(name = "HomeStateID")),
-			@AttributeOverride(name = "homeCountryId", column = @Column(name = "HomeCountryID")),
-			@AttributeOverride(name = "certTypeId", column = @Column(name = "CertTypeID", nullable = false)) })
+			@AttributeOverride(name = "homeCountryId", column = @Column(name = "HomeCountryID")) })
 	public EmailAgentCourseEnrollmentsId getId() {
 		return this.id;
 	}

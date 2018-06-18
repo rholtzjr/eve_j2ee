@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSvStockRoomDAO;
 import org.holtz.eve.jpa.entity.TSvStockRoom;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSvStockRoom;
 
 public class TSvStockRoomDAOImpl implements TSvStockRoomDAO {
 

@@ -578,10 +578,12 @@
 		class="org.holtz.eve.jpa.dao.impl.TP7podeliveryItemDetailDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />
 	</bean>
+<!-- 
 	<bean id="tp8certTypeDAO"
 		class="org.holtz.eve.jpa.dao.impl.TP8certTypeDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />
 	</bean>
+ -->
 	<bean id="tpaPodeliveryItemDAO"
 		class="org.holtz.eve.jpa.dao.impl.TPaPodeliveryItemDAOImpl">
 		<property name="sessionFactory" ref="eveSessionFactory" />

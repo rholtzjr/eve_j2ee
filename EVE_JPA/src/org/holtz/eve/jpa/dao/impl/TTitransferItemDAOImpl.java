@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTitransferItemDAO;
 import org.holtz.eve.jpa.entity.TTitransferItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTitransferItem;
 
 public class TTitransferItemDAOImpl implements TTitransferItemDAO {
 

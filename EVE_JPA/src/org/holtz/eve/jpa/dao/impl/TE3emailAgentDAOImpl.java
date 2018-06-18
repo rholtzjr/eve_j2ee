@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TE3emailAgentDAO;
 import org.holtz.eve.jpa.entity.TE3emailAgent;
-import org.holtz.eve.jpa.entity.TE3emailAgent;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TE3emailAgentDAOImpl implements TE3emailAgentDAO {

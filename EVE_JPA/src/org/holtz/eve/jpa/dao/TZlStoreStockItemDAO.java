@@ -2,7 +2,6 @@ package org.holtz.eve.jpa.dao;
 
 import java.util.List;
 
-import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 
 public interface TZlStoreStockItemDAO {

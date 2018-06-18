@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TReRoomTypeDAO;
 import org.holtz.eve.jpa.entity.TReRoomType;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TReRoomType;
 
 public class TReRoomTypeDAOImpl implements TReRoomTypeDAO {
 

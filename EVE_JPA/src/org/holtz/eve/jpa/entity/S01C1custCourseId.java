@@ -1,7 +1,6 @@
 package org.holtz.eve.jpa.entity;
 // Generated Aug 4, 2017 9:16:24 AM by Hibernate Tools 4.0.1.Final
 
-import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -62,7 +61,7 @@ public class S01C1custCourseId implements java.io.Serializable {
 	private Integer c1touchIdN;
 	private String c1digitalCodeTxN;
 	private Date c1inWaterDateN;
-	private int c1certTypeId;
+	
 
 	public S01C1custCourseId() {
 	}
@@ -99,7 +98,7 @@ public class S01C1custCourseId implements java.io.Serializable {
 		this.c1elearnerBl = c1elearnerBl;
 		this.c1storeId = c1storeId;
 		this.c1seatNoIn = c1seatNoIn;
-		this.c1certTypeId = c1certTypeId;
+//		this.c1certTypeId = c1certTypeId;
 	}
 
 	public S01C1custCourseId(int c1custCourseId, int c1custId, short c1custNoIn, int c1courseTypeId,
@@ -166,7 +165,7 @@ public class S01C1custCourseId implements java.io.Serializable {
 		this.c1touchIdN = c1touchIdN;
 		this.c1digitalCodeTxN = c1digitalCodeTxN;
 		this.c1inWaterDateN = c1inWaterDateN;
-		this.c1certTypeId = c1certTypeId;
+//		this.c1certTypeId = c1certTypeId;
 	}
 
 	@Column(name = "C1CustCourseID", nullable = false)
@@ -619,14 +618,14 @@ public class S01C1custCourseId implements java.io.Serializable {
 		this.c1inWaterDateN = c1inWaterDateN;
 	}
 
-	@Column(name = "C1CertTypeID", nullable = false)
-	public int getC1certTypeId() {
-		return this.c1certTypeId;
-	}
-
-	public void setC1certTypeId(int c1certTypeId) {
-		this.c1certTypeId = c1certTypeId;
-	}
+//	@Column(name = "C1CertTypeID", nullable = false)
+//	public int getC1certTypeId() {
+//		return this.c1certTypeId;
+//	}
+//
+//	public void setC1certTypeId(int c1certTypeId) {
+//		this.c1certTypeId = c1certTypeId;
+//	}
 
 	public boolean equals(Object other) {
 		if ((this == other))
@@ -743,8 +742,8 @@ public class S01C1custCourseId implements java.io.Serializable {
 								&& this.getC1digitalCodeTxN().equals(castOther.getC1digitalCodeTxN())))
 				&& ((this.getC1inWaterDateN() == castOther.getC1inWaterDateN())
 						|| (this.getC1inWaterDateN() != null && castOther.getC1inWaterDateN() != null
-								&& this.getC1inWaterDateN().equals(castOther.getC1inWaterDateN())))
-				&& (this.getC1certTypeId() == castOther.getC1certTypeId());
+								&& this.getC1inWaterDateN().equals(castOther.getC1inWaterDateN())));
+	//			&& (this.getC1certTypeId() == castOther.getC1certTypeId());
 	}
 
 	public int hashCode() {
@@ -801,7 +800,7 @@ public class S01C1custCourseId implements java.io.Serializable {
 		result = 37 * result + (getC1touchIdN() == null ? 0 : this.getC1touchIdN().hashCode());
 		result = 37 * result + (getC1digitalCodeTxN() == null ? 0 : this.getC1digitalCodeTxN().hashCode());
 		result = 37 * result + (getC1inWaterDateN() == null ? 0 : this.getC1inWaterDateN().hashCode());
-		result = 37 * result + this.getC1certTypeId();
+//		result = 37 * result + this.getC1certTypeId();
 		return result;
 	}
 

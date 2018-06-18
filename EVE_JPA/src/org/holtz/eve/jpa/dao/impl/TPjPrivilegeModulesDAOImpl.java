@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPjPrivilegeModulesDOA;
 import org.holtz.eve.jpa.entity.TPjPrivilegeModules;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPjPrivilegeModules;
 
 public class TPjPrivilegeModulesDAOImpl implements TPjPrivilegeModulesDOA {
 

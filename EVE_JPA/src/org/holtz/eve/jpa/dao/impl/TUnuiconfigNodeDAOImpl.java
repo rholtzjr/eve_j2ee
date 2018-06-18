@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TUnuiconfigNodeDAO;
 import org.holtz.eve.jpa.entity.TUnuiconfigNode;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TUnuiconfigNode;
 
 public class TUnuiconfigNodeDAOImpl implements TUnuiconfigNodeDAO {
 

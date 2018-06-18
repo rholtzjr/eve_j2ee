@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPiPrivilegeDAO;
 import org.holtz.eve.jpa.entity.TPiPrivilege;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPiPrivilege;
 
 public class TPiPrivilegeDAOImpl implements TPiPrivilegeDAO {
 

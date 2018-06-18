@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TUiconfigDAO;
 import org.holtz.eve.jpa.entity.TUiconfig;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TUiconfig;
 
 public class TUiconfigDAOImpl implements TUiconfigDAO {
 

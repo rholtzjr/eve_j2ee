@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIbInstallationDAO;
 import org.holtz.eve.jpa.entity.TIbInstallation;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIbInstallation;
 
 public class TIbInstallationDAOImpl implements TIbInstallationDAO {
 

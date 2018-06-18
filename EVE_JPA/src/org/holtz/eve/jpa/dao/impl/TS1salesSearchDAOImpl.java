@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS1salesSearchDAO;
 import org.holtz.eve.jpa.entity.TS1salesSearch;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS1salesSearch;
 
 public class TS1salesSearchDAOImpl implements TS1salesSearchDAO {
 

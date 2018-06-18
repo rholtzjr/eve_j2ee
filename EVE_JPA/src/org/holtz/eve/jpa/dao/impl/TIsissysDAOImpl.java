@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIsissysDAO;
 import org.holtz.eve.jpa.entity.TIsissys;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIsissys;
 
 public class TIsissysDAOImpl implements TIsissysDAO {
 

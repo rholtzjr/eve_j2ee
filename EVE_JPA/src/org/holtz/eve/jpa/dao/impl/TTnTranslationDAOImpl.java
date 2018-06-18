@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTnTranslationDAO;
 import org.holtz.eve.jpa.entity.TTnTranslation;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTnTranslation;
 
 public class TTnTranslationDAOImpl implements TTnTranslationDAO {
 

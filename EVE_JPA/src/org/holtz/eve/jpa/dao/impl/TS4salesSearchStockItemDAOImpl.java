@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS4salesSearchStockItemDAO;
 import org.holtz.eve.jpa.entity.TS4salesSearchStockItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS4salesSearchStockItem;
 
 public class TS4salesSearchStockItemDAOImpl implements TS4salesSearchStockItemDAO {
 

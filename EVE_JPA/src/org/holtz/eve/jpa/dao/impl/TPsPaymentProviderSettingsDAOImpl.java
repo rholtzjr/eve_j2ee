@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPsPaymentProviderSettingsDAO;
 import org.holtz.eve.jpa.entity.TPsPaymentProviderSettings;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPsPaymentProviderSettings;
 
 public class TPsPaymentProviderSettingsDAOImpl implements TPsPaymentProviderSettingsDAO {
 

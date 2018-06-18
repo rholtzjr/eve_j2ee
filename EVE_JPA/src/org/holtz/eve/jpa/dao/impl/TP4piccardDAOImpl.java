@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TP4piccardDAO;
 import org.holtz.eve.jpa.entity.TP4piccard;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TP4piccard;
 
 public class TP4piccardDAOImpl implements TP4piccardDAO {
 

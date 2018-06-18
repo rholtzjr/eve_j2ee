@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSoStoreDAO;
 import org.holtz.eve.jpa.entity.TSoStore;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSoStore;
 
 public class TSoStoreDAOImpl implements TSoStoreDAO {
 

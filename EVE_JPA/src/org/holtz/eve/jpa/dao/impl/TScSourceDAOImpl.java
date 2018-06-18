@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TScSourceDAO;
 import org.holtz.eve.jpa.entity.TScSource;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TScSource;
 
 public class TScSourceDAOImpl implements TScSourceDAO {
 

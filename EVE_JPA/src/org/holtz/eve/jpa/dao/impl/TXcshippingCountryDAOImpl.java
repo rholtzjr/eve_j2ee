@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TXcshippingCountryDAO;
 import org.holtz.eve.jpa.entity.TXcshippingCountry;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TXcshippingCountry;
 
 public class TXcshippingCountryDAOImpl implements TXcshippingCountryDAO {
 

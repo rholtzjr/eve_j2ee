@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TSfStockOfferDAO;
 import org.holtz.eve.jpa.entity.TSfStockOffer;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TSfStockOffer;
 
 public class TSfStockOfferDAOImpl implements TSfStockOfferDAO {
 

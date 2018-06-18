@@ -1,7 +1,6 @@
 package org.holtz.eve.jpa.entity;
 // Generated Aug 4, 2017 9:16:24 AM by Hibernate Tools 4.0.1.Final
 
-import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -55,7 +54,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 	private String referralStoreNo;
 	private boolean preRegistration;
 	private String certNotes;
-	private String certType;
+//	private String certType;
 	private boolean qualifiedHere;
 	private String fatherName;
 	private int courseTypeId;
@@ -68,14 +67,14 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 	private short storeId;
 	private Integer homeStateId;
 	private Integer homeCountryId;
-	private int certTypeId;
+//	private int certTypeId;
 
 	public EmailAgentCertificationsId() {
 	}
 
 	public EmailAgentCertificationsId(int custCourseId, String courseType, int custId, String firstName,
 			String lastName, Date creationDate, Date lastUpdatedDate, boolean referral, boolean preRegistration,
-			boolean qualifiedHere, int courseTypeId, short picstatusId, short storeId, int certTypeId) {
+			boolean qualifiedHere, int courseTypeId, short picstatusId, short storeId) {
 		this.custCourseId = custCourseId;
 		this.courseType = courseType;
 		this.custId = custId;
@@ -89,7 +88,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		this.courseTypeId = courseTypeId;
 		this.picstatusId = picstatusId;
 		this.storeId = storeId;
-		this.certTypeId = certTypeId;
+//		this.certTypeId = certTypeId;
 	}
 
 	public EmailAgentCertificationsId(int custCourseId, String courseType, String courseNo,
@@ -105,7 +104,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 			String referralStoreNo, boolean preRegistration, String certNotes, String certType,
 			boolean qualifiedHere, String fatherName, int courseTypeId, Integer courseId, Integer instructorId,
 			short picstatusId, Integer piccardId, Integer returnCardToId, Integer picprocessedById, short storeId,
-			Integer homeStateId, Integer homeCountryId, int certTypeId) {
+			Integer homeStateId, Integer homeCountryId) {
 		this.custCourseId = custCourseId;
 		this.courseType = courseType;
 		this.courseNo = courseNo;
@@ -149,7 +148,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		this.referralStoreNo = referralStoreNo;
 		this.preRegistration = preRegistration;
 		this.certNotes = certNotes;
-		this.certType = certType;
+//		this.certType = certType;
 		this.qualifiedHere = qualifiedHere;
 		this.fatherName = fatherName;
 		this.courseTypeId = courseTypeId;
@@ -162,7 +161,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		this.storeId = storeId;
 		this.homeStateId = homeStateId;
 		this.homeCountryId = homeCountryId;
-		this.certTypeId = certTypeId;
+//		this.certTypeId = certTypeId;
 	}
 
 	@Column(name = "CustCourseID", nullable = false)
@@ -552,14 +551,14 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		this.certNotes = certNotes;
 	}
 
-	@Column(name = "CertType")
-	public String getCertType() {
-		return this.certType;
-	}
-
-	public void setCertType(String certType) {
-		this.certType = certType;
-	}
+//	@Column(name = "CertType")
+//	public String getCertType() {
+//		return this.certType;
+//	}
+//
+//	public void setCertType(String certType) {
+//		this.certType = certType;
+//	}
 
 	@Column(name = "QualifiedHere", nullable = false)
 	public boolean isQualifiedHere() {
@@ -669,14 +668,14 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		this.homeCountryId = homeCountryId;
 	}
 
-	@Column(name = "CertTypeID", nullable = false)
-	public int getCertTypeId() {
-		return this.certTypeId;
-	}
-
-	public void setCertTypeId(int certTypeId) {
-		this.certTypeId = certTypeId;
-	}
+//	@Column(name = "CertTypeID", nullable = false)
+//	public int getCertTypeId() {
+//		return this.certTypeId;
+//	}
+//
+//	public void setCertTypeId(int certTypeId) {
+//		this.certTypeId = certTypeId;
+//	}
 
 	public boolean equals(Object other) {
 		if ((this == other))
@@ -792,8 +791,8 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 				&& (this.isPreRegistration() == castOther.isPreRegistration())
 				&& ((this.getCertNotes() == castOther.getCertNotes()) || (this.getCertNotes() != null
 						&& castOther.getCertNotes() != null && this.getCertNotes().equals(castOther.getCertNotes())))
-				&& ((this.getCertType() == castOther.getCertType()) || (this.getCertType() != null
-						&& castOther.getCertType() != null && this.getCertType().equals(castOther.getCertType())))
+//				&& ((this.getCertType() == castOther.getCertType()) || (this.getCertType() != null
+//						&& castOther.getCertType() != null && this.getCertType().equals(castOther.getCertType())))
 				&& (this.isQualifiedHere() == castOther.isQualifiedHere())
 				&& ((this.getFatherName() == castOther.getFatherName()) || (this.getFatherName() != null
 						&& castOther.getFatherName() != null && this.getFatherName().equals(castOther.getFatherName())))
@@ -818,8 +817,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 								&& this.getHomeStateId().equals(castOther.getHomeStateId())))
 				&& ((this.getHomeCountryId() == castOther.getHomeCountryId())
 						|| (this.getHomeCountryId() != null && castOther.getHomeCountryId() != null
-								&& this.getHomeCountryId().equals(castOther.getHomeCountryId())))
-				&& (this.getCertTypeId() == castOther.getCertTypeId());
+								&& this.getHomeCountryId().equals(castOther.getHomeCountryId())));
 	}
 
 	public int hashCode() {
@@ -868,7 +866,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		result = 37 * result + (getReferralStoreNo() == null ? 0 : this.getReferralStoreNo().hashCode());
 		result = 37 * result + (this.isPreRegistration() ? 1 : 0);
 		result = 37 * result + (getCertNotes() == null ? 0 : this.getCertNotes().hashCode());
-		result = 37 * result + (getCertType() == null ? 0 : this.getCertType().hashCode());
+//		result = 37 * result + (getCertType() == null ? 0 : this.getCertType().hashCode());
 		result = 37 * result + (this.isQualifiedHere() ? 1 : 0);
 		result = 37 * result + (getFatherName() == null ? 0 : this.getFatherName().hashCode());
 		result = 37 * result + this.getCourseTypeId();
@@ -881,7 +879,7 @@ public class EmailAgentCertificationsId implements java.io.Serializable {
 		result = 37 * result + this.getStoreId();
 		result = 37 * result + (getHomeStateId() == null ? 0 : this.getHomeStateId().hashCode());
 		result = 37 * result + (getHomeCountryId() == null ? 0 : this.getHomeCountryId().hashCode());
-		result = 37 * result + this.getCertTypeId();
+//		result = 37 * result + this.getCertTypeId();
 		return result;
 	}
 

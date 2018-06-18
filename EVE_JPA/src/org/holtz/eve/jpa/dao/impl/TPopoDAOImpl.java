@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPopoDAO;
 import org.holtz.eve.jpa.entity.TPopo;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPopo;
 
 public class TPopoDAOImpl implements TPopoDAO {
 

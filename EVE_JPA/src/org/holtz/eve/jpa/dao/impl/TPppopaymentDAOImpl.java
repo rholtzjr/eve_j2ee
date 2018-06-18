@@ -9,8 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TPppopaymentDAO;
 import org.holtz.eve.jpa.entity.TPppopayment;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TPppopayment;
-import org.holtz.eve.jpa.entity.TPppopayment;
 
 public class TPppopaymentDAOImpl implements TPppopaymentDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TGigiftTypeAllowedItemDAO;
 import org.holtz.eve.jpa.entity.TGigiftTypeAllowedItem;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TGigiftTypeAllowedItem;
 
 public class TGigiftTypeAllowedItemDAOImpl implements TGigiftTypeAllowedItemDAO {
 

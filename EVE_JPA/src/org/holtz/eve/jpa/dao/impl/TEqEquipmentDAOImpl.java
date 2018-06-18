@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEqEquipmentDAO;
 import org.holtz.eve.jpa.entity.TEqEquipment;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEqEquipment;
 
 public class TEqEquipmentDAOImpl implements TEqEquipmentDAO {
 

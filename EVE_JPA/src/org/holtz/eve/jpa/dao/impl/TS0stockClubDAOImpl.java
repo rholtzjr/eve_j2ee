@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TS0stockClubDAO;
 import org.holtz.eve.jpa.entity.TS0stockClub;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TS0stockClub;
 
 public class TS0stockClubDAOImpl implements TS0stockClubDAO {
 

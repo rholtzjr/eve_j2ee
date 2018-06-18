@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TTstransStatusDAO;
 import org.holtz.eve.jpa.entity.TTstransStatus;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TTstransStatus;
 
 public class TTstransStatusDAOImpl implements TTstransStatusDAO {
 

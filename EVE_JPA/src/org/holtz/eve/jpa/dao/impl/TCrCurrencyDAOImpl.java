@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TCrCurrencyDAO;
 import org.holtz.eve.jpa.entity.TCrCurrency;
-import org.holtz.eve.jpa.entity.TCrCurrency;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TCrCurrencyDAOImpl implements TCrCurrencyDAO {

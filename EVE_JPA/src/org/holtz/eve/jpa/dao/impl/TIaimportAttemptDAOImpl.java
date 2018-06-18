@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TIaimportAttemptDAO;
 import org.holtz.eve.jpa.entity.TIaimportAttempt;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TIaimportAttempt;
 
 public class TIaimportAttemptDAOImpl implements TIaimportAttemptDAO {
 

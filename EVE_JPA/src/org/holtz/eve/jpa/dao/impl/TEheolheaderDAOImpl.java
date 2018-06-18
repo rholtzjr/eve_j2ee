@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TEheolheaderDAO;
 import org.holtz.eve.jpa.entity.TEheolheader;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TEheolheader;
 
 public class TEheolheaderDAOImpl implements TEheolheaderDAO {
 

@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TQ2internalExamStDAO;
 import org.holtz.eve.jpa.entity.TQ2internalExamSt;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TQ2internalExamSt;
 
 public class TQ2internalExamStDAOImpl implements TQ2internalExamStDAO {
 

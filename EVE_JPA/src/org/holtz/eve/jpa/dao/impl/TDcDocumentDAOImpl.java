@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDcDocumentDAO;
 import org.holtz.eve.jpa.entity.TDcDocument;
-import org.holtz.eve.jpa.entity.TDcDocument;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TDcDocumentDAOImpl implements TDcDocumentDAO {

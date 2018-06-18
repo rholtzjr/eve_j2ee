@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TMoModuleDAO;
 import org.holtz.eve.jpa.entity.TMoModule;
-import org.holtz.eve.jpa.entity.TMoModule;
 import org.holtz.jpa.util.HibernateUtil;
 
 public class TMoModuleDAOImpl implements TMoModuleDAO {

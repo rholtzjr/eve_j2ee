@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TRgreportGroupDAO;
 import org.holtz.eve.jpa.entity.TRgreportGroup;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TRgreportGroup;
 
 public class TRgreportGroupDAOImpl implements TRgreportGroupDAO {
 

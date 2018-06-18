@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.holtz.eve.jpa.dao.TDnDenominationDAO;
 import org.holtz.eve.jpa.entity.TDnDenomination;
 import org.holtz.jpa.util.HibernateUtil;
-import org.holtz.eve.jpa.entity.TDnDenomination;
 
 public class TDnDenominationDAOImpl implements TDnDenominationDAO {
 
