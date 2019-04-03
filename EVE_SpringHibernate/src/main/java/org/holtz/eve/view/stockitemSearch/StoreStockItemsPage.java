@@ -28,8 +28,6 @@ import org.apache.wicket.markup.repeater.RefreshingView;
 import org.apache.wicket.model.AbstractReadOnlyModel;
 import org.apache.wicket.model.IModel;
 import org.holtz.eve.controller.StockItemController;
-import org.holtz.eve.jpa.dao.StoreStockItemDAO;
-import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 
 
@@ -74,7 +72,8 @@ public class StoreStockItemsPage extends StockItemBasePage
             @Override
             protected Iterator<IModel<S01StockItemSearch>> getItemModels()
             {
-                Iterator<IModel<S01StockItemSearch>> iterator = (Iterator<IModel<S01StockItemSearch>>) sidp.iterator(0, 10);
+                @SuppressWarnings("unchecked")
+				Iterator<IModel<S01StockItemSearch>> iterator = (Iterator<IModel<S01StockItemSearch>>) sidp.iterator(0, 10);
 				return iterator;
             }
 

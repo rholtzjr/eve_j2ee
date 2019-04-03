@@ -1,9 +1,7 @@
 package org.holtz.eve.controller;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -18,21 +16,13 @@ import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.TZlStoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01SistockItem;
-import org.holtz.eve.jpa.entity.S01SistockItem;
-import org.holtz.eve.jpa.entity.S01SistockItem;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
-import org.holtz.eve.jpa.entity.TSistockItem;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;

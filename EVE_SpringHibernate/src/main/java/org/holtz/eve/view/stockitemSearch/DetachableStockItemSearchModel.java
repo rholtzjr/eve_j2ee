@@ -1,13 +1,16 @@
 package org.holtz.eve.view.stockitemSearch;
 
-import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 
 public class DetachableStockItemSearchModel extends LoadableDetachableModel<S01StockItemSearch> 
 {
 
-    private final long id;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private final long id;
 
     /**
      * @param c

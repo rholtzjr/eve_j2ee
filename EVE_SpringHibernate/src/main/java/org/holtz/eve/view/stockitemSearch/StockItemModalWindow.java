@@ -1,11 +1,7 @@
 package org.holtz.eve.view.stockitemSearch;
 
-import org.apache.wicket.Session;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
-import org.apache.wicket.markup.html.WebMarkupContainer;
-import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.panel.EmptyPanel;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 
 public abstract class StockItemModalWindow extends ModalWindow {

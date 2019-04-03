@@ -1,11 +1,14 @@
 package org.holtz.eve.view.stockitemSearch;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class StockItemFilter implements Serializable
 {
-    private String stockItemId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String stockItemId;
     private String stockItemName;
     private String stockItemSupplier;
     private String stockItemBarcode;

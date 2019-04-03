@@ -21,8 +21,6 @@ package org.holtz.eve.view.invoice;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.wicket.Session;
-import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.extensions.markup.html.repeater.data.grid.ICellPopulator;
 import org.apache.wicket.extensions.markup.html.repeater.data.table.AbstractColumn;
 import org.apache.wicket.extensions.markup.html.repeater.data.table.DataTable;
@@ -41,7 +39,6 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.holtz.eve.jpa.entity.S01InInvoice;
-import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 
 
 /**
@@ -93,6 +90,11 @@ public class InvoiceDataTablePage extends InvoiceBasePage
         columns.add(new PropertyColumn<S01InInvoice, String>(new Model<>("Invoice Id"), "invId", "inInvoiceID")
         {
             /**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			/**
 			 * 
 			 */
 

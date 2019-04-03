@@ -8,8 +8,6 @@ import org.apache.wicket.markup.html.navigation.paging.PagingNavigator;
 import org.apache.wicket.markup.repeater.Item;
 import org.apache.wicket.markup.repeater.data.DataView;
 import org.apache.wicket.model.AbstractReadOnlyModel;
-import org.apache.wicket.model.CompoundPropertyModel;
-import org.apache.wicket.model.Model;
 
 /**
  * Page that demonstrates a paging dataview
@@ -32,8 +30,6 @@ public class PagingPage extends StockItemBasePage
 		DataView<S01StockItemSearch> dataView = new DataView<S01StockItemSearch>("pageable", stockItemDataProvider)
         {
             private static final long serialVersionUID = 1L;
-            @SuppressWarnings("unchecked")
-			
             @Override
             protected void populateItem(final Item<S01StockItemSearch> item)
             {

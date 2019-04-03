@@ -5,7 +5,11 @@ import java.sql.Timestamp;
 
 public class InvoiceFilter implements Serializable
 {
-    private String invId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String invId;
     private Timestamp invCreateDate;
     private String invCustId;
     private String invNumber_Tx_N;

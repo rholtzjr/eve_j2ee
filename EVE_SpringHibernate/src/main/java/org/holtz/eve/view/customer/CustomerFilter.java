@@ -1,11 +1,14 @@
 package org.holtz.eve.view.customer;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class CustomerFilter implements Serializable
 {
-    private String custId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String custId;
     private String custFirstName;
     private String custLastName;
     private String custNumber;

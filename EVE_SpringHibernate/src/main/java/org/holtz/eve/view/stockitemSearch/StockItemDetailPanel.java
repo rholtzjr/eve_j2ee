@@ -1,14 +1,10 @@
 package org.holtz.eve.view.stockitemSearch;
 
-import org.apache.wicket.Session;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
-import org.apache.wicket.markup.html.WebMarkupContainer;
-import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.panel.Panel;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 import org.slf4j.Logger;
@@ -66,12 +62,22 @@ public class StockItemDetailPanel extends Panel {
 			editForm.addOrReplace(new TextField<>("zlAvgCostPriceMn", new PropertyModel<Object>(item, "zlAvgCostPriceMn")));
 	 	    
 			editForm.addOrReplace(new AjaxButton("close") {
+				/**
+				 * 
+				 */
+				private static final long serialVersionUID = 1L;
+
 				public void onSubmit(AjaxRequestTarget target, String contentId) {
 					onCancel(target);
 				
 				}
 			});
 			editForm.addOrReplace(new AjaxButton("save") {
+				/**
+				 * 
+				 */
+				private static final long serialVersionUID = 1L;
+
 				public void onSubmit(AjaxRequestTarget target, TZlStoreStockItem item) {
 					onSelect(target, item);
 				}

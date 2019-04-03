@@ -1,7 +1,6 @@
 package org.holtz.eve.auth.view;
 
 import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
-import org.apache.wicket.authroles.authentication.panel.SignInPanel;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.PasswordTextField;
@@ -13,7 +12,12 @@ import org.apache.wicket.model.CompoundPropertyModel;
  * This Login page might not be the most elegant way to log into Wicket. It works, but refactoring it is a bit lower on our current to-do list.
  */
 public class LoginPage extends WebPage {
-    private String username;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private String username;
 
     private String password;
 
@@ -21,7 +25,12 @@ public class LoginPage extends WebPage {
         setDefaultModel(new CompoundPropertyModel(this));
 
         Form form = new Form("signInForm") {
-            @Override
+            /**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
             protected void onSubmit() {
                 if (signIn(username, password)) {
                     onSignInSucceeded();
@@ -31,7 +40,7 @@ public class LoginPage extends WebPage {
             }
         };
 
-        form.add(new TextField("username").setRequired(true));
+        form.add(new TextField<Object>("username").setRequired(true));
         form.add(new PasswordTextField("password").setRequired(true));
 
         add(new FeedbackPanel("feedback"));

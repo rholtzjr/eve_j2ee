@@ -4,24 +4,16 @@ package org.holtz.eve.view.stockitemSearch;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
 import org.apache.wicket.extensions.markup.html.repeater.data.sort.SortOrder;
 import org.apache.wicket.extensions.markup.html.repeater.data.table.filter.IFilterStateLocator;
 import org.apache.wicket.extensions.markup.html.repeater.util.SortableDataProvider;
-import org.apache.wicket.injection.Injector;
 import org.apache.wicket.model.IModel;
-import org.apache.wicket.model.LoadableDetachableModel;
-import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.holtz.eve.jpa.dao.S01StockItemSearchDAO;
-import org.holtz.eve.jpa.dao.StockItemDAO;
-import org.holtz.eve.jpa.dao.StoreStockItemDAO;
 import org.holtz.eve.jpa.dao.TZlStoreStockItemDAO;
 import org.holtz.eve.jpa.dao.impl.S01StockItemSearchDAOImpl;
-import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
-import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
 import org.holtz.eve.jpa.dao.impl.TZlStoreStockItemDAOImpl;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 import org.holtz.eve.jpa.entity.TZlStoreStockItem;
@@ -29,7 +21,11 @@ import org.holtz.eve.view.DatabaseLocator;
 
 public class SortableStockItemDataProvider extends SortableDataProvider<S01StockItemSearch, String> implements IFilterStateLocator<StockItemFilter>, Serializable 
 {
-    private StockItemFilter stockItemFilter = new StockItemFilter();
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private StockItemFilter stockItemFilter = new StockItemFilter();
     private transient S01StockItemSearchDAO stockItemDAO;
     private List<S01StockItemSearch> stockItemList = new ArrayList<S01StockItemSearch>();
     private TZlStoreStockItem storeStockItem = new TZlStoreStockItem();

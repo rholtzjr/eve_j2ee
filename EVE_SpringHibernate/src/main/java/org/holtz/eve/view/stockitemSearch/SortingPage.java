@@ -24,7 +24,6 @@ import org.apache.wicket.markup.html.navigation.paging.PagingNavigator;
 import org.apache.wicket.markup.repeater.Item;
 import org.apache.wicket.markup.repeater.data.DataView;
 import org.apache.wicket.model.AbstractReadOnlyModel;
-import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.holtz.eve.jpa.entity.S01StockItemSearch;
 /**
  * page that demonstrates dataview and sorting

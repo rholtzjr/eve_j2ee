@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -118,7 +117,7 @@ public class CustomerDatabase
         {
             return sort.isAscending() ? custLastNameIdx : custLastNameDescIdx;
         }
-        else if ( sort.getProperty().equals("cuCustNumberTx"))
+        else if ( sort.getProperty().equals("cuCustNumber"))
         {
         	return sort.isAscending() ? custNumberIdx : custNumberDescIdx;
         	

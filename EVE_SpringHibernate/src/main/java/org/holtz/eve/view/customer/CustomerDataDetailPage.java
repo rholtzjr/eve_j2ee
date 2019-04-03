@@ -2,17 +2,12 @@ package org.holtz.eve.view.customer;
 
 import java.sql.Timestamp;
 
-import org.apache.wicket.ajax.AjaxRequestTarget;
-import org.apache.wicket.ajax.markup.html.form.AjaxButton;
-import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.holtz.eve.jpa.entity.S01CuCust;
-import org.holtz.eve.jpa.entity.TZlStoreStockItem;
-import org.holtz.eve.view.stockitemSearch.StockItemDetailPanel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

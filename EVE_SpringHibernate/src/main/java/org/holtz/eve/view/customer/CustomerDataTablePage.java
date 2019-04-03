@@ -21,8 +21,6 @@ package org.holtz.eve.view.customer;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.wicket.Session;
-import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.extensions.markup.html.repeater.data.grid.ICellPopulator;
 import org.apache.wicket.extensions.markup.html.repeater.data.table.AbstractColumn;
 import org.apache.wicket.extensions.markup.html.repeater.data.table.DataTable;
@@ -41,7 +39,6 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.holtz.eve.jpa.entity.S01CuCust;
-import org.holtz.eve.jpa.entity.TZlStoreStockItem;
 
 
 /**
@@ -95,6 +92,11 @@ public class CustomerDataTablePage extends CustomerBasePage
             /**
 			 * 
 			 */
+			private static final long serialVersionUID = 1L;
+
+			/**
+			 * 
+			 */
 
 			@Override
             public String getCssClass()
@@ -105,7 +107,7 @@ public class CustomerDataTablePage extends CustomerBasePage
         
         columns.add(new PropertyColumn<S01CuCust, String>(new Model<>("First Name"), "custFirstName", "cuFirstNameTx"));
         columns.add(new PropertyColumn<S01CuCust, String>(new Model<>("Last Name"), "custLastName", "cuLastNameTx"));
-        columns.add(new PropertyColumn<S01CuCust, String>(new Model<>("Customer Number"), "custNumber", "cuCustNumberTx_N"));
+        columns.add(new PropertyColumn<S01CuCust, String>(new Model<>("Customer Number"), "cuCustNumber", "cuCustNumberTx_N"));
         SortableCustomerDataProvider provider = new SortableCustomerDataProvider();
         DataTable<S01CuCust, String> custItemTable = new DataTable<>("custItemTable", columns, provider, 10);
         custItemTable.addBottomToolbar(new ExportToolbar(custItemTable).addDataExporter(new CSVDataExporter()));

@@ -1,25 +1,12 @@
 package org.holtz.eve.view.invoice;
 
-import org.apache.wicket.Page;
-import org.apache.wicket.Session;
-import org.apache.wicket.ajax.AjaxRequestTarget;
-import org.apache.wicket.ajax.markup.html.AjaxLink;
-import org.apache.wicket.core.util.resource.locator.ResourceStreamLocator;
-import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.IModel;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
-import org.holtz.eve.controller.StockItemRestController;
-import org.holtz.eve.jpa.dao.StockItemDAO;
-import org.holtz.eve.jpa.dao.StoreStockItemDAO;
-import org.holtz.eve.jpa.dao.impl.StockItemDAOImpl;
-import org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl;
-import org.holtz.eve.jpa.entity.S01InInvoice;
 import org.holtz.eve.jpa.entity.S01InInvoice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -83,6 +70,11 @@ public abstract class InvoiceBasePage extends WebPage
 //		return editSelected;
 //	}
 	public class ActionPanel extends Panel {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		/**
 		 * @param id
 		 *            component id
