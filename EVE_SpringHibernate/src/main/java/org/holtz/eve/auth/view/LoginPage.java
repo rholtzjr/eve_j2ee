@@ -22,9 +22,9 @@ public class LoginPage extends WebPage {
     private String password;
 
     public LoginPage() {
-        setDefaultModel(new CompoundPropertyModel(this));
+        setDefaultModel(new CompoundPropertyModel<LoginPage>(this));
 
-        Form form = new Form("signInForm") {
+        Form<?> form = new Form<Object>("signInForm") {
             /**
 			 * 
 			 */
@@ -40,7 +40,7 @@ public class LoginPage extends WebPage {
             }
         };
 
-        form.add(new TextField<Object>("username").setRequired(true));
+        form.add(new TextField<String>("username").setRequired(true));
         form.add(new PasswordTextField("password").setRequired(true));
 
         add(new FeedbackPanel("feedback"));

@@ -104,7 +104,7 @@ public abstract class StockItemBasePage extends WebPage
 
 
 			});
-			add(new AjaxLink("edit") {
+			add(new AjaxLink<Object>("edit") {
 				/**
 				 * 
 				 */

@@ -11,44 +11,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
-<!--  	
-	<bean id="eveDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-		<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=eve"/>
-		<property name="username" value="sa"/>
-		<property name="password" value="adminadmin"/>
-	</bean>
-	
-	<bean id="eveSessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-		<property name="dataSource" ref="eveDataSource" />
-		<property name="packagesToScan" value="org.holtz.eve"></property>
-		
-		<property name="hibernateProperties">
-			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
-				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.hbm2ddl.auto">none</prop>
-			</props>
-		</property>
-	</bean>
-	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-    	<property name="sessionFactory" ref="eveSessionFactory"></property>
-	</bean>
-	<bean id="stockItemDAO" class="org.holtz.eve.jpa.dao.impl.StockItemDAOImpl">
-		<property name="sessionFactory" ref="eveSessionFactory"/>
-	</bean>
-	<bean id="storeStockItemDAO" class="org.holtz.eve.jpa.dao.impl.StoreStockItemDAOImpl">
-		<property name="sessionFactory" ref="eveSessionFactory"/>
-	</bean>
-	<bean name="/stockItem/*.htm" class="org.holtz.eve.controller.StockItemController" >
-		<property name="storeStockItemDAO" ref="storeStockItemDAO" />
-		<property name="stockItemDAO" ref="stockItemDAO" />
-	</bean>
-	<bean name="/rest/stockItem/*" class="org.holtz.eve.controller.StockItemRestController" >
-		<property name="storeStockItemDAO" ref="storeStockItemDAO" />
-		<property name="stockItemDAO" ref="stockItemDAO" />	
-	</bean>
-	-->
 	<bean name="/wicket/*" class="org.holtz.eve.view.EveApplication"></bean>
 
 </beans>
