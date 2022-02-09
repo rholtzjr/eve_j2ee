@@ -100,7 +100,7 @@
   </build>
   <properties>
   	<org.springframework.version>4.3.8.RELEASE</org.springframework.version>
-  	<hibernate.version>4.0.1.Final</hibernate.version>
+  	<hibernate.version>5.4.24.Final</hibernate.version>
   	<microsoft.jdbc.version>6.2.1.jre8</microsoft.jdbc.version>
   	<hibernate.annotaions.version>4.0.1.Final</hibernate.annotaions.version>
   </properties>
